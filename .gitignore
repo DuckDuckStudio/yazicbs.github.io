@@ -10,3 +10,6 @@ test/
 test.*
 # npm
 node_modules/
+# 玩音游玩的
+.action_scripts/Python/玩音游玩的-*.log
+.action_scripts/Python/玩音游玩的.py
