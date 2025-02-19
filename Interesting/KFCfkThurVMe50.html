@@ -10,17 +10,17 @@
     </head>
     <body>
         <script>
-            // Get 当前 day
+            // 获取今天周几
             let currentDate = new Date();
             let dayOfWeek = currentDate.getDay(); // 返回一周中的第几天，周日->0，周一->1...
             //---
             if (Math.random() > 0.5) {
-                window.location.href = 'https://www.cnhls.com/';//%50几率跳转华莱士官网(周四亦如此)
-            } else {//没随机到时
-                if (dayOfWeek === 4) {//if 今日fk星期四
-                    window.location.href = 'http://www.kfc.com.cn/kfccda/index.aspx';//KFC!
+                window.location.href = 'https://www.cnhls.com/';// %50几率跳转华莱士官网(周四亦如此)
+            } else { // 没随机到时
+                if (dayOfWeek === 4) { // 如果今天疯狂星期四
+                    window.location.href = 'http://www.kfc.com.cn/kfccda/index.aspx';
                 } else {
-                    window.location.href = 'https://www.mcdonalds.com.cn/';//MDL!
+                    window.location.href = 'https://www.mcdonalds.com.cn/';
                 }
             }
         </script>

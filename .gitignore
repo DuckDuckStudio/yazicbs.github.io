@@ -1,4 +1,7 @@
+# IDE
+.idea/
 .vs/
+.vscode/
 # python
 .venv/
 # 编写中
@@ -13,3 +16,5 @@ node_modules/
 # 玩音游玩的
 .action_scripts/Python/玩音游玩的-*.log
 .action_scripts/Python/玩音游玩的.py
+# 提醒自己的
+minecraft/photos/INFO.txt
