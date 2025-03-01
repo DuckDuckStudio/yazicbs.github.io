@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 生成日期: 2025-02-20T16:15:04.397Z -->
+<!-- 生成日期: 2025-03-01T16:22:34.478Z -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
               xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
@@ -95,7 +95,7 @@
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/index.html</loc>
-    <lastmod>2025-02-14T04:54:33+08:00</lastmod>
+    <lastmod>2025-03-02T00:02:06+08:00</lastmod>
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/minimum/index.html</loc>
@@ -182,12 +182,16 @@
     <lastmod>2024-11-15T01:12:22+08:00</lastmod>
   </url>
   <url>
+    <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/GitHubView/index.html</loc>
+    <lastmod>2025-03-02T00:02:06+08:00</lastmod>
+  </url>
+  <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/chinese_git/index.html</loc>
-    <lastmod>2024-11-27T18:10:45+08:00</lastmod>
+    <lastmod>2025-03-02T00:01:46+08:00</lastmod>
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/index.html</loc>
-    <lastmod>2024-11-15T01:12:22+08:00</lastmod>
+    <lastmod>2025-03-02T00:02:06+08:00</lastmod>
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/index.html</loc>
@@ -263,6 +267,6 @@
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/zh_cn/index.html</loc>
-    <lastmod>2025-02-20T11:44:44+08:00</lastmod>
+    <lastmod>2025-03-02T00:00:36+08:00</lastmod>
   </url>
 </urlset>
