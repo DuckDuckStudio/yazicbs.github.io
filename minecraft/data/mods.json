@@ -1,6 +1,5 @@
 {
-  // 数据由 AI 生成，不保证除 "Minecraft Version" 和 "Mod Loader" 和 "Name" 外的其他字段完全准确
-  // 我知道 JSON 中不许有注释，这是给看到的人的警告
+  "NOTE": "数据由 AI 生成，不保证除 Minecraft Version 和 Mod Loader 和 Name 外的其他字段完全准确"
   "Minecraft Version": "1.21.1",
   "Mod Loader": "Fabric",
   "Mods": [
