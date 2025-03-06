@@ -140,7 +140,7 @@ var playlists = [
             cover: 'https://p2.music.126.net/6_oOAFwqRnW1m_S7EZk5OQ==/109951169274100743.jpg'
         },
     ],
-    /* 春节 */
+    /* 春节
     [
         {
             name: '春节序曲',
@@ -155,7 +155,7 @@ var playlists = [
             cover: 'https://p2.music.126.net/9HMwjKJ28PkHp609d98dJQ==/109951169761022710.jpg'
         }
     ],
-    // */
+    */
 ];
 
 // 从歌单列表中随机选择一个歌单
@@ -173,7 +173,7 @@ const playlistNames = {
     4: "明日方舟 (塞壬唱片-MSR)",
     5: "日推 - Live",
     6: "纯音乐",
-    7: "春节...啊？这么快就过节了？？？",
+    // 7: "春节...啊？这么快就过节了？？？",
     default: "[WARN(歌单-选择-索引越界)] 未定义歌单名称"
     // 最后更新分类：2024/12/12
 };
