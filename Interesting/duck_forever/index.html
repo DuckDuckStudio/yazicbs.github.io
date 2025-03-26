@@ -15,11 +15,11 @@
         <script>
             // 前面不要加空格
             console.log(`
-ddddd                 k         ssss                   d  i
-d     d         c c c k   k     s      t            dddd      oooo
-d     d  u   u  a     k k        sss  ttt  u   u  d    d  i  o    o
-d     d  u   u  c     k k           s  t   u   u  d    d  i  o    o
-ddddd    u u u  c c c k   k     sssss  t   u u u   ddddd  i   oooo
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
 
 本站维护人员：
 鸭鸭「カモ」
@@ -90,8 +90,8 @@ https://space.bilibili.com/2054654702/
 
                 <p>&nbsp;</p>
 
-                <!--声音文件位于https://duckduckstudio.github.io/yazicbs.github.io/Interesting/sounds/*.mp3-->
-                <!--每次循环从中选一个音频进行循环。每次循环只循环其中的一个音频-->
+                <!-- 声音文件位于https://duckduckstudio.github.io/yazicbs.github.io/Interesting/sounds/*.mp3 -->
+                <!-- 每次循环从中选一个音频进行循环。每次循环只循环其中的一个音频 -->
             </div>
         </div>
 
@@ -122,11 +122,11 @@ https://space.bilibili.com/2054654702/
             var currentQuackIndex = -1;
     
             function playQuack() {
-                if (currentQuackIndex === -1) {// 如果当前没有选定鸭叫音频，就随机选择一个
+                if (currentQuackIndex === -1) { // 如果当前没有选定鸭叫音频，就随机选择一个
                     currentQuackIndex = Math.floor(Math.random() * quackSounds.length);
                     const NewText = document.getElementById("text");
                     NewText.textContent = "再来一个";
-                } else {// 如果当前有选定鸭叫音频，就随机选择一个和当前的不同的
+                } else { // 如果当前有选定鸭叫音频，就随机选择一个和当前的不同的
                     let nowcurrentQuackIndex = currentQuackIndex
                     while (nowcurrentQuackIndex === currentQuackIndex){
                         currentQuackIndex = Math.floor(Math.random() * quackSounds.length);
