@@ -121,13 +121,13 @@ https://space.bilibili.com/2054654702/
                     <tbody>
                         <tr>
                             <td>工具箱</td>
-                            <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/tag/v1.3.7">v1.3.7</a></td>
-                            <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/tag/v1.3.7">v1.3.7</a></td>
+                            <td><a id="toolbox-stable-version">加载中...</a></td>
+                            <td><a id="toolbox-pre-release-version">加载中...</a></td>
                         </tr>
                         <tr>
                             <td>开发工具包</td>
-                            <td><a href="https://github.com/DuckDuckStudio/Fufu_Dev_Tools/releases/tag/2025.02.20.1150">2025.02.20.1150</a></td>
-                            <td><a href="https://github.com/DuckDuckStudio/Fufu_Dev_Tools/releases/tag/2025.02.20.1150">2025.02.20.1150</a></td>
+                            <td><a id="devtools-stable-version">加载中...</a></td>
+                            <td><a id="devtools-pre-release-version">加载中...</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -215,5 +215,65 @@ https://space.bilibili.com/2054654702/
                 <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues" target="_blank">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
             </div>
         </div>
+
+        <!-- JS Script -->
+        <script>
+            // 获取版本号并更新HTML内容
+            function getLatestVersion(repo, stable_version, pre_release_version) {
+                fetch(`https://api.github.com/repos/${repo}/releases`)
+                    .then(response => response.json()) // 将响应转为 json 格式
+                    .then(data => {
+                        // 查找最新的 Stable 版本
+                        const latestStableVersion = data
+                            .filter(release => !release.prerelease) // 筛选返回的 json 中的 "prerelease" 为 false 的版本
+                            .sort((a, b) => new Date(b.published_at) - new Date(a.published_at))[0]; // 按发布时间排序，取最新的版本
+
+                        // 查找最新的 Pre-release 版本
+                        const latestPreReleaseVersion = data
+                            .filter(release => release.prerelease) // 筛选返回的 json 中的 "prerelease" 为 true 的版本
+                            .sort((a, b) => new Date(b.published_at) - new Date(a.published_at))[0]; // 按发布时间排序，取最新的版本
+
+                        // 确定都有获取到
+                        if (latestStableVersion && latestPreReleaseVersion) {
+                            if (new Date(latestStableVersion.published_at) > new Date(latestPreReleaseVersion.published_at)) {
+                                // 如果最新的 Stable 版本比最新的 Pre-release 版本新，则都显示 Stable 版本
+                                document.getElementById(stable_version).innerHTML = latestStableVersion.tag_name;
+                                document.getElementById(stable_version).href = latestStableVersion.html_url;
+                                document.getElementById(pre_release_version).innerHTML = latestStableVersion.tag_name;
+                                document.getElementById(pre_release_version).href = latestStableVersion.html_url;
+                            } else {
+                                // 否则各显示各的
+                                document.getElementById(stable_version).innerHTML = latestStableVersion.tag_name;
+                                document.getElementById(stable_version).href = latestStableVersion.html_url;
+                                document.getElementById(pre_release_version).innerHTML = latestPreReleaseVersion.tag_name;
+                                document.getElementById(pre_release_version).href = latestPreReleaseVersion.html_url;
+                            }
+                        } else if (latestStableVersion) {
+                            // 如果只有 Stable 版本
+                            document.getElementById(stable_version).innerHTML = latestStableVersion.tag_name;
+                            document.getElementById(stable_version).href = latestStableVersion.html_url;
+                            document.getElementById(pre_release_version).innerHTML = "暂无预览版本";
+                        } else if (latestPreReleaseVersion) {
+                            // 如果只有 Pre-release 版本
+                            document.getElementById(stable_version).innerHTML = "暂无正式版本";
+                            document.getElementById(pre_release_version).innerHTML = latestPreReleaseVersion.tag_name;
+                            document.getElementById(pre_release_version).href = latestPreReleaseVersion.html_url;
+                        } else {
+                            // 如果啥都没有
+                            document.getElementById(stable_version).innerHTML = "暂无正式版本";
+                            document.getElementById(pre_release_version).innerHTML = "暂无预览版本";
+                        }
+                    })
+                    .catch(error => {
+                        console.error(`获取最新发行版时出错: ${error}`);
+                        document.getElementById(stable_version).innerHTML = "获取失败";
+                        document.getElementById(pre_release_version).innerHTML = "获取失败";
+                    })
+            }
+
+            // 调用 getLatestVersion 方法获取并更新版本信息
+            getLatestVersion("DuckDuckStudio/Fufu_Tools", "toolbox-stable-version", "toolbox-pre-release-version");
+            getLatestVersion("DuckDuckStudio/Fufu_Dev_Tools", "devtools-stable-version", "devtools-pre-release-version");
+        </script>
     </body>
 </html>
