@@ -120,13 +120,6 @@ https://space.bilibili.com/2054654702/
                 <p>A：</p>
                 <p>关于如何配置Python，请参阅<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98QandA/%E4%B8%BB%E7%A8%8B%E5%BA%8F/#open-lite-program" target="_blank">[Q：我不知道该用什么打开lite版的主程序]</a>与<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98QandA/%E4%B8%BB%E7%A8%8B%E5%BA%8F/#add-python-to-path" target="_blank">[Q：我该如何添加python到系统PATH环境变量]</a></p>
                 <p>关于如何安装必须库文件，请参阅<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98QandA/小工具/#error-module" target="_blank">[Q:小工具运行时出现错误No module named 'xxx']</a></p>
-                <p>关于如何配置ADB(Android 调试桥)，请参阅<a href="https://source.android.google.cn/docs/setup/build/adb?hl=zh-cn" target="_blank">[Android 调试桥 (ADB)]</a></p>
-                <p>关于如何配置WSA(适用于Android的Windows子系统)，请参阅<a href="https://learn.microsoft.com/zh-cn/windows/android/wsa/" target="_blank">[适用于 Android™️ 的 Windows 子系统]</a></p>
-                <p><i>
-                Note:Microsoft 正在停止为适用于 Android™️ 的 Windows 子系统 (WSA) 提供支持。 因此，自 2025 年 3 月 5 日起，将不再支持 Windows 上的 Amazon Appstore 以及依赖于 WSA 的所有应用程序和游戏。 在此之前，客户仍可获取技术支持。<br>
-                2024 年 3 月 5 日之前安装了 Amazon Appstore 或 Android 应用程序的客户，在 2025 年 3 月 5 日停用日之前仍可继续使用这些应用程序。<br>
-                (也就是WSA被砍掉了) 
-                </i></p>
             </div>
             <p>&nbsp;</p>
             <div class="container">
@@ -134,7 +127,7 @@ https://space.bilibili.com/2054654702/
                 <p>A：</p>
                 <p>可以的，不过请在使用前执行<code>git pull</code>更新一下仓库，以解决一些可能的问题。</p>
                 <p>这样做相当于使用<code>code</code>版程序。详细版本分类请查看<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/versions/" target="_blank">[芙芙工具箱版本说明]</a></p>
-                <p>我仅授予用户仓库文件的使用权，请勿将文件进行二次分发、上传至其他仓库等，详情请查看<a href="https://github.com/DuckDuckStudio/Fufu_Tools/blob/main/LICENSE" target="_blank">LICENSE 文件</a></p>
+                <p>请勿将文件进行二次分发、上传至其他仓库等，详情请查看<a href="https://github.com/DuckDuckStudio/Fufu_Tools/blob/main/LICENSE" target="_blank">LICENSE 文件</a></p>
                 <p>对于这样做是否也受支持，请查看<a href="https://github.com/DuckDuckStudio/Fufu_Tools/blob/main/SECURITY.md" target="_blank">SECURITY 文件</a></p>
                 <p>对于下载仓库文件zip，不属于使用<code>code</code>版程序，这样做不受支持。</p>
             </div>
@@ -142,30 +135,17 @@ https://space.bilibili.com/2054654702/
             <div class="container">
                 <h2 id="how_to_update">Q：我该如何更新芙芙工具箱</h2>
                 <p>A：</p>
-                <p>在发布新版本后，你可以更新芙芙工具箱。</p>
-                <p>目前由于技术原因，更新程序尚未制作，只制作了更新信息检测程序。所以目前如果需要更新芙芙工具箱请<strong>先卸载/删除本地的旧版本，然后安装/下载新版本</strong>。</p>
-                <p>请注意，如果需要保存您之前的配置，在卸载旧版前请先另存旧版中的<strong>除初始目录中的<code>config.ini</code>外</strong>所有的<code>config.ini</code>文件。详细信息请参阅<a href="#how_to_save_config">[Q:我该如何在更新时保留我的配置?]</a></p>
+                <h3>对于安装程序(exe)版</h3>
+                <ol>
+                    <li>在芙芙工具箱中找到 <strong>关于芙芙工具箱</strong> &gt; <strong>备份配置</strong> 来备份配置文件</li>
+                    <li>下载新版本的安装程序</li>
+                    <li>运行它来更新芙芙工具箱</li>
+                    <li>在新版本的芙芙工具箱中找到 <strong>关于芙芙工具箱</strong> &gt; <strong>还原配置</strong> 并选中前面备份配置文件的文件夹来还原配置</li>
+                </ol>
+                <h3>对于源码(code)版</h3>
                 <p>如果您是使用code版芙芙工具箱，请cd到程序目录后运行<code>git pull</code>拉取最新源码</p>
-            </div>
-            <p>&nbsp;</p>
-            <div class="container">
-                <h2 id="how_to_save_config">Q：我该如何在更新时保留我的配置？</h2>
-                <p>A:</p>
-                <p>目前由于技术原因，暂未制作更新程序。如果直接删除/卸载旧版本后再下载/安装新版本，则会丢失旧版本中的所有配置</p>
-                <p>如果您希望保存您的配置并将其用于新版本，目前的办法是<strong>先另存旧版本中的除初始目录中的所有<code>config.ini</code>文件，在更新完成后用这些<code>config.ini</code>文件替换新版本中的<code>config.ini</code>文件</strong>。</p>
-                <p>请注意以下几点：</p>
-                <ol>
-                    <li><p>在另存旧版<code>config.ini</code>文件时请勿也另存初始目录中的<code>config.ini</code>文件。</p></li>
-                    <li><p>在替换新版的<code>config.ini</code>文件前，请先阅读新版本的更新说明，切勿替换更新说明中提到的<code>config.ini</code>文件。如果你这样做，你可能会遇到一些错误。</p></li>
-                    <li><p>切勿将旧版<code>config.ini</code>文件另存在初始目录中，以防旧版<code>config.ini</code>文件被误删。</p></li>
-                </ol>
-                <p>Note:初始目录指的是在<a href="#installation-path">[Q：如何找到芙芙工具箱的安装路径]</a>中程序输出的目录，也就是芙芙工具箱的目录。</p>
-                <p>自<strong>v1.3.0</strong>起，你可以使用以下方法另存配置文件:</p>
-                <ol>
-                    <li>打开芙芙工具箱</li>
-                    <li>选择<strong>关于芙芙工具箱</strong>&gt;<strong>另存配置文件</strong></li>
-                    <li>在新窗口中选择需要另存到的文件夹，切勿将配置文件另存在旧程序的文件夹内，请确保目标文件夹为空。</li>
-                </ol>
+                <h3>其他版本(zip/7z)</h3>
+                <p>像前面安装程序版那样另存配置文件后，删除旧版文件夹并用新版的替换它，然后还原配置文件。</p>
             </div>
             <p>&nbsp;</p>
             <div class="container">
@@ -210,7 +190,7 @@ https://space.bilibili.com/2054654702/
         <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
-                <p>最后更新：<strong>2024/9/13</strong></p>
+                <p>最后更新：<strong>2025/4/16</strong></p>
                 <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
                 <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
             </div>
