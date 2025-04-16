@@ -1,1 +1,6 @@
 requests==2.32.3
+pytesseract==0.3.13
+# pytesseract 依赖
+# Pillow=11.2.1
+# packaging=24.2
+colorama==0.4.6
