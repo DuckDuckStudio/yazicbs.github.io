@@ -18,9 +18,6 @@ https://space.bilibili.com/2054654702/
 `)
 
 document.addEventListener('DOMContentLoaded', () => {
-    const 当前时间 = new Date(); // 我获取这个干啥
-    console.log(`%c[log] 当前时间: ${当前时间}`, "color: cyan"); // 输出好看?
-
     const 鸭子出生 = new Date(2023, 11, 6); // 2023年12月5日
     const 鸭子没嘎 = true;
     let showDay = true; // 初始时显示“日”
@@ -38,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let 岁数 = ["🦆嘎了🦆",""];
         let 活了多久;
 
-        // 鸭子活 8 年
+        // 鸭子活 6 年
         // 人活 80 岁
 
         try {
@@ -47,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 鸭子占比 = 活了多久 / 6;
                 岁数 = 80 * 鸭子占比
                 岁数 = 格式化岁数(岁数);
+                console.log(`%c[log] 当前时间: ${现在} | 活了多久(实际): ${格式化岁数(活了多久)} | 鸭子占比: ${鸭子占比}`, "color: cyan");
             }
         } catch (error) {
             岁数 = "没算出来";
@@ -64,8 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 每0.01鸭日(144s)更新一次
-    setInterval(更新岁数, 144);
+    // 每 0.01 鸭日 (64800ms) 更新一次
+    setInterval(更新岁数, 64800);
 
     // 初次调用以显示时间
     更新岁数();
