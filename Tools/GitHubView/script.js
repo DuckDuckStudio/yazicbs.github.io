@@ -56,7 +56,7 @@ function showSlide(index) {
 function autoPlay() {
     setInterval(() => {
         showSlide(currentSlide + 1);
-    }, 5000);
+    }, 6000); // 每 6 秒切换一次
 }
 
 // 初始化
