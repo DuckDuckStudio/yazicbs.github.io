@@ -48,8 +48,12 @@ jobs:
           cd .action_scripts/JavaScript
           npm install js-yaml
           cd ../..
+          echo ===============
           node .action_scripts/JavaScript/yaml-json.mjs api/json/notifications.yaml
           rm -v api/json/notifications.yaml
+          echo ===============
+          node .action_scripts/JavaScript/yaml-json.mjs api/json/fzxc.yaml
+          rm -v api/json/fzxc.yaml
 
       - name: 移除不应部署的文件
         shell: bash
