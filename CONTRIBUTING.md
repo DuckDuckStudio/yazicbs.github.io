@@ -74,7 +74,6 @@ yazicbs.github.io
 │   └───photos  
 ├───other → 其他人的网页，请将每个人的网页再用文件夹包起来！如果可以，请在这里添加对您的网页的说明。  
 ├───pictures → 网页所用图片(zh_cn)  
-├───project_photos → 其他repo使用的图片  
 │   └───文章图片 → repo Articles 使用的图片  
 ├───Tools → 自己做的一些小工具的索引页  
 │   ├───chinese_git → repo Chinese_git 的网站  
