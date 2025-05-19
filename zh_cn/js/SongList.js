@@ -34,12 +34,6 @@ var playlists = [
             url: 'https://music.163.com/song/media/outer/url?id=2034615687.mp3',
             cover: 'https://p2.music.126.net/RWIGyShmnjmUxizXco6fVg==/109951168505830245.jpg'
         },
-        {
-            name: '水龙吟',
-            artist: 'HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=2067222280.mp3',
-            cover: 'https://p1.music.126.net/oDhurcFOPMPVMLnc6xF99A==/109951168765200998.jpg'
-        },
     ],
     // 原神
     [
@@ -66,27 +60,6 @@ var playlists = [
             artist: 'HOYO-MiX',
             url: 'https://music.163.com/song/media/outer/url?id=2613484725.mp3',
             cover: 'https://p1.music.126.net/dH0bfwKCPFdT65ZIe2OUjA==/109951169835593264.jpg'
-        },
-    ],
-    // 崩坏3
-    [
-        {
-            name: 'Da Capo',
-            artist: 'HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=2026565329.mp3',
-            cover: 'https://p2.music.126.net/awzv1LpuBJiKTeB7roh_Aw==/109951168434956885.jpg'
-        },
-        {
-            name: 'ReOracle',
-            artist: '黄霄雲 / HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=1920740889.mp3',
-            cover: 'https://p2.music.126.net/T_KEXE301-CuVfgaNYfJJw==/109951167055474167.jpg'
-        },
-        {
-            name: 'Moon Halo (薪炎永燃)', // 坏了，崩坏三还在追我
-            artist: '茶理理 / TetraCalyx / Hanser / HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=1859652717.mp3',
-            cover: 'https://p2.music.126.net/ciLKATqflV2YWSV3ltE2Kw==/109951166159281275.jpg'
         },
     ],
     // 明日方舟 (塞壬唱片-MSR)
@@ -169,21 +142,23 @@ const playlistNames = {
     0: "小甜甜",
     1: "崩铁",
     2: "原神",
-    3: "崩坏3",
-    4: "明日方舟 (塞壬唱片-MSR)",
-    5: "日推 - Live",
-    6: "纯音乐",
-    // 7: "春节...啊？这么快就过节了？？？",
+    3: "明日方舟 (塞壬唱片-MSR)",
+    4: "日推 - Live",
+    5: "纯音乐",
+    // 6: "春节...啊？这么快就过节了？？？",
     default: "[WARN(歌单-选择-索引越界)] 未定义歌单名称"
-    // 最后更新分类：2024/12/12
+    // 最后更新分类：2025/5/19
 };
 
 // 获取歌单名称
 const SongListSet = playlistNames[randomPlaylistIndex] || playlistNames.default;
 
-const logMessage = SongListSet === playlistNames.default ?
-    console.warn(`${SongListSet}，随机到的数字是${randomPlaylistIndex}`) :
+if (SongListSet === playlistNames.default) {
+    console.warn(`${SongListSet}，随机到的数字是${randomPlaylistIndex}`);
+    console.debug("%c[FUN] 不喜欢没有边界感的调用。", "color: #d6aaff;")
+} else {
     console.log(`[INFO(歌单)] 选中歌单 [${SongListSet}]`);
+}
 
 /* -----END----- */
 
