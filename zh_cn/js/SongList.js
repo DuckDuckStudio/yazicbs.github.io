@@ -14,138 +14,158 @@ var playlists = [
     // Sweet
     [
         {
-            name: 'Floating Star',
-            artist: 'Kirara Magic / Shion Lee',
-            url: 'https://music.163.com/song/media/outer/url?id=1830190033.mp3',
-            cover: 'https://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg'
+            name: "Floating Star",
+            artist: "Kirara Magic / Shion Lee",
+            url: "https://music.163.com/song/media/outer/url?id=1830190033.mp3",
+            cover: "https://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg"
         },
         {
-            name: 'Aurora VIP',
-            artist: 'Kirara Magic / Shion Lee',
-            url: 'https://music.163.com/song/media/outer/url?id=1830187577.mp3',
-            cover: 'https://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg'
+            name: "Aurora VIP",
+            artist: "Kirara Magic / Shion Lee",
+            url: "https://music.163.com/song/media/outer/url?id=1830187577.mp3",
+            cover: "https://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg"
         },
     ],
     // 崩铁
     [
         {
-            name: '太空漫步',
-            artist: 'HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=2034615687.mp3',
-            cover: 'https://p2.music.126.net/RWIGyShmnjmUxizXco6fVg==/109951168505830245.jpg'
+            name: "太空漫步",
+            artist: "HOYO-MiX",
+            url: "https://music.163.com/song/media/outer/url?id=2034615687.mp3",
+            cover: "https://p2.music.126.net/RWIGyShmnjmUxizXco6fVg==/109951168505830245.jpg"
         },
     ],
     // 原神
     [
         {
-            name: '清润玉响',
-            artist: 'HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=2140118672.mp3',
-            cover: 'https://p1.music.126.net/MlajrhHqU-33qDnu41p11w==/109951169447872203.jpg'
+            name: "清润玉响",
+            artist: "HOYO-MiX",
+            url: "https://music.163.com/song/media/outer/url?id=2140118672.mp3",
+            cover: "https://p1.music.126.net/MlajrhHqU-33qDnu41p11w==/109951169447872203.jpg"
         },
         {
-            name: '柔灯轻漾时',
-            artist: 'HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=2130083946.mp3',
-            cover: 'https://p2.music.126.net/vkLKNH2WpfYh4p4ACRRYOg==/109951169367650385.jpg'
+            name: "柔灯轻漾时",
+            artist: "HOYO-MiX",
+            url: "https://music.163.com/song/media/outer/url?id=2130083946.mp3",
+            cover: "https://p2.music.126.net/vkLKNH2WpfYh4p4ACRRYOg==/109951169367650385.jpg"
         },
         {
-            name: '不再年轻的村庄(轻策夜间)',
-            artist: '陈致逸 / HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=1492276660.mp3',
-            cover: 'httpss://p2.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg'
+            name: "不再年轻的村庄(轻策夜间)",
+            artist: "陈致逸 / HOYO-MiX",
+            url: "https://music.163.com/song/media/outer/url?id=1492276660.mp3",
+            cover: "httpss://p2.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg"
         },
         {
-            name: '风轻云暖',
-            artist: 'HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=2613484725.mp3',
-            cover: 'https://p1.music.126.net/dH0bfwKCPFdT65ZIe2OUjA==/109951169835593264.jpg'
-        },
-    ],
-    // 明日方舟 (塞壬唱片-MSR)
-    [
-        {
-            name: '不存在的乐园',
-            artist: '塞壬唱片-MSR / Erik Castro',
-            url: 'https://music.163.com/song/media/outer/url?id=2053918838.mp3',
-            cover: 'https://p2.music.126.net/kojx4UU24KVgoOf_szFCmg==/109951168665117523.jpg'
-        },
-        {
-            name: '赴大荒',
-            artist: '塞壬唱片-MSR / Kirara Magic',
-            url: 'https://music.163.com/song/media/outer/url?id=2124415181.mp3',
-            cover: 'https://p1.music.126.net/ryCmscVNLU0y4BEEQPhTyg==/109951169316167603.jpg'
+            name: "风轻云暖",
+            artist: "HOYO-MiX",
+            url: "https://music.163.com/song/media/outer/url?id=2613484725.mp3",
+            cover: "https://p1.music.126.net/dH0bfwKCPFdT65ZIe2OUjA==/109951169835593264.jpg"
         },
     ],
-    // 日推 - Live
+    // 明日方舟
     [
         {
-            name: 'Moon (feat. MYLK)',
-            artist: 'Kirara Magic / MYLK',
-            url: 'https://music.163.com/song/media/outer/url?id=1970065457.mp3',
-            cover: 'https://p1.music.126.net/8iXNNlZSJgePYhBmWpPaVQ==/109951167752893617.jpg'
+            name: "相见欢",
+            artist: "塞壬唱片-MSR / MeLo_绿萝组",
+            url: "https://music.163.com/song/media/outer/url?id=2668949546.mp3",
+            cover: "https://p2.music.126.net/EhAPL8JRSar3zsKs0nsS5Q==/109951170419323950.jpg"
+        },
+        {
+            name: "不存在的乐园",
+            artist: "塞壬唱片-MSR / Erik Castro",
+            url: "https://music.163.com/song/media/outer/url?id=2053918838.mp3",
+            cover: "https://p2.music.126.net/kojx4UU24KVgoOf_szFCmg==/109951168665117523.jpg"
+        },
+        {
+            name: "赴大荒",
+            artist: "塞壬唱片-MSR / Kirara Magic",
+            url: "https://music.163.com/song/media/outer/url?id=2124415181.mp3",
+            cover: "https://p1.music.126.net/ryCmscVNLU0y4BEEQPhTyg==/109951169316167603.jpg"
         },
     ],
     // 纯音乐
     [
         {
-            name: 'jiggy boogy (sped up)',
-            artist: 'Study Group',
-            url: 'https://music.163.com/song/media/outer/url?id=2615267878.mp3',
-            cover: 'https://p1.music.126.net/E3byOaUZwLP8MNtXfKgvuw==/109951169853517770.jpg'
+            name: "jiggy boogy (sped up)",
+            artist: "Study Group",
+            url: "https://music.163.com/song/media/outer/url?id=2615267878.mp3",
+            cover: "https://p1.music.126.net/E3byOaUZwLP8MNtXfKgvuw==/109951169853517770.jpg"
         },
         {
-            name: 'junkie',
-            artist: 'Study Group',
-            url: 'https://music.163.com/song/media/outer/url?id=2607737920.mp3',
-            cover: 'https://p1.music.126.net/4eYqE7mlVq_fxHihCmUM4g==/109951169778904902.jpg'
+            name: "junkie",
+            artist: "Study Group",
+            url: "https://music.163.com/song/media/outer/url?id=2607737920.mp3",
+            cover: "https://p1.music.126.net/4eYqE7mlVq_fxHihCmUM4g==/109951169778904902.jpg"
         },
         {
-            name: 'Fallen Angel',
-            artist: 'UnicornPhantom',
-            url: 'https://music.163.com/song/media/outer/url?id=2071485908.mp3',
-            cover: 'https://p2.music.126.net/RnkKxlngZH2A0KEphrBGnw==/109951168826312208.jpg'
+            name: "Fallen Angel",
+            artist: "UnicornPhantom",
+            url: "https://music.163.com/song/media/outer/url?id=2071485908.mp3",
+            cover: "https://p2.music.126.net/RnkKxlngZH2A0KEphrBGnw==/109951168826312208.jpg"
         },
         {
-            name: 'This Is For You',
-            artist: 'Lukrembo',
-            url: 'https://music.163.com/song/media/outer/url?id=2119282905.mp3',
-            cover: 'https://p2.music.126.net/6_oOAFwqRnW1m_S7EZk5OQ==/109951169274100743.jpg'
+            name: "This Is For You",
+            artist: "Lukrembo",
+            url: "https://music.163.com/song/media/outer/url?id=2119282905.mp3",
+            cover: "https://p2.music.126.net/6_oOAFwqRnW1m_S7EZk5OQ==/109951169274100743.jpg"
         },
     ],
     /* 春节
     [
         {
-            name: '春节序曲',
-            artist: '中国人民解放军军乐团',
-            url: 'https://music.163.com/song/media/outer/url?id=395304.mp3',
-            cover: 'https://p1.music.126.net/j0g_25GyPhar5xxJoGPZiA==/109951163910801634.jpg'
+            name: "春节序曲",
+            artist: "中国人民解放军军乐团",
+            url: "https://music.163.com/song/media/outer/url?id=395304.mp3",
+            cover: "https://p1.music.126.net/j0g_25GyPhar5xxJoGPZiA==/109951163910801634.jpg"
         },
         {
-            name: '好运来',
-            artist: '祖海',
-            url: 'https://music.163.com/song/media/outer/url?id=333750.mp3',
-            cover: 'https://p2.music.126.net/9HMwjKJ28PkHp609d98dJQ==/109951169761022710.jpg'
+            name: "好运来",
+            artist: "祖海",
+            url: "https://music.163.com/song/media/outer/url?id=333750.mp3",
+            cover: "https://p2.music.126.net/9HMwjKJ28PkHp609d98dJQ==/109951169761022710.jpg"
         }
     ],
     */
 ];
 
-// 从歌单列表中随机选择一个歌单
-var randomPlaylistIndex = Math.floor(Math.random() * playlists.length);
-// 关于随机，详见MDN: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-// 伪随机
-var randomPlaylist = playlists[randomPlaylistIndex];
+// 歌单权重设置，权重越大被选中的概率越高
+var playlistWeights = [
+    0.9, // 小甜甜
+    1, // 崩铁
+    1, // 原神
+    1, // 明日方舟
+    1, // 纯音乐
+    // 1, // 春节
+];
+// [ '15.25%', '16.95%', '16.95%', '16.95%', '16.95%', '16.95%' ]
+
+// 计算权重总和
+var totalWeight = playlistWeights.reduce((sum, w) => sum + w, 0);
+
+// 按权重随机选择歌单索引
+function weightedRandomIndex(weights) {
+    // 具体概率请见测试文件夹中的概率测试，并将 weights 改为前面定义的歌单权重。
+    var r = Math.random() * totalWeight;
+    var acc = 0;
+    for (var i = 0; i < weights.length; i++) {
+        acc += weights[i];
+        if (r < acc) return i;
+    }
+    return weights.length - 1; // fallback
+}
+
+// 使用权重随机
+const randomPlaylistIndex = weightedRandomIndex(playlistWeights);
+const randomPlaylist = playlists[randomPlaylistIndex];
 
 /* 日志记录 */
 const playlistNames = {
     0: "小甜甜",
     1: "崩铁",
     2: "原神",
-    3: "明日方舟 (塞壬唱片-MSR)",
-    4: "日推 - Live",
-    5: "纯音乐",
-    // 6: "春节...啊？这么快就过节了？？？",
+    3: "明日方舟",
+    4: "纯音乐",
+    // 5: "春节...啊？这么快就过节了？？？",
     default: "[WARN(歌单-选择-索引越界)] 未定义歌单名称"
     // 最后更新分类：2025/5/19
 };
@@ -164,7 +184,7 @@ if (SongListSet === playlistNames.default) {
 
 /* 创建 APlayer 对象 */
 var ap = new APlayer({
-    element: document.getElementById('aplayer'),
+    element: document.getElementById("aplayer"),
     showlrc: false,
     fixed: true,
     mini: true,
