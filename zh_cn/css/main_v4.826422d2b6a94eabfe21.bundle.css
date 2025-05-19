@@ -21078,11 +21078,6 @@ ul.slides li.slide {
     display: block
 }
 
-.s-ratio-box .lazyloaded {
-    opacity: 1;
-    transition: opacity .1s
-}
-
 .s-gallery {
     margin-left: -10px;
     margin-right: -12px
