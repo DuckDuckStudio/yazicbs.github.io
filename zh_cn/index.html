@@ -1292,15 +1292,15 @@ https://space.bilibili.com/2054654702/
                                                 <p><strong><span id="commitMessage">[加载中...]</span></strong></p>
                                                 <!-- 使用GitHub API 获取最新 Commit message -->
                                                 <script>
-                                                    /* 
+                                                    /*
                                                     * JS输出分类: 提交
                                                     */
-                                                    const repoUrl = 'https://api.github.com/repos/DuckDuckStudio/yazicbs.github.io/commits';
+                                                    const repoUrl = "https://api.github.com/repos/DuckDuckStudio/yazicbs.github.io/commits";
 
                                                     fetch(repoUrl)
                                                         .then(response => response.json())
                                                         .then(data => {
-                                                            const latestCommitMessage = data[0].commit.message.split('\n')[0]; // 获取最新提交的消息的第一行
+                                                            let latestCommitMessage = data[0].commit.message.split('\n')[0]; // 获取最新提交的消息的第一行
                                                             const latestCommitTime = new Date(data[0].commit.committer.date); // 获取最新提交的时间，并转换为 Date 对象
 
                                                             // 格式化日期
@@ -1314,6 +1314,11 @@ https://space.bilibili.com/2054654702/
 
                                                             // 构建完整的日期时间字符串
                                                             const formattedDateTime = `${year}年${month}月${day}日 ${hours}时${minutes}分`;
+
+                                                            // 替换 #123 为链接
+                                                            latestCommitMessage = latestCommitMessage.replace(/#(\d+)/g, function(match, issueNumber) {
+                                                                return `<a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues/${issueNumber}" target="_blank">${match}</a>`;
+                                                            });
 
                                                             document.getElementById('commitMessage').innerHTML = latestCommitMessage;
                                                             document.getElementById('commitTime').innerHTML = formattedDateTime;
