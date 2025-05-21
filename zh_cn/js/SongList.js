@@ -38,12 +38,6 @@ var playlists = [
     // 原神
     [
         {
-            name: "清润玉响",
-            artist: "HOYO-MiX",
-            url: "https://music.163.com/song/media/outer/url?id=2140118672.mp3",
-            cover: "https://p1.music.126.net/MlajrhHqU-33qDnu41p11w==/109951169447872203.jpg"
-        },
-        {
             name: "柔灯轻漾时",
             artist: "HOYO-MiX",
             url: "https://music.163.com/song/media/outer/url?id=2130083946.mp3",
@@ -53,13 +47,31 @@ var playlists = [
             name: "不再年轻的村庄(轻策夜间)",
             artist: "陈致逸 / HOYO-MiX",
             url: "https://music.163.com/song/media/outer/url?id=1492276660.mp3",
-            cover: "httpss://p2.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg"
+            cover: "https://p2.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg"
+        },
+        {
+            name: "清泉之诗",
+            artist: "HOYO-MiX",
+            url: "https://music.163.com/song/media/outer/url?id=2613482875.mp3",
+            cover: "https://p1.music.126.net/dH0bfwKCPFdT65ZIe2OUjA==/109951169835593264.jpg"
         },
         {
             name: "风轻云暖",
             artist: "HOYO-MiX",
             url: "https://music.163.com/song/media/outer/url?id=2613484725.mp3",
             cover: "https://p1.music.126.net/dH0bfwKCPFdT65ZIe2OUjA==/109951169835593264.jpg"
+        },
+        {
+            name: "清润玉响",
+            artist: "HOYO-MiX",
+            url: "https://music.163.com/song/media/outer/url?id=2140118672.mp3",
+            cover: "https://p1.music.126.net/MlajrhHqU-33qDnu41p11w==/109951169447872203.jpg"
+        },
+        {
+            name: "品茗尝清心(望舒昼间)",
+            artist: "陈致逸 / HOYO-MiX",
+            url: "https://music.163.com/song/media/outer/url?id=1492275685.mp3",
+            cover: "https://p1.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg"
         },
     ],
     // 明日方舟
@@ -130,8 +142,8 @@ var playlists = [
 
 // 歌单权重设置，权重越大被选中的概率越高
 var playlistWeights = [
-    0.9, // 小甜甜
-    1, // 崩铁
+    0.8, // 小甜甜
+    0.9, // 崩铁
     1, // 原神
     1, // 明日方舟
     1, // 纯音乐
@@ -142,7 +154,7 @@ var playlistWeights = [
 // 计算权重总和
 var totalWeight = playlistWeights.reduce((sum, w) => sum + w, 0);
 
-// 按权重随机选择歌单索引
+// 按加权随机选择歌单索引
 function weightedRandomIndex(weights) {
     // 具体概率请见测试文件夹中的概率测试，并将 weights 改为前面定义的歌单权重。
     var r = Math.random() * totalWeight;
@@ -154,7 +166,7 @@ function weightedRandomIndex(weights) {
     return weights.length - 1; // fallback
 }
 
-// 使用权重随机
+// 使用加权随机
 const randomPlaylistIndex = weightedRandomIndex(playlistWeights);
 const randomPlaylist = playlists[randomPlaylistIndex];
 
