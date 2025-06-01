@@ -1143,16 +1143,16 @@ https://space.bilibili.com/2054654702/
                                                                                                 let welcomeMessage = '';
 
                                                                                                 if (country === 'CN') {
-                                                                                                    if (cityMessages[country] && cityMessages[country][province] && cityMessages[country][province][city]) {
-                                                                                                        welcomeMessage = `你好，${cityMessages[country][province][city]}！`;
+                                                                                                    if (cityMessages[country] && cityMessages[country][province]) {
+                                                                                                        welcomeMessage = `你好，${cityMessages[country][province]}！`;
                                                                                                     } else {
                                                                                                         console.warn("[WARN(位置-映射)] 你所在的地区没有被映射，请提交Issue或PR补充，记得带上控制台输出[TEST(位置)]")
-                                                                                                        welcomeMessage = `你好，${city || province}！`;
+                                                                                                        welcomeMessage = `你好，${province}！`;
                                                                                                     }
                                                                                                 } else if (country === 'JP') {
-                                                                                                    welcomeMessage = `こんにちは、${city || province}！`;
+                                                                                                    welcomeMessage = `こんにちは、${province}！`;
                                                                                                 } else {
-                                                                                                    welcomeMessage = `Hello, ${city || province}!`;
+                                                                                                    welcomeMessage = `Hello, ${province}!`;
                                                                                                 }
 
                                                                                                 console.debug(`%c[TEST(位置)] ${country} | ${province} | ${city}`, 'color: cyan;');
