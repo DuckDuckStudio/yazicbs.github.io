@@ -113,7 +113,11 @@
                 const baseUrl = 'https://github.com/DuckDuckStudio/yazicbs.github.io/tree/main/';
                 const path = currentUrl.replace('https://duckduckstudio.github.io/yazicbs.github.io/', '');
                 const githubLink = baseUrl + path;
-                document.getElementById('resource').innerHTML = '<a href="' + githubLink + '">' + githubLink + '</a>';
+                const resourceElement = document.getElementById('resource');
+                const linkElement = document.createElement('a');
+                linkElement.setAttribute('href', githubLink);
+                linkElement.textContent = githubLink;
+                resourceElement.appendChild(linkElement);
             </script>
 
             <div class="right-text">
