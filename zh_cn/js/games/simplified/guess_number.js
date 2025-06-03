@@ -7,7 +7,7 @@ var guess_max;
 var guess_min;
 gm_init(0, 1000);
 console.log("[INFO(游戏-猜数字)] 试试 gm(n) 吗？[已自动初始化(Max:1000 | Min:0)]");
-console.warn("%c[WARN(游戏-猜数字-加载)]加载的游戏为简化版", "color: yellow;");
+console.log("%c[WARN(游戏-猜数字-加载)]加载的游戏为简化版", "color: yellow;");
 
 // 创建一个函数,生成指定范围内的随机整数
 function gm_init(min, max) {
