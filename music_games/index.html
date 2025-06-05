@@ -5,9 +5,9 @@
         <meta charset="UTF-8">
         <title>某鸭的音游记录</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="鸭鸭「カモ」| 音游记录" name="description">
+        <meta content="鸭鸭「カモ」的音游（节奏游戏）记录，包含 Arc、Phi、Orz、Osu 等音游的成绩截图的索引。" name="description">
         <!--定义了网页的描述，用于搜索引擎显示网页摘要-->
-        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,DuckDuckStudio,音游,Music_games" name="keywords">
+        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,DuckDuckStudio,音游,MusicGames,节奏游戏,成绩图,Arcaea,Phigros,Orzmic,Milthm,MuseDash,Osu,Osu!,原神" name="keywords">
         <!--定义与网页相关的关键词-->
         <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/music.png">
 
@@ -34,7 +34,6 @@ https://space.bilibili.com/2054654702/
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                /*font-family: Arial, sans-serif;*/
             }
 
             .container {
@@ -42,17 +41,6 @@ https://space.bilibili.com/2054654702/
                 border-radius: 10px;
                 padding: 20px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            }
-
-            h1 {
-                color: #333;
-                font-size: 40px;
-            }
-
-            h2 {
-                color: #333;
-                font-size: 24px; /* 调整标题文本大小 */
-                margin-bottom: 10px; /* 调整标题与下方段落的间距 */
             }
 
             ul {
@@ -73,26 +61,24 @@ https://space.bilibili.com/2054654702/
         <div class="container center-text">
             <img src="https://duckduckstudio.github.io/yazicbs.github.io/music_games/photos/index/Full-Combo.png" alt="福 禄 康 宝" style="width: 40%; height: 40%;"><br>
             <h1>欢迎来到某鸭的音游记录的索引页面！</h1>
-            <p><i>音游?音乐游戏罢了。</i></p>
             <div class="container center-text">
-                <p>(以英文名称字母顺序排序)</p>
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/Arcaea/" target="_blank">Arcaea<del>(阿卡抑、闊靛緥婧愮偣)</del></a>
+                &nbsp;|&nbsp;
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/Milthm/" target="_blank">Milthm<del>(🦆💥🦆💥🦆💥🦆💥)</del></a>
                 &nbsp;|&nbsp;
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/MuseDash/" target="_blank">MuseDash<del>(MD=**)</del></a>
                 &nbsp;|&nbsp;
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/Orzmic/" target="_blank">Orzmic<del>(奥兹米奇)</del></a>
                 &nbsp;|&nbsp;
+                <a href="https://osu.ppy.sh/users/33434930/mania" target="_blank">OSU!</a>
+                <br>
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/Phigros/" target="_blank">Phigros<del>(臀)</del></a>
-                &nbsp;|&nbsp;
-                <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/Milthm/" target="_blank">Milthm<del>(🦆💥🦆💥🦆💥🦆💥)</del></a>
                 &nbsp;|&nbsp;
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/Project_Sekai/" target="_blank">Project Sekai(世界计划、pjsk)</a>
                 &nbsp;|&nbsp;
-                <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/GenshinImpact/" target="_blank">原神</a>
-                &nbsp;|&nbsp;
-                <a href="https://osu.ppy.sh/users/33434930/mania" target="_blank">OSU!</a>
-                &nbsp;|&nbsp;
                 <a href="https://quavergame.com/user/355088" target="_blank">Quaver</a>
+                &nbsp;|&nbsp;
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/GenshinImpact/" target="_blank">原神</a>
                 &nbsp;|&nbsp;
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/games/Other/" target="_blank">其他音游</a>
             </div>
@@ -102,7 +88,7 @@ https://space.bilibili.com/2054654702/
         <div class="container">
             <div class="center-text">
                 <p><strong>[这 些 你 知 道 了 也 没 用]</strong></p>
-                <i>小Tip:在控制台看效果更佳哦~</i>
+                <i>小Tip: 在控制台看效果更佳哦~</i>
                 <hr>
                 <p id="random-sentence"></p>
             </div>
@@ -194,21 +180,16 @@ https://space.bilibili.com/2054654702/
             ];
     
             // 每次访问随机
-    
             const randomIndex = Math.floor(Math.random() * sentences.length);
-    
             const randomSentence = sentences[randomIndex];
-
-            console.log(randomSentence)
-    
+            console.log(randomSentence);
             const randomSentenceElement = document.getElementById("random-sentence");
             randomSentenceElement.textContent = randomSentence;
-            // --
         </script>
         <div class="container">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
-                <p>最后更新：<strong>2024/6/16</strong></p>
+                <p>最后更新：<strong>2025/6/5</strong></p>
             </div>
         </div>
     </body>
