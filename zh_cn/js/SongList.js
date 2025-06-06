@@ -98,18 +98,6 @@ var playlists = [
     // 纯音乐
     [
         {
-            name: "jiggy boogy (sped up)",
-            artist: "Study Group",
-            url: "https://music.163.com/song/media/outer/url?id=2615267878.mp3",
-            cover: "https://p1.music.126.net/E3byOaUZwLP8MNtXfKgvuw==/109951169853517770.jpg"
-        },
-        {
-            name: "junkie",
-            artist: "Study Group",
-            url: "https://music.163.com/song/media/outer/url?id=2607737920.mp3",
-            cover: "https://p1.music.126.net/4eYqE7mlVq_fxHihCmUM4g==/109951169778904902.jpg"
-        },
-        {
             name: "Fallen Angel",
             artist: "UnicornPhantom",
             url: "https://music.163.com/song/media/outer/url?id=2071485908.mp3",
