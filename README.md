@@ -9,10 +9,10 @@
 | [![处理自动合并标签](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/handle_auto_merge_labels.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/handle_auto_merge_labels.yml) | [![生成 Sitemap](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/generate-sitemap.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/generate-sitemap.yml) | [![Dependabot Updates](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/dependabot/dependabot-updates) |
 
 ## 关于本网页
-本网页由 **鸭鸭「カモ」** 编写与维护，**如有任何问题可以[提交Issues](https://github.com/DuckDuckStudio/yazicbs.github.io/issues)进行反馈。**  
+本网站由 **鸭鸭「カモ」** 编写与维护，**如有任何问题可以[提交Issues](https://github.com/DuckDuckStudio/yazicbs.github.io/issues)进行反馈。**  
 Code by **Duck Studio**.  
-**Duck Studio** 保留本网页最终解释权  
-[点我前往网站页面](https://duckduckstudio.github.io/yazicbs.github.io/)
+**Duck Studio** 保留本网站最终解释权  
+[点我前往网站主页](https://duckduckstudio.github.io/yazicbs.github.io/)
 
 ## 网站公告
 这里暂时没有东西捏，去看看其他地方吧~  
