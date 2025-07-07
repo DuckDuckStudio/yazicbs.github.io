@@ -97,8 +97,6 @@ https://space.bilibili.com/2054654702/
         <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
     </head>
     <body>
-        <!-- width / height only can use int. -->
-        <!-- 如果可以，请使用百分比 -->
         <div class="container" style="margin-top: 30px; margin-right: 30px; margin-left: 30px;">
             <div style="text-align: center;">
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/blogs.png" alt="展示图" width="960" height="540">
@@ -113,8 +111,7 @@ https://space.bilibili.com/2054654702/
                     const txt = [
                         "Sleep all day.",
                         "不管你有没有昼夜的概念，首先祝你早上 中午 晚上好！",// 确定位置 index 2
-                        "Just do it!",
-                        "希望世界是善良的",
+                        // TODO: 太少了，之后记得补点
                     ];
 
                     // ----------- 处理各个时段的消息 -----------
@@ -189,8 +186,7 @@ https://space.bilibili.com/2054654702/
                     }, 200);
                 </script>
                 <i>某鸭的一些闲话都会放在这里，至于为什么没有做评论区...反正也没人看...对吧？</i><br>
-                <i>建议使用<code>Ctrl</code>+<code>F</code>搜索内容。</i>
-                <a href="#index">[点我前往索引]</a>&nbsp;|&nbsp;<a href="#say-index">[点我前往概括式索引]</a>
+                <i>建议使用<code>Ctrl</code>+<code>F</code>搜索内容</i> <a href="#index">点我前往索引</a>
             </div>
             <p>&nbsp;</p>
             <hr>
@@ -212,8 +208,8 @@ https://space.bilibili.com/2054654702/
             <!--
                 折叠样式使用说明:
                 请在需要折叠的地方的前面添加上如下代码，已确保有按钮可以控制是否折叠。
-                <details id="det2024060401">
-                    <summary id="sum2024060401">展开内容</summary>
+                <details id="det20250708">
+                    <summary id="sum20250708">展开内容</summary>
                     somethings
                 </details>
                 Note:请注意默认文本，默认折叠时是“展开内容”，反之是“折叠内容”
@@ -224,247 +220,21 @@ https://space.bilibili.com/2054654702/
                 你在看注释?! 你是不是很久没写都忘记怎么写了?!
                 长大后的你啊，请下手轻点。我写的那几篇留着也有纪念意义嘛~
                 求求了~别删掉嘛~我给你当猫摸摸也不是不行喵~
-            -->
 
-            <!--
-                抑郁日记的编写说明:
-                唉，期望抑郁日记记录的是一个抑郁患者被社会帮助、一步步走向阳光的吧。
-                如果真到了那个时候，请一定不要忘记:
-
-                                        你永远是最棒的！
-                
-                愿生日时的你，不再是悲伤的、不再是抑郁的，而是乐观的、阳光的！加油！我看好你！
-
-                ==================================================================
-
-                日期/篇格式: 在原先正常的日期记录后面加上` <span id="抑郁日记n">抑郁日记n</span></i></p>`
-                不是每篇都要加，你也会有快乐的时候，对吧?
-
-                id说明: 原先的日期id要，抑郁日记的id也要，指向同一篇。
-
-                index说明: 日期index后面要加"抑郁日记n"，概括式index...不加吧，加了太杂。
+                25年7月整理注: 3 files changed, 76 insertions(+), 666 deletions(-) ...
             -->
 
             <!-- blog 样例 Start -->
             <div style="text-align: center;">
-                <p id="20241114"><i>2024/11/14</i></p>
+                <p id="20240825"><i>2024/8/25</i></p>
             </div>
-            <p>现在我只想说:</p>
-            <p style="font-size: larger; text-align: center;">我不玩电竞</p>
-            <p>我真的不是在玩游戏啊，我天天对着这些英语思考半天，你说我懒、爱玩电脑、不做家务、不运动、不学习、躺平、沉迷游戏也就算了，还天天跟我讲干电竞的多难多难，让我不要去玩游戏...</p>
-            <p>你也看过我做的东西了，如果你认为这些东西都很简单、我就是关房间4小时最多做5分钟这些东西，其他全在玩游戏的话，请你来写看看。</p>
-            <p>我知道你不会写的，你在电脑上连搜索都不会，在手机上也只用百度做杂事<i>(除工作、生活之外的事，例如听音乐、查路线等，我不知道用哪个词表述最好)</i>，自己搁那弄来弄去把东西弄没了/坏了/不一样了就说“我只是点/划/没动而已，他自己那样的”(拜托，实现你那个效果的标准方法有很多步的...真·防呆不防_)，还会去写我这些???</p>
-            <p>看嘛...你也看了...我也和你讲了很多次这些东西了...</p>
-            <p>我只听过你说的几句:</p>
-            <ul>
-                <li>我说我还有很多(PR/Issue/ToDo/想法)还在写，很忙，都快累趴了 → 不做不就好了</li>
-                <li>我说我要回复Request changes → 不理他不就好了</li>
-                <li>我和你说不要打扰我 → 我xxx在不在你那(我在外面经常放的位置找到)、你为什么不出来、你可不可以出来喝下水(水杯就在我旁边，我出去喝什么?)...</li>
-                <li>...</li>
-            </ul>
-            <p>你提的建议我也有思考过，这里列几个实现不了的理由:</p>
-            <ul>
-                <li>在门上贴纸条写在忙
-                    <ol>
-                        <li>你根本就不会看</li>
-                        <li>我不可能在每次都有事时都去写一个字条贴(等下门都贴坏了)</li>
-                        <li>你不信</li>
-                        <li>你认为我的事不重要/你的事比我的事重要</li>
-                    </ol>
-                </li>
-                <li>和你们说你们怎么样我才能好
-                    <ol>
-                        <li>你们只会回答我说的是借口，你们说的才是事实</li>
-                        <li>就算你们同意了，也不会做出改变，或者只改变一两天</li>
-                        <li>你们听不懂我说的一些词语 (啊对，我听不懂成语啊，听不懂啊(无奈))</li>
-                    </ol>
-                </li>
-                <li>...</li>
-            </ul>
-            <p>最后，我只想说：我不玩电竞，不玩王者、农药<i class="hidden_text">(我知道它们是一个东西)</i>，不知道国服最强是啥，不想去电竞专业，不想去电竞班，不想做电竞<i class="hidden_text">(费眼睛)</i>，不玩电竞。</p>
-            <p>小小的提示：游戏 ≠ 电竞 ≠ 电子设备 ≠ 玩 ≠ 沉迷 <i class="hidden_text">(就是说它们不是一个东西啦)</i></p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="20241010"><i>2024/10/10 <span id="抑郁日记8">抑郁日记8</span></i></p>
-            </div>
-            <p>好难受，真的不知道那些装抑郁的是怎么想的...</p>
-            <p>从12点躺倒1点半了，一直都在喘，完全睡不着。</p>
-            <p>明天还要继续去上课吗? 如果一直不去的话，副校(还是段长?)又说可以让保安不让我进学校，到后面还扣毕业证...</p>
-            <p>去吗? 万一在课上发作了怎么办? 这种是真的忍不了... (我最怕在发作时被提问，而且这种发作时间还挺长的)</p>
-            <p>到后面看学校要怎么处理我这个垃圾吧...反正报告也给学校看过了</p>
-            <p>对了，去看的时候医生不是说这种病不能装吗? 我班主任说这些都是可以掌控的(大意:你填啥就啥)...可是我填的时候已经很保守了...</p>
-            <p>另外，我还听到医生说可能要住院，但...现在这情况怎么可能允许啊? (我这边没有休学)</p>
-            <p>写差不多了，再去试试能不能睡，现在是1点55分。</p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="20241009"><i>2024/10/9 <span id="抑郁日记7">抑郁日记7</span></i></p>
-            </div>
-            <p>昨天去看医生了，看报告有写:</p>
-            <p style="text-align: center;"><b>轻度躁狂症状(另一张轻躁狂的写无)、中度临床失眠、重度强迫思维/动作、重度抑郁症状、中度焦虑症状</b>。没有双相情感障碍倾向</p>
-            <p>开了“盐酸舍曲林片”和“奥沙西泮片”，一早一晚吃。</p>
-            <p>今天是吃药的第一天，感觉吃了“奥沙西泮片”真的能睡好。舍曲林刚吃，第一次感觉没什么效果，反倒还有点“窒息感”。坐地铁都做过了好几个站才反应过来。</p>
-            <p>这里提两点我遇到的:</p>
-            <ol>
-                <li><p>有时(发作时)可能需要自己/他人强迫吃药</p></li>
-                <li><p>去看医生能解决一部分焦虑</p></li>
-            </ol>
-            <!-- 今天把之前的 "抑" 样式移除了，如还需实现，请查看这两个提交 -->
-            <!--
-            * e844c198d08311d973ce7900d984134aec031611 - 初步实现
-            * 1772dadbc53e1defd52e6a20961ee7bb5f02c36a - bug fix
-            -->
-            <p>补: 今天一回学校，就一直被教育 (班主任 → 副校长 → 段长 → 班主任) ，回来马上就崩溃了，手脚并用地爬着上楼梯...最后面到楼顶准备跳的时候，先是全身麻走不动，后面缓了缓站了起来，然后又被人“劝”下直接晕了...醒来就在家里了。</p>
-            <p>有些时候是真能把抑郁症患者劝死...</p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="20241006"><i>2024/10/6</i></p>
-            </div>
-            <p>虽然您是我妈，但请不要把自己看得太高呀，请让我也正常说下可以吗?</p>
-            <p>[ 我听你提的建议并发表我自己的意见 (没说拒绝且给出可能方案) → 我搜索完后否定了前面的方案 ] ≠ [ 我出尔反尔 → 我口出狂言 ] ≠ [ 忠言逆耳 ]</p>
-            <!-- 就两天了，让我缓缓行吗? 非要整成双相? 还是您认为双向更好/才正常? -->
-            <!-- 持续更新，一有类似的就更 -->
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="20241003"><i>2024/10/3 <span id="抑郁日记6">抑郁日记6</span></i></p>
-            </div>
-            <p>现在是 1:27 , 还是睡不着。</p>
-            <p>根本想不到要做什么，感觉做什么都没有意义。</p>
-            <!--不知道要不要写为什么没意义，但感觉也没什么必要-->
-            <p>虽然约到了10月8号去仙岳医院的号，但我还是没有感到希望。我很早就计划着在我生日那天<!--10月7日-->自杀，可惜我没忍住，先试了两次，还好没有影响接下来的计划。</p>
-            <p><!--应该不会有人看注释吧...希望不会...但也有点希望会...在这里空一行-->&nbsp;</p>
-            <!--计划实施第三次的时间在去看前的一天，如果再没成...就真的是装的了...-->
-            <!--很怪，遗书都写好了，但我都试了两次了还没成功...一次应该是剂量不够、一次又是绳子不会打结(还有别的原因，但到后面又被他给拉回来了)...-->
-            <p>简单写下计划吧...不然之后心里也没底...</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>10月3日</th>
-                        <th>10月4日</th>
-                        <th>10月5日</th>
-                        <th>10月6日</th>
-                        <!---->
-                        <th>10月7日</th>
-                        <th>10月8日</th>
-                        <th><span style="color: #f44030;">10月9日</span><!--不知道为什么，写到9号就飘过了一道红色--></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- tr 行 | td 列 (7) -->
-                    <tr>
-                        <!--结--><td>学打结、查记录<br>和我爸去外面玩下</td>
-                        <!--绳--><td>找绳子(可能较久<!--家里都没有长的绳子，更别说结实的了，刚好我爸想弄“自然生态鸟笼”(好高级的叫法...)，应该可以整条绳子。实在不行生日当天整(就说是要礼物)-->)<br>玩游戏</td>
-                        <!--遗书--><td>刷知乎、找案例、练练字、修下网页bug</td>
-                        <!--方法--><td>找案例、看手册、补遗书</td>
-                        <!---->
-                        <td>晚上11点半左右实施，还吊不了就直接跳，没什么大不了的</td>
-                        <td>如果没成，就去听医生的建议</td>
-                        <td>如果确实有问题，该吃药吃药。<br>如果确实是装的，算了7楼直接跳吧，管他够不够的</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>好怪，写到9号就突然感觉有人要杀我...<!--控制台什么时候多的"# 你身后只有你自己"...?!这么吓人的啊，下次不敢关灯写了--></p>
-            <p>本来就睡不着，写完更睡不着了...</p>
-            <p>补充: 又失败了，在楼顶先是全身麻走不动，后面被人“劝”下直接晕了...醒来就在家里了。</p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="20241001"><i>2024/10/1 <span id="抑郁日记5">抑郁日记5</span></i></p>
-            </div>
-            <p>我真的有抑郁症吗? 还是我只是装的? 我自己都不知道。</p>
-            <p>好不容易劝好了家长，但是根本约不到号。国庆又都放假...</p>
-            <p>我家长带我去辅导站做心理咨询，咨询的人说我没什么问题、可以正常上学。于是我当天又想着以“让家长去修电脑”为理由劝自己去上学，可是我那天又实施了一次自杀...</p>
-            <p>我是装的吗? 可是我真的自杀过啊，而且不止一次，还在计划下一次尝试...</p>
-            <p>我真有病? 可是问同学都说我很乐观，老师也说我很正常，辅导站的都说我没什么问题...</p>
-            <p>又是睡不着的一天。为什么睡不着...我不知道。我很困，但就是睡不着。这几天都是这样。现在是 1:17。</p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="20240923"><i>2024/9/23 <span id="抑郁日记4">抑郁日记4</span></i></p>
-            </div>
-            <p>你问我为什么不去看医生? 我想啊，但是我还只是个初三学生，这种无底的投入我是负担不起的，而且我的家长也坚持认为我没事。</p>
-            <p>去看看吧...去求求看能不能争取到一次去看的机会。去试试吧...</p>
-            <p>还是请不过家长，不知道是不是看买书的看多了，(他们)心里就想着“去看没有抑郁也能看出来抑郁”...对厦门人这么不信任吗? 愿意砸一万去随便找个补习的补课，不愿意花一千块钱治病? <span class="hidden_text">请不要说抑郁不是病，抑郁症可是列在世卫组织的ICD上的</span></p>
-            <p>再试试? 万一这次能行呢?</p>
-            <p>好吧，新原因。还是听那个买书的讲的，“那种片片吃了之后更抑郁”</p>
-            <p>现在的人为了钱什么都干的出来吗? 前有某度广告“遗书范文”，现有买书/买课阻止看病...</p>
-            <p>我妈还特地把它买书的视频放出来，我听到就受不了。一刻都受不了。它的每一句话都在骂人，它是以为自己说自己有抑郁症就必须全部听它的了? 而且它的每一句话，都是为了卖书，总是才隔一两(拒绝虚指，从你我做起)句话就开始推销书。它面向的全是着急的(怕耽误学业而着急)家长，对抑郁症患者没有一点作用。一点都没有。这种人在我眼里都配不起“他”这个字。</p><br>
-
-            <p>总感觉有人在追我、在跟踪我、在偷看我。这个人不是别人，就是我的家长。两点半了，洗洗睡吧。</p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="20240922"><i>2024/9/22 <span id="抑郁日记3">抑郁日记3</span></i></p>
-            </div>
-            <p>我真的好想删代码跑路，可是不行。不是因为违反法律，而是因为这是我的项目。这都是我的成果。</p>
-            <p>可是这堆东西需要维护的也太多了，一堆issue没解决(甚至是一点思路都没有)，想给别的项目写写PR缓缓，结果别人看都不看。</p>
-            <p>项目维护是一方面，学习与家庭这又是一方面。</p>
-            <p><span class="hidden_text">自杀</span>能换来什么？只能换来冷静两(不是虚指)天。然后呢？没了！还记旷课。旷课五天(?)毕业证都不给你。休学？你在说什么玩意？我现在只能退学，双十就没休学这一说法。</p>
-            <p>我真的太累了。让我去死吧。</p>
-            <br>
-            <p>怎么批判我都无所谓，我就是:</p>
-            <p style="text-align: center;">厌学、沉迷手机、沉迷游戏、缺乏社交、缺乏自信、生活不能自理、不懂尊重...的学渣</p>
-            <p>你可能会说: <i>难道不是吗? / 还算有点自知之明。 </i>...说罢。</p>
-            <p>打我罢、骂我罢...让我去死吧，你们开心，我也安心。</p>
-            <p>真的好像要个人来骂骂我！打打我也可以！</p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="2024082502"><i>2024/8/25[2] <span id="抑郁日记1">抑郁日记1</span></i></p>
-            </div>
-            <details id="det2024082502">
-                <summary id="sum2024082502">展开内容</summary>
-                <div style="text-align: left;">
-                    <p><em>如果我走了，还会有人记得我吗?</em></p>
-                    <p>我曾不止一次想过要自杀，但都没有成功。如今我硬抗到了初三，我还是会想自杀。</p>
-                    <p>我晚上在搜索相关方法时，发现了一项来自<a href="https://www.who.int/zh/news-room/questions-and-answers/item/suicide" target="_blank">世卫组织(WHO)</a>的一项预防自杀的方法:</p>
-                    <ul><li>限制自杀手段的可及性（例如，限制有毒杀虫剂和枪支）</li></ul>
-                    <hr>
-                    <p>现在是晚上3点46分，我在小区三期二的中庭继续写这段Blog。</p>
-                    <p>至于我为什么大半夜还会跑去楼下呢...唉，刚才家长突然过来看我没睡就把我赶出来了...</p>
-                    <p>不过确实，被赶出来之后心情真的好很多了欸！现在都没怎么再想自杀的事了。再去走走？</p>
-                    <hr>
-                    <p>现在是晚上4点29分，去学校走了一圈又回来了。真的，一路上都有一堆心里话想找人倾诉，但整条路上几乎没有一个人，更没有人理会我<del>(一个穿着校服的学生三四点走在外面还背个包难道很正常吗?)</del></p>
-                    <p>Anyway, 出来走了一圈后，我算是找到了一个可能让我继续活下去的方向：为了找更多的朋友而活。</p>
-                    <p>目前的想法是在周六、日等放假的时候去小区中庭(小学门口对面)码字，顺便再和来这里玩的小学生一起玩一玩，混熟了之后在加他的QQ或微信，毕竟我是线上E人线下I人。</p>
-                    <p>从<code>...</code>变成了<code>。</code>，真好。</p>
-                    <hr>
-                    <p>现在是晚上的4点40分，我还在中庭。这个Blog的大致架构写好了。我不知道该如何优化表达，又想想还是觉得保留当时的编辑就好，这样才能体现当时的情感嘛。(实在不行再加个折叠?)</p>
-                    <p>找个有网的地方，把前面的方法补全了就直接commit了，不管了。</p>
-                    <hr>
-                    <p>现在是早上6点24分，补完了。</p>
+            <details id="det20240825">
+                <summary id="sum20240825">展开内容</summary>
+                <div style="text-align: center;">
+                    <p>晚安，<a href="https://www.bilibili.com/video/BV1aS4y187yD/" target="_blank">一食纪</a>。</p>
+                    <p>记得好好吃饭。</p>
                 </div>
             </details>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="2024082501"><i>2024/8/25[1]</i></p>
-            </div>
-            <div style="text-align: center;">
-                <p>晚安，<a href="https://www.bilibili.com/video/BV1aS4y187yD/" target="_blank">一食纪</a>。</p>
-                <p>记得好好吃饭。</p>
-            </div>
             <hr>
             <!-- blog 样例 End -->
 
@@ -473,7 +243,7 @@ https://space.bilibili.com/2054654702/
                 <p id="20240812"><i>2024/8/12</i></p>
             </div>
             <p>这就是<del>传说中的</del>厦门树洞吗？</p>
-            <div style="background-color: #0d1c8c; height: 40px; width: 30%; margin-left: 35%; margin-right: 35%;">
+            <div style="background-color: #0d1c8c; height: 40px; width: 35%; margin-left: 35%; margin-right: 35%;">
                 <p><marquee style="margin-bottom: 5px; margin-top: 5px; font-size: 20px; color: #ffffff;">【XM6厦门树洞】古代有一位老先生，从小体弱多病，一直躺在床上，四十几了还没结婚，老先生遂写事道，卧躯，初姻未来。&nbsp;&nbsp;&nbsp;【XM6厦门树洞】神里阿黄：我要把裤子放冰箱，从此变成冷裤的人。我要把裤子剪碎，从此变成残裤的人。我要把裤子炫了，从此变成炫裤的人。我要把裤子扔了，从此变成神里绫人的狗。&nbsp;&nbsp;&nbsp;【XM6厦门树洞】明太鱼夫人：我拿什么跟他比，他吃肯德基都不看星期几。&nbsp;&nbsp;&nbsp;【XM6厦门树洞】世界上现在有77亿人，有253亿只鸡，是人数量的三倍。如果鸡决定与人类开战，每个人平均要打三只鸡。今天是疯狂星期四，V我50，我帮你去杀敌。&nbsp;&nbsp;&nbsp;【XM6厦门树洞】我现在好emo啊，不知道该想我哪个前男友。&nbsp;&nbsp;&nbsp;【XM6厦门树洞】我昨天摆烂今天摆烂明天也摆烂，这不是自律是什么&nbsp;&nbsp;&nbsp;【XM6厦门树洞】啊，这是什么？失忆喷雾？喷一下。啊，这是什么？失忆喷雾？喷一下。啊，这是什么？失忆喷雾？喷一下。&nbsp;&nbsp;&nbsp;【XM6厦门树洞】一想到要返校我就扭曲上勾拳！阴暗的下勾拳！乌鸦痉挛！阴森的低吼！愤怒的章鱼！爬行！分裂！走上岸！章鱼扭曲！无差别攻击！&nbsp;&nbsp;&nbsp;【XM6厦门树洞】吾日三省吾身，吾是不是太客气了？吾是不是给他脸了？吾是不是该动手了？&nbsp;&nbsp;&nbsp;【XM6厦门树洞】第一次来厦门的时候惊呆了，我从来没在一个市里见到那么多厦门人。&nbsp;&nbsp;&nbsp;【XM6厦门树洞】我爸开劳斯莱斯，我妈开玛莎拉蒂，我哥开法拉利，我姐开保时捷，我开玩笑&nbsp;&nbsp;&nbsp;【XM6厦门树洞】只要心态好，单位也是巴厘岛！我好喜欢上班呀！巴厘岛！我要去度假啦！哈哈！主线任务就是生存一辈子！一辈子假期！哈哈哈！</marquee></p>
                 <!--
                 - NOTE:
@@ -488,58 +258,14 @@ https://space.bilibili.com/2054654702/
 
             <!-- blog 样例 Start -->
             <div style="text-align: center;">
-                <p id="20240810"><i>2024/8/10</i></p>
-            </div>
-            <details id="det20240810">
-                <summary id="sum20240810">展开内容</summary>
-                <p>我做的:</p>
-                <ol>
-                    <li>写2小时(连续的)数学</li>
-                    <li>写一会代码(约30分钟)</li>
-                    <li>继续写1小时数学</li>
-                </ol>
-                <p>家长认为的:</p>
-                <ol>
-                    <li>玩两个小时游戏</li>
-                    <li>刷半小时视频</li>
-                    <li>继续玩一小时游戏</li>
-                </ol>
-                <p>家长懒得辩解时:</p>
-                <p>就算真的像你说的那样，你也不是都在学习。你看那个xxx，不仅上课认真，还去报补习班。再看看你，啥都不想学，你以后还想怎样？</p>
-                <hr>
-                <p>于是现在的我都是直接摆烂:</p>
-                <ul>
-                    <li>我都看到你在玩游戏了! (我在此前一句话都没说)</li>
-                    <li>嗯，我在玩游戏啊，咋了？</li>
-                    <li>你看看你....(把电脑收走)(扔给我作业)(扬长而去)</li>
-                    <li>...</li>
-                </ul>
-            </details>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
                 <p id="20240627"><i>2024/6/27</i></p>
             </div>
             <div style="text-align: center;">
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/20240627.png" alt="✕ 第 153 次尝试失败 (截止到写这篇时)" style="width: 65%; height: 65%;">
                 <p><a href="#20240528">#20240528</a>是假的错误，但这次却是真的。</p>
-                <p><i>自动化100多次都救不了的网络，前面还手动试过几十次...<span class="hidden_text">(后面家长断网了就自动化都救不了了...)</span></i></p>
-                <p class="hidden_text"><i>就你在这跑自动化是吧？！我把网络关了看你还怎么跑！</i></p>
+                <p><i>自动化100多次都救不了的网络，前面还手动试过几十次...</i></p>
+                <p class="hidden_text">(后面家长断网了就自动化都救不了了...)</p>
             </div>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="20240626"><i>2024/6/26</i></p>
-            </div>
-            <details id="det20240626">
-                <summary id="sum20240626">展开内容</summary>
-                <p>前有<a href="#20240604">10 min can do anything</a>，后有一整个晚上5小时不间断打扰，现还有30min(我) vs 9h(我妈) = 你管我？</p>
-                <p>真·你是家长还是我是家长？ | 小学生都没用这么久！(说我) | 玩游戏 = 废掉了 | 我都看到你在玩了！</p>
-            </details>
             <hr>
             <!-- blog 样例 End -->
 
@@ -547,7 +273,7 @@ https://space.bilibili.com/2054654702/
             <div style="text-align: center;">
                 <p id="20240611"><i>2024/6/11</i></p>
             </div>
-            <p><i>(内容为虚构。)</i></p>
+            <p><i>(内容纯属虚构。)</i></p>
             <p>英语老师: <i>float</i>是什么意思?</p>
             <p>某同学: 单精度浮点数</p>
             <p>老师: ...?</p>
@@ -567,59 +293,11 @@ https://space.bilibili.com/2054654702/
 
             <!-- blog 样例 Start -->
             <div style="text-align: center;">
-                <p id="20240604"><i>2024/6/4</i></p>
-            </div>
-            <details id="det2024060401" open>
-                <summary id="sum2024060401">折叠内容</summary>
-                <p><i>这只是一段故事，<span class="hidden_text">虽然真的发生过，但</span>没有任何评价的意思。</i></p>
-                <p>P1: 给你10分钟，够不够？</p>
-                <p>P2: 可以再多点吗，10分钟根本写不完...</p>
-                <p>P1: 你整天在那写写写的，要把重心放到学习上，知道吗？10分钟很多了。</p>
-                <p>P2(内心): 你的意思是十分钟做完以下操作吗？</p>
-                <details id="det2024060402">
-                    <summary id="sum2024060402">展开内容</summary>
-                    <ol>
-                        <li><p>编写一个新程序</p></li>
-                        <li><p>调试</p></li>
-                        <li><p>编写文档</p></li>
-                        <li><p>提交</p></li>
-                        <li><p>提交PR</p></li>
-                        <li><p>等待审核</p></li>
-                        <li><p>(可能)补正</p></li>
-                        <li><p>(可能)重新等待审核</p></li>
-                        <li><p>合并</p></li>
-                        <li><p>(可能)编辑发行版</p></li>
-                        <li><p>(可能)打包发行版</p></li>
-                        <li><p>(可能)打包安装程序</p></li>
-                        <li><p>(可能)验证</p></li>
-                        <li><p>(可能)上传&amp;发布发行版</p></li>
-                        <li><p>(可能)编写更新说明</p></li>
-                    </ol>
-                </details>
-                <p><em>5分钟后...</em></p>
-                <p>P1: 好了吗？</p>
-                <p>P2: ???这不才过5分钟吗？</p>
-                <p>P1: 那你快点弄，我看着。</p>
-                <p>P2(内心): 你看着我怎么写啊,,,看着就会一直说，说到后面时间都过了，也专心不了(容易出错)。</p>
-                <p>P2: 你可以让我自己写吗？</p>
-                <p>P1: 有什么不能看的，肯定又在玩游戏，不然为什么不给看。</p>
-                <p>P2: ...?</p>
-                <p><em>一通解释后...10分钟过去了(一共)...</em></p>
-                <p>P1: 好了，时间到了，我把网络关了啊。</p>
-                <p>P2: ...?你一直在这我写个头啊。</p>
-                <p><span class="hidden_text">这也是我为什么迟迟不更新的原因之一，本地已修改但无法推送(网络被关了)</span></p>
-                <p class="hidden_text">本地编写我也很烦啊，控制台都是<code class="hidden_text" style="background-color: rgba(0, 0, 0, 0)">net::ERR_INTERNET_DISCONNECTED</code>(<a href="#20240528" class="hidden_text">图片↓</a>)，根本看不清哪些是真的错误。</p>
-            </details>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
                 <p id="20240528"><i>2024/5/28</i></p>
             </div>
             <div style="text-align: center;">
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/20240528.png" alt="ERR * n" style="width: 40%; height: 40%;">
-                <p><strong>非常“好”的操作，使我的网页崩溃。</strong></p>
+                <p><strong>非常“好”的网络，使我的网页崩溃。</strong></p>
             </div>
             <hr>
             <!-- blog 样例 End -->
@@ -631,6 +309,7 @@ https://space.bilibili.com/2054654702/
             <p>听说多写日记多看书可以增强写作文的能力，这是真的吗？</p>
             <p>我：多写日记(×)&nbsp;写Blog、技术文章(✔)&nbsp;|&nbsp;多看书(×)&nbsp;多看文档(✔)</p>
             <p>感觉我的写作能力也没有提升啊，要写的时候连个题目都想不出来。</p>
+            <!-- 25年7月整理注: 写作是看"文采"，文档主要是"准确"和"效率"，这关注点都不一样怎么提升? -->
             <hr>
             <!-- blog 样例 End -->
 
@@ -654,6 +333,7 @@ https://space.bilibili.com/2054654702/
             </div>
             <h2>好帅！</h2>
             <p class="hidden_text">对！就是这样！接着踩，再用点力♡~</p>
+            <!-- 25年7月整理注: 不至于。哥，不至于。 -->
             <p><a href="#20240229">[上次的神子(#20240229)]</a></p>
             <hr>
             <!-- blog 样例 End -->
@@ -665,6 +345,7 @@ https://space.bilibili.com/2054654702/
             <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/20240511.png" alt="给i他 铺设">
             <!-- 图片原本像素就合适，不做大小修改 -->
             <p>继 <a href="#20240304">#20240304</a> 之后的又一笑话。</p>
+            <!-- 25年7月整理注: 没看出来它们有什么关联... -->
             <hr>
             <!-- blog 样例 End -->
 
@@ -680,7 +361,7 @@ https://space.bilibili.com/2054654702/
 
             <!-- blog 样例 Start -->
             <div style="text-align: center;">
-                <p id="2024042302"><i>2024/4/23[2]</i></p>
+                <p id="20240423"><i>2024/4/23</i></p>
             </div>
             <p>你知道社恐的人在自己关着唱歌时被突然推开门进来的感受吗<span class="hidden_text">(别再有下次了，求求了，怕了)</span></p>
             <hr>
@@ -688,26 +369,14 @@ https://space.bilibili.com/2054654702/
 
             <!-- blog 样例 Start -->
             <div style="text-align: center;">
-                <p id="2024042301"><i>2024/4/23[1]</i></p>
-            </div>
-            <details id="det2024042301">
-                <summary id="sum2024042301">展开内容</summary>
-                <p class="hidden_text">(总结：2024/4/22 - 不如意的一天)</p>
-                <p>先是写代码 git 推送不了，然后又是背生物全都忘光了，又被说<span class="hidden_text">这些东西等到大学了你就会发现你现在弄的这些东西很幼稚了</span>...</p>
-                <p>到了晚上，我之前给一个项目提交的翻译 pr 被说过时，但是当我签出到最新分支时发现缺的一摸一样...<span class="hidden_text">(搞得我还建两个 PR ,主要是他还把旧的分支设为默认分支...)</span></p>
-                <p>电脑 D 盘和 C 盘也都红了，想让加点硬盘空间(以及内存，16G的内存虚拟机有时不够用)。结果我得到的回复把我搞傻了...</p>
-                <p class="hidden_text">“等到大学了再给你买台更<strong>高级</strong>的电脑(这句我还能接受)，到时候买个<strong>苹果的</strong>电脑(我现在用Windows表示macos是真的不会用啊)”</p>
-            </details>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
                 <p id="20240421"><i>2024/4/21</i></p>
             </div>
-            <p>家长看cctv5(体育)：我这看的又不是视频，又不像你一样天天只会刷视频。你要多看看这个，看体育的可以增强自己的自信心。</p>
-            <p>我看cctv13(新闻)：你一天天的就只会刷视频，这些又不需要你去关注(天气:?)，都不知道干点正事。</p>
-            <p class="hidden_text">我：？？？看新闻的都是整天闲着没事干的？？？</p>
+            <details id="det20240421">
+                <summary id="sum20240421">展开内容</summary>
+                <p>家长看cctv5/5+(体育)：我这看的又不是视频，又不像你一样天天只会刷视频。你要多看看这个，看体育的可以增强自己的自信心。</p>
+                <p>我看cctv13(新闻)/12(社会与法)/2(财经(主要看消费者那类))：你一天天的就只会刷视频，这些又不需要你去关注，都不知道干点正事。</p>
+                <p><i>(2025年7月整理时有修改: 新增 cctv12 和 cctv2)</i></p>
+            </details>
             <hr>
             <!-- blog 样例 End -->
 
@@ -720,18 +389,7 @@ https://space.bilibili.com/2054654702/
                 <img src="https://duckduckstudio.github.io/powered_by_akasha_terminal/PowerShell中的效果展示图.png" alt="Power by 虚空终端" style="width: 75%; height: 75%;">
             </div>
             <p><del>(须弥教令院精心制作 - Powered by [虚空终端])</del></p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="2024041904"><i>2024/4/19[4]</i></p>
-            </div>
-            <p>废 物 英 语：</p>
-            <div style="text-align: center;">
-                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/2024041902.png" alt="一个GitHub上的PR" style="width: 75%; height: 75%;">
-            </div>
-            <p><del>你问我这个 PR 是谁写的？你就不该问这个问题。</del>(这句话好像在<a href="#2024041901">哪</a>说过)</p>
+            <!-- 25年7月整理注: 该项目已归档 -->
             <hr>
             <!-- blog 样例 End -->
 
@@ -739,9 +397,12 @@ https://space.bilibili.com/2054654702/
             <div style="text-align: center;">
                 <p id="2024041903"><i>2024/4/19[3]</i></p>
             </div>
-            <p>知周所众：写文档=玩游戏=荒废时间</p>
-            <p>所以，我写<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/" target="_blank">文档</a>=我荒废时间=我是废物</p>
-            <p><i class="hidden_text">(以上言论来自某位家长)</i></p>
+            <p>废 物 英 语：</p>
+            <div style="text-align: center;">
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/2024041902.png" alt="一个GitHub上的PR" style="width: 75%; height: 75%;">
+            </div>
+            <p><del>你问我这个 PR 是谁写的？你就不该问这个问题。</del>(这句话好像在<a href="#2024041901">哪</a>说过)</p>
+            <!-- 25年7月整理注: 我就问你管我? -->
             <hr>
             <!-- blog 样例 End -->
 
@@ -751,6 +412,7 @@ https://space.bilibili.com/2054654702/
             </div>
             <p>说起来你可能不信，我在写代码的时候<strong>坐扁了一只蟑螂</strong>！</p>
             <p>噗。</p>
+            <!-- 25年7月整理注: 真的假的??? -->
             <hr>
             <!-- blog 样例 End -->
 
@@ -762,26 +424,18 @@ https://space.bilibili.com/2054654702/
             <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/2024041901.png" alt="一些写Blog时的规则">
             <!-- 图片原本像素就合适，不做大小修改 -->
             <p>你问我这个规则是谁写的？你就不该问这个问题。</p>
+            <!-- 25年7月整理注: 好人(流泪)...真的是好人啊!(赞叹) -->
             <hr>
             <!-- blog 样例 End -->
 
             <!-- blog 样例 Start -->
             <div style="text-align: center;">
-                <p id="2024041802"><i>2024/4/18[2]</i></p>
+                <p id="20240418"><i>2024/4/18</i></p>
             </div>
             <p>这是什么：</p>
             <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/20240418.png" alt="1818宇宙碎片">
             <!-- 图片原本像素就合适，不做大小修改 -->
             <p>欸~1818黄金眼↓↑~</p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="2024041801"><i>2024/4/18[1]</i></p>
-            </div>
-            <p>不配水吞药？</p>
-            <h2>狠 人 ！</h2>
             <hr>
             <!-- blog 样例 End -->
 
@@ -803,8 +457,6 @@ https://space.bilibili.com/2054654702/
             </div>
             <p>写了3000多字的发行版说明，感觉跟写天书一样。</p>
             <p>写的发行版说明→<a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/tag/v1.2.8" target="_blank">[芙芙工具箱 v1.2.8]</a></p>
-            <p class="hidden_text">家长：能赚钱吗？你一天天的心思都放在哪里...</p>
-            <p class="hidden_text">我(内心)：开源项目赚什么钱...不赚钱就连东西都算不上吗...</p>
             <hr>
             <!-- blog 样例 End -->
 
@@ -819,59 +471,14 @@ https://space.bilibili.com/2054654702/
 
             <!-- blog 样例 Start -->
             <div style="text-align: center;">
-                <p id="2024041504"><i>2024/4/15&nbsp;[4]</i></p>
+                <p id="20240415"><i>2024/4/15</i></p>
             </div>
-            <details id="det2024041504">
-                <summary id="sum2024041504">展开内容</summary>
-                <p>家长：“又在玩什么？(严肃的)”</p>
-                <p>我：“Visual Code.(摆烂的)”</p>
-                <p>家长：“一天天的就知道玩游戏，玩游戏能赚钱吗？”</p>
-                <p class="hidden_text">...</p>
+            <details id="det20240415">
+                <summary id="sum20240415">展开内容</summary>
+                <p><del>好耶！生病不用去上学啦！</del></p>
+                <p>支原体感染伴肺炎，我看你还能不能好耶出来。</p>
+                <p class="hidden_text">(去长庚医院去了4次，挂门诊又转到急诊，抽血+打点滴要打7针(检查抽血1针+5日头孢5针+3日时复查抽血1针)，回来还要爬7层楼梯...感觉人已经废了。吃了十多种药，大部分还是吞的...)</p>
             </details>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="2024041503"><i>2024/4/15&nbsp;[3]</i></p>
-            </div>
-            <p><del>好耶！生病不用去上学啦！</del></p>
-            <p>支原体感染伴肺炎，我看你还能不能好耶出来。</p>
-            <p class="hidden_text">(去长庚医院去了4次，挂门诊又转到急诊，抽血+打点滴要打7针(检查抽血1针+5日头孢5针+3日时复查抽血1针)，回来还要爬7层楼梯...感觉人已经废了。吃了十多种药，大部分还是吞的...)</p>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="2024041502"><i>2024/4/15&nbsp;[2]</i></p>
-            </div>
-            <p>一段吐槽：</p>
-            <details id="det2024041502">
-                <summary id="sum2024041502">展开内容</summary>
-                <p>真的有点搞不懂现在的一些家长，自己孩子得了心理类的疾病(例如抑郁症等)接受不了就说“欸~孩子他啥病没有~都是他装的~”</p>
-                <p>更离谱的是还有<strong>医院确诊得了心理疾病的</strong>孩子的家长认为孩子没病装病，<strong>私自把孩子的药给停了</strong>(消息来源：车棍儿老师的哔哩哔哩视频)</p>
-                <p>你不相信你家孩子，可以。但是你可不可以听听医生的话啊？孩子是不是装病医生看得出来啊...</p>
-                <p>我听到过一种说法：“主动提出去看心理疾病的孩子往往是家中患病最轻的一个。”</p>
-                <p>我觉得这个说法并无道理，因为心理疾病的最大影响因素就是环境。而孩子接触最多的环境，就是家庭。</p>
-                <p>部分家长认为他们一直爱着孩子，只是孩子不懂得他们的爱。但他们只是爱着他们心里那个完美、听话(省略n个好词)的孩子<strong>的影子</strong>。</p>
-                <p class="hidden_text">其实，只要你搜索过与心理疾病有关的信息你就会发现，有很多心理疾病患者<strong>不会主动前往医院治疗</strong>。</p>
-                <p class="hidden_text"><del>作为一个有迹象表明抑郁症但没去看的人讲：“确实，如果主动提出去看心理疾病会出现一大堆问题。1.家长不同意(决定性的) 2.药物冲突(抗抑郁药与我现在用的止咳药不可共用) 3.影响学习(如果确诊抑郁症，也不知道该不该和学校讲，如果讲了，会不会被当作没事找事，搞得以后被针对) 等等等等问题”</del></p>
-                <p class="hidden_text">有些心理疾病患者不会在别人面前表达自己的内心，而只会在一些没人的地方自言自语的说出来。<del>(就像我把这些内容放在这个无人问津的Blog中一样)</del></p>
-                <p class="hidden_text">我理解你们需要了解我内心的想法，但也请你们给我空间让我存在自己内心的想法，说出自己内心的想法，而不是一味的逼迫，并阻断一个人的时间/空间。</p>
-                <p class="hidden_text">今天我也尝试了一下向我家长询问“你觉得我们是不是应该要去*医院*看心理医生？”而我得到的回复却是...</p>
-                <p class="hidden_text">“还去看心理医生？我看你就是欠打。”</p>
-                <p>...</p>
-            </details>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
-                <p id="2024041501"><i>2024/4/15&nbsp;[1]</i></p>
-            </div>
-            <p>一句吐槽：</p>
-            <h2>明天再弄！听见没有！</h2>
-            <del>真·万物皆可暂停...</del>
             <hr>
             <!-- blog 样例 End -->
 
@@ -881,6 +488,7 @@ https://space.bilibili.com/2054654702/
             </div>
             <p>一句吐槽：</p>
             <h2>头孢加酒，生命<del>没</del>还有！</h2>
+            <!-- 25年7月整理注: 绝对 Edit 过，毕竟自己尝试过的 -->
             <hr>
             <!-- blog 样例 End -->
 
@@ -902,6 +510,7 @@ https://space.bilibili.com/2054654702/
             <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/2024033001.png" alt="看起来很正常" style="width: 70%; height: 70%;">
             <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/2024033002.png" alt="就差一点了！继续加油吧！" style="width: 25%; height: 25%;">
             <p>世界名画：<strong>就差一点</strong>。</p>
+            <!-- 25年7月整理注: 不是这是什么界面?!!! -->
             <hr>
             <!-- blog 样例 End -->
         
@@ -909,13 +518,12 @@ https://space.bilibili.com/2054654702/
             <div style="text-align: center;">
                 <p id="20240322"><i>2024/3/22</i></p>
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/music_games/photos/Arcaea/[Ether Strike]-09800129-EX-TC.png" alt="Ether Strike 09800129" style="width: 70%; height: 70%;">
-                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/2024032202.png" alt="Arcaea个人档案截图" style="width: 70%; height: 70%;">
             </div>
             <p>听好了：3月22日，花紫就此陷落。每个TC的单曲都将迎来一次HARD TC，为这些单曲带来全新的SCORE。</p>
             <p>你所熟知的一切都将改变，你所熟悉的歌曲都将加诸HARD的历练。</p>
             <p>至此，一锤定音。</p>
             <p>尘埃，已然落定。</p>
-            <p><i>某鸭今日ptt红框get！</i></p>
+            <!-- 25年7月整理注: #听好了# #听好了# #听好了# -->
             <hr>
             <!-- blog 样例 End -->
 
@@ -923,15 +531,9 @@ https://space.bilibili.com/2054654702/
             <div style="text-align: center;">
                 <p id="20240304"><i>2024/3/4</i></p>
             </div>
-            <p>讲个笑话：</p>
-            <i>
-            发布到远程仓库时遇到错误: Git failed with a fatal error.<br>
-            Git failed with a fatal error.<br>
-            unable to access 'https://path/to/the/repository/': Could not resolve host: github.com<br>
-            <br>
-            未能推送到远程仓库。请参见输出窗口了解更多详细信息。<br>
-            </i>
+            <p>讲个笑话:</p>
             <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/20240304.png" alt="对不起，图片没有加载出来，因为未能推送到远程仓库。请参见输出窗口了解更多详细信息。(笑)" width="802" height="454">
+            <!-- 25年7月整理注: 请看眼图片 alt XD -->
             <hr>
             <!-- blog 样例 End -->
 
@@ -939,7 +541,6 @@ https://space.bilibili.com/2054654702/
             <div style="text-align: center;">
                 <p id="20240302"><i>2024/3/2</i></p>
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/music_games/photos/MuseDash/[c.s.q.n.]-212804-S.png" alt="c.s.q.n. 高手 MISS 1" width="800" height="451">
-                <!--图片转移至Music Games页面-->
             </div>
             <p>您 有 一 个 小 姐</p>
             <hr>
@@ -985,25 +586,6 @@ https://space.bilibili.com/2054654702/
 
             <!-- blog 样例 Start -->
             <div style="text-align: center;">
-                <p id="20240205"><i>2024/2/5</i></p>
-                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/20240205.png" alt="文件夹占用大小(图片看不到下面不还有文字撒)" width="955" height="187">
-            </div>
-            <p>笑点解析</p>
-            <i>D盘：349 GB，已分配343.3 GB</i><br>
-            <strong>两 大 巨 头 ：</strong>
-            <ul>
-                <li>
-                    <p>Genshin Impact：100.9 GB</p>
-                </li>
-                <li>
-                    <p>Star Rail：41.9 GB</p>
-                </li>
-            </ul>
-            <hr>
-            <!-- blog 样例 End -->
-
-            <!-- blog 样例 Start -->
-            <div style="text-align: center;">
                 <p id="20240123"><i>2024/1/23</i></p>
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/20240123.png" alt="6.5速" style="width: 50%; height: 50%;">
             </div>
@@ -1026,7 +608,8 @@ https://space.bilibili.com/2054654702/
                 <p id="20240114"><i>2024/1/14</i></p>
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/20240114.png" alt="芙宁娜，璃月，崴脚" width="644" height="360">
             </div>
-            <p>震惊！水神大人(伪)竟在璃月当中崴脚！</p>
+            <p>震惊！水神大人(伪)竟在璃月当众...</p>
+            <!-- 25年7月整理注: 你看那是脚吗？字还打错了。过去的记忆还在追我... -->
             <p><i>「这样看感觉变高了欸！」</i></p>
             <hr>
             <!-- blog 样例 End -->
@@ -1046,7 +629,8 @@ https://space.bilibili.com/2054654702/
                 <p id="20220827"><i>2022/8/27</i></p>
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/2022082701.png" alt="四小只" width="800" height="450">
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/2022082702.png" alt="四小只" width="800" height="450">
-                <h1>刑！</h1>
+                <h2>刑！</h2>
+                <!-- 25年7月整理注: 要改大字也请用 css，用 <h1> 对 SEO 有影响 -->
             </div>
             <hr>
             <!-- blog 样例 End -->
@@ -1056,38 +640,14 @@ https://space.bilibili.com/2054654702/
             <h2 id="index">Blog 索引</h2>
             <!-- 倒序 月份新的在前 日期旧的在前 -->
             <h3 id="y2024">2024年</h3>
-            <h4 id="y2024m11">11月</h4><!---->
-            <a href="#20241114">2024/11/14</a>
-            <h4 id="y2024m10">10月</h4><!---->
-            <a href="#20241001">2024/10/1 - 抑郁日记5</a>
-            &nbsp;|&nbsp;
-            <a href="#20241003">2024/10/3 - 抑郁日记6</a>
-            &nbsp;|&nbsp;
-            <a href="#20241006">2024/10/6</a>
-            &nbsp;|&nbsp;
-            <a href="#20241009">2024/10/9 - 抑郁日记7</a>
-            &nbsp;|&nbsp;
-            <a href="#20241010">2024/10/10 - 抑郁日记8</a>
-            <h4 id="y2024m09">9月</h4><!---->
-            <a href="#20240922">2024/9/22 - 抑郁日记3</a>
-            &nbsp;|&nbsp;
-            <a href="#20240923">2024/9/23 - 抑郁日记4</a>
             <h4 id="y2024m08">8月</h4><!---->
-            <a href="#20240810">2024/8/10</a>
-            &nbsp;|&nbsp;
             <a href="#20240812">2024/8/12</a>
             &nbsp;|&nbsp;
-            <a href="#2024082501">2024/8/25[1]</a>
-            &nbsp;|&nbsp;
-            <a href="#2024082502">2024/8/25[2] - 抑郁日记1</a>
+            <a href="#20240825">2024/8/25</a>
             <h4 id="y2024m06">6月</h4><!---->
-            <a href="#20240604">2024/6/4</a>
-            &nbsp;|&nbsp;
             <a href="#20240607">2024/6/7</a>
             &nbsp;|&nbsp;
             <a href="#20240611">2024/6/11</a>
-            &nbsp;|&nbsp;
-            <a href="#20240626">2024/6/26</a>
             &nbsp;|&nbsp;
             <a href="#20240627">2024/6/27</a>
             <h4 id="y2024m05">5月</h4><!---->
@@ -1107,13 +667,7 @@ https://space.bilibili.com/2054654702/
             &nbsp;|&nbsp;
             <a href="#20240414">2024/4/14</a>
             &nbsp;|&nbsp;
-            <a href="#2024041501">2024/4/15[1]</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041502">2024/4/15[2]</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041503">2024/4/15[3]</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041504">2024/4/15[4]</a>
+            <a href="#20240415">2024/4/15</a>
             &nbsp;|&nbsp;
             <a href="#2024041601">2024/4/16[1]</a>
             &nbsp;|&nbsp;
@@ -1121,9 +675,7 @@ https://space.bilibili.com/2054654702/
             &nbsp;|&nbsp;
             <a href="#2024041603">2024/4/16[3]</a>
             &nbsp;|&nbsp;
-            <a href="#2024041801">2024/4/18[1]</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041802">2024/4/18[2]</a>
+            <a href="#20240418">2024/4/18</a>
             &nbsp;|&nbsp;
             <a href="#2024041901">2024/4/19[1]</a>
             &nbsp;|&nbsp;
@@ -1131,15 +683,11 @@ https://space.bilibili.com/2054654702/
             &nbsp;|&nbsp;
             <a href="#2024041903">2024/4/19[3]</a>
             &nbsp;|&nbsp;
-            <a href="#2024041904">2024/4/19[4]</a>
-            &nbsp;|&nbsp;
             <a href="#20240420">2024/4/20</a>
             &nbsp;|&nbsp;
             <a href="#20240421">2024/4/21</a>
             &nbsp;|&nbsp;
-            <a href="#2024042301">2024/4/23[1]</a>
-            &nbsp;|&nbsp;
-            <a href="#2024042302">2024/4/23[2]</a>
+            <a href="#20240423">2024/4/23</a>
             <h4 id="y2024m03">3月</h4><!---->
             <a href="#20240302">2024/3/2</a>
             &nbsp;|&nbsp;
@@ -1149,8 +697,6 @@ https://space.bilibili.com/2054654702/
             &nbsp;|&nbsp;
             <a href="#20240330">2024/3/30</a>
             <h4 id="y2024m02">2月</h4><!---->
-            <a href="#20240205">2024/2/5</a>
-            &nbsp;|&nbsp;
             <a href="#20240209">2024/2/9</a>
             &nbsp;|&nbsp;
             <a href="#20240219">2024/2/19</a>
@@ -1175,158 +721,27 @@ https://space.bilibili.com/2054654702/
         </div>
 
         <div class="container" style="margin-right: 30px; margin-left: 30px;">
-            <h2 id="say-index">概括式 Blog 索引</h2>
-            <p><i>并非所有Blog都有概括。</i></p>
-            <p><i>更建议使用<code>Ctrl</code>+<code>F</code>搜索关键词。</i></p>
-            <!-- 倒序 月份新的在前 日期旧的在前 -->
-            <h3>2024年</h3>
-            <h4>11月</h4><!---->
-            <a href="#20241114">2024/11/14(不玩电竞)</a>
-            <h4>10月</h4><!---->
-            <a href="#20241001">2024/10/1(抑郁日记5)</a>
-            &nbsp;|&nbsp;
-            <a href="#20241003">2024/10/3(抑郁日记6)</a>
-            &nbsp;|&nbsp;
-            <a href="#20241006">2024/10/6(请不要把自己看得太高)</a>
-            &nbsp;|&nbsp;
-            <a href="#20241009">2024/10/9(抑郁日记7)</a>
-            &nbsp;|&nbsp;
-            <a href="#20241010">2024/10/10(抑郁日记8)</a>
-            <h4>9月</h4><!---->
-            <a href="#20240922">2024/9/22(让我去死吧。)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240923">2024/9/23(抑郁日记计划启动)</a>
-            <h4>8月</h4><!---->
-            <a href="#20240810">2024/8/10(你在玩游戏，对吧？)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240812">2024/8/12(厦门人的精神状态都是这样的？)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024082501">2024/8/25[1](记得好好吃饭。)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024082502">2024/8/25[2](活着，挺好。)</a>
-            <h4>6月</h4><!---->
-            <a href="#20240604">2024/6/4(给你10分钟，够不够？)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240607">2024/6/7(迅影如鸟！)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240611">2024/6/11(float不是单精度浮点数吗?)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240626">2024/6/26(还是吐槽家长)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240627">2024/6/27(<span style="color: #f85149;">✕</span> 第 <span style="color: #4493f8;">153</span> 次尝试失败)</a>
-            <h4>5月</h4><!---->
-            <a href="#20240507">2024/5/7(还差一点，Minecraft)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240511">2024/5/11(给i他 铺设)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240514">2024/5/14(阿帽截图)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240517">2024/5/17(用终端看ACI)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240520">2024/5/20(看文档+写技术文章=毫无提升)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240528">2024/5/28(非常好的ERR，使我的网页崩溃)</a>
-            <h4>4月</h4><!---->
-            <a href="#20240410">2024/4/10(双爆+强化)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240414">2024/4/14(头孢加酒,____)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041501">2024/4/15[1](万物皆可暂停...)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041502">2024/4/15[2](一段吐槽...)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041503">2024/4/15[3]</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041504">2024/4/15[4]</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041601">2024/4/16[1](异议!)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041602">2024/4/16[2](芙芙工具箱v1.2.8天书发行版)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041603">2024/4/16[3](Arc成绩)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041801">2024/4/18[1](不配水吞药?)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041802">2024/4/18[2](1818黄金眼↓↑~)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041901">2024/4/19[1](给自己写规则)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041902">2024/4/19[2](坐扁了一只蟑螂)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041903">2024/4/19[3](写文档=荒废时间=废物)</a>
-            &nbsp;|&nbsp;
-            <a href="#2024041904">2024/4/19[4](废 物 英 语，PR)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240420">2024/4/20(Powered by [虚空终端])</a>
-            &nbsp;|&nbsp;
-            <a href="#20240421">2024/4/21</a>
-            &nbsp;|&nbsp;
-            <a href="#2024042301">2024/4/23[1]</a>
-            &nbsp;|&nbsp;
-            <a href="#2024042302">2024/4/23[2]</a>
-            <h4>3月</h4><!---->
-            <a href="#20240302">2024/3/2(您有一个MISS)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240304">2024/3/4(Git failed with a fatal error.)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240322">2024/3/22(Arc ptt 红框)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240330">2024/3/30(就差一点，原神)</a>
-            <h4>2月</h4><!---->
-            <a href="#20240205">2024/2/5(原神100GB)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240209">2024/2/9(我一直都爱着你啊!)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240219">2024/2/19(某种神奇算法)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240222">2024/2/22(双倍遗器狗粮)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240229">2024/2/29(八神虫子截图)</a>
-            <h4>1月</h4><!---->
-            <a href="#20240114">2024/1/14(芙宁娜，璃月，崴脚)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240116">2024/1/16(音游+弹窗)</a>
-            &nbsp;|&nbsp;
-            <a href="#20240123">2024/1/23(音游越慢越简单)</a>
-
-            <h3>2023年</h3>
-            <h4>7月</h4>
-            <a href="#20230712">2023/7/12(骨折光困难通关)</a>
-
-            <h3>2022年</h3>
-            <h4>8月</h4>
-            <a href="#20220827">2022/8/27(原神四小只)</a>
-        </div>
-
-        <div class="container" style="margin-right: 30px; margin-left: 30px;">
             <h2 id="id">id命名格式说明</h2>
-            <details id="det_id">
-                <summary id="sum_id">展开内容</summary>
-                <p>具体某篇Blog：aaaa年bb月cc日&nbsp;→&nbsp;aaaabbcc&nbsp;(e.g.&nbsp;20240418)</p>
-                <p>索引:</p>
-                <ul>
-                    <li><p>aaaa年&nbsp;→&nbsp;yaaaa&nbsp;(e.g.&nbsp;<a href="#y2024">y2024</a>)</p></li>
-                    <li><p>aaaa年bb月&nbsp;→&nbsp;yaaaambb&nbsp;(e.g.&nbsp;<a href="#y2024m09">y2024m09</a>)</p></li>
-                </ul>
-                <p>抑郁日记:</p>
-                <ul>
-                    <li><p>和普通索引共存，格式为：抑郁日记n<br>e.g.&nbsp;<a href="#抑郁日记4">抑郁日记4</a></p></li>
-                </ul>
-                <p>特殊部分:</p>
-                <ul>
-                    <li><p>Blog索引：<a href="#index">index</a></p></li>
-                    <li><p>id命名格式说明：<a href="#id">id</a></p></li>
-                    <li><p>概括式Blog索引：<a href="#say-index">say-index</a></p></li>
-                    <li><p>其他记录页面: <a href="#other">other</a></p></li>
-                    <li><p>统计: <a href="#count">count</a></p></li>
-                </ul>
-                <p>在链接后面添上#id即可快速跳转，例如<a href="#index">https://duckduckstudio.github.io/yazicbs.github.io/Articles/Blogs.html#index</a>(快速跳转到Blog索引)</p>
-            </details>
+            <p>具体某篇Blog：aaaa年bb月cc日&nbsp;→&nbsp;aaaabbcc&nbsp;(e.g.&nbsp;20240418)</p>
+            <p>索引:</p>
+            <!-- 25年7月整理注: 别把 abc 改成 ymd，会导致下面的解释有歧义 -->
+            <ul>
+                <li><p>aaaa年&nbsp;→&nbsp;yaaaa&nbsp;(e.g.&nbsp;<a href="#y2024">y2024</a>)</p></li>
+                <li><p>aaaa年bb月&nbsp;→&nbsp;yaaaambb&nbsp;(e.g.&nbsp;<a href="#y2024m05">y2024m05</a>)</p></li>
+            </ul>
+            <p>特殊部分:</p>
+            <ul>
+                <li><p>Blog索引：<a href="#index">index</a></p></li>
+                <li><p>id命名格式说明：<a href="#id">id</a></p></li>
+                <li><p>其他记录页面: <a href="#other">other</a></p></li>
+                <li><p>统计: <a href="#count">count</a></p></li>
+            </ul>
+            <p>在链接后面添上#id即可快速跳转，例如<a href="#index">https://duckduckstudio.github.io/yazicbs.github.io/Articles/Blogs.html#index</a>(快速跳转到Blog索引)</p>
         </div>
 
         <div class="container" style="margin-right: 30px; margin-left: 30px;">
             <h2 id="count">统计</h2>
-            <p><i>数据截至2024年11月14日 22点35分</i></p>
+            <p><i>数据截至2025年07月08日 4点整</i></p>
             <table>
                 <thead>
                     <tr>
@@ -1341,11 +756,11 @@ https://space.bilibili.com/2054654702/
                     </tr>
                     <tr>
                         <td>总代码行数</td>
-                        <td>1437</td>
+                        <td>810</td>
                     </tr>
                     <tr>
                         <td>最后更新</td>
-                        <td>2024年11月14日</td>
+                        <td>2024年8月25日</td>
                     </tr>
                     <tr>
                         <td>最早发布</td>
@@ -1375,25 +790,20 @@ https://space.bilibili.com/2054654702/
                 const details = document.getElementById(detailsId);
                 const summary = document.getElementById(summaryId);
                 
-                details.addEventListener('toggle', function() {
+                details.addEventListener("toggle", function() {
                     if (details.open) {
-                        summary.textContent = '折叠内容';
+                        summary.textContent = "折叠内容";
                     } else {
-                        summary.textContent = '展开内容';
+                        summary.textContent = "展开内容";
                     }
                 });
             }
 
             // 调用函数来设置每个折叠区域的行为
-            setupDetails('det2024041502', 'sum2024041502');
-            setupDetails('det2024041504', 'sum2024041504');
-            setupDetails('det2024042301', 'sum2024042301');
-            setupDetails('det2024060401', 'sum2024060401');
-            setupDetails('det2024060402', 'sum2024060402');
-            setupDetails('det20240626', 'sum20240626');
-            setupDetails('det20240810', 'sum20240810');
-            setupDetails('det2024082502', 'sum2024082502');
-            setupDetails('det_id', 'sum_id');
+            // 无论你默认展不展开都要设置这个，不然你点了文字不会变
+            setupDetails("det20240415", "sum20240415");
+            setupDetails("det20240421", "sum20240421");
+            setupDetails("det20240825", "sum20240825");
         </script>
     </body>
 </html>
