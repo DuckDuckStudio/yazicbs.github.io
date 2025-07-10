@@ -87,7 +87,7 @@ Ciallo~ (∠・ω< )⌒☆
 
 ### 为什么不直接用Markdown写文章？
 我已经尝试这样做了，我用 [docsify](https://docsify.js.org/) 部署了部分 Markdown 写的文章，[~~小鸡习~~](https://duckduckstudio.github.io/Articles/)的文章就是用 Markdown 写的。  
-其他文章已经用 html 写了，懒得改了。  
+但是 [docsify](https://docsify.js.org/) 对 SEO 似乎不太友好...
 
 ### 我可以复制你的网页的部分代码来用吗？
 在遵守[许可文件](https://github.com/DuckDuckStudio/yazicbs.github.io/blob/main/LICENSE)及[隐私政策](https://duckduckstudio.github.io/yazicbs.github.io/privacy.html)的情况下可以哒~  
