@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 由 DuckDuckStudio/Sitemap_Creator 于 7/17/2025, 13:36:49 生成 -->
+<!-- 由 DuckDuckStudio/Sitemap_Creator 于 7/18/2025, 11:31:33 生成 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
               xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
@@ -95,7 +95,7 @@
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/index.html</loc>
-    <lastmod>2025-06-06T13:04:44+08:00</lastmod>
+    <lastmod>2025-07-18T11:30:51+08:00</lastmod>
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/index.html</loc>
@@ -275,6 +275,6 @@
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/zh_cn/index.html</loc>
-    <lastmod>2025-06-04T23:18:09+08:00</lastmod>
+    <lastmod>2025-07-18T11:30:51+08:00</lastmod>
   </url>
 </urlset>
