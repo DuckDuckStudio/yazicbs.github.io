@@ -27,7 +27,7 @@ jobs:
         uses: DuckDuckStudio/Sitemap_Creator@1.0.8
         with:
           file_type: "html"
-          ignore_file: "debug.html,404.html,无聊闲话.html,VerificationFailure.html,test"
+          ignore_file: "debug.html,404.html,无聊闲话.html,VerificationFailure.html,test,跳转页面"
           label: "DEV-已启用自动合并,工作流,DEV-开发分支合并"
           auto_merge: "压缩合并"
           debug: true # 启用调试输出
