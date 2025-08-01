@@ -11,7 +11,7 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>别看，这就是个要你钱的垃圾网站！</title>
+        <title>真的！别看！</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/773x716.png">
         <!-- 捡没用的图标来用 -->
@@ -33,36 +33,23 @@ https://space.bilibili.com/2054654702/
             `)
         </script>
 
-        <style>
-            * {
-                max-width: 100%;
-            }
-
-            body {
-                background-color: #f5f5dc;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                overflow-y: hidden;
-                margin: 0; /* 防止默认外边距影响居中 */
-            }
-
-            .container {
-                max-width: 100%;
-                background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
-                border-radius: 10px;
-                padding: 20px;
-                text-align: center;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            }
-        </style>
+        <link rel="stylesheet" href="css/style.css">
         <!-- 芙芙工具箱网页通用样式 by鸭鸭「カモ」 -->
         <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
     </head>
     <body>
         <div class="container;" style="text-align: center;">
-            <p style="font-size: xx-large;">真的，别看。这就是个硬要你交钱的垃圾网站。</p>
+            <p style="font-size: xx-large;">真的，别看。<span id="原因">这就是个垃圾网站。</span></p>
         </div>
+        <script>
+            // 获取 URL 参数中的 why (阻止理由)
+            const why = new URLSearchParams(window.location.search).get("why");
+            if (why) {
+                document.getElementById("原因").textContent = why;
+            } else {
+                console.warn("未检测到 why 参数！显示默认理由。");
+                // 保持原样
+            }
+        </script>
     </body>
 </html>
