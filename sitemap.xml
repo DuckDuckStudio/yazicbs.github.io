@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 由 DuckDuckStudio/Sitemap_Creator 于 8/3/2025, 02:30:41 生成 -->
+<!-- 由 DuckDuckStudio/Sitemap_Creator 于 8/3/2025, 07:34:31 生成 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
               xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
@@ -230,10 +230,6 @@
     <lastmod>2025-08-03T02:09:28+08:00</lastmod>
   </url>
   <url>
-    <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/music_games/games/GenshinImpact/index.html</loc>
-    <lastmod>2025-08-03T02:09:28+08:00</lastmod>
-  </url>
-  <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/music_games/games/Milthm/index.html</loc>
     <lastmod>2025-08-03T02:09:28+08:00</lastmod>
   </url>
@@ -259,7 +255,7 @@
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/music_games/index.html</loc>
-    <lastmod>2025-08-03T02:09:28+08:00</lastmod>
+    <lastmod>2025-08-03T07:00:48+08:00</lastmod>
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/other/Luna-Grace/index.html</loc>
@@ -271,10 +267,10 @@
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/privacy.html</loc>
-    <lastmod>2025-08-03T02:09:28+08:00</lastmod>
+    <lastmod>2025-08-03T07:32:27+08:00</lastmod>
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/zh_cn/index.html</loc>
-    <lastmod>2025-08-03T02:09:28+08:00</lastmod>
+    <lastmod>2025-08-03T07:32:27+08:00</lastmod>
   </url>
 </urlset>
