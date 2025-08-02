@@ -15,8 +15,7 @@ Code by **Duck Studio**.
 [点我前往网站主页](https://duckduckstudio.github.io/yazicbs.github.io/)
 
 ## 网站公告
-这里暂时没有东西捏，去看看其他地方吧~  
-Ciallo~ (∠・ω< )⌒☆  
+【2025年 8月 3日】最近更新了网站的（原）隐私政策页，前往（现）[网站声明](https://duckduckstudio.github.io/yazicbs.github.io/privacy.html)页查看更新后的内容。  
 
 ## 网站仓库状态
 ![Alt](https://repobeats.axiom.co/api/embed/e19801f5fdc2c56d7f85f73c12c8993f8c8023c7.svg "Repobeats analytics image")  
