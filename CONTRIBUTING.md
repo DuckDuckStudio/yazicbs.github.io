@@ -122,6 +122,6 @@ yazicbs.github.io
 # 通用样式
 你可以直接使用以下通用样式:  
 ```html
-<!-- 芙芙工具箱网页通用样式 by鸭鸭「カモ」 -->
+<!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
 <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
 ```

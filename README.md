@@ -29,7 +29,7 @@ Ciallo~ (∠・ω< )⌒☆
 同时，本仓库也提供了一些可直接调用的脚本/样式:  
 * 芙芙工具箱通用样式
 ```html
-<!-- 芙芙工具箱网页通用样式 by鸭鸭「カモ」 -->
+<!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
 <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
 ```
 * 一些控制台游戏
