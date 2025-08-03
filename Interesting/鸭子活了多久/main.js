@@ -26,7 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 初始化
     let 哪只鸭子 = 0; // 叫 嘎嘎 的那只
-    let showDay = true; // 初始时显示“日”
+    /** 设置当前显示模式。0 相当于，显示日 | 1 相当于，不显示日 | 2 实际，显示日 | 3 实际，不显示日 */
+    let 显示 = 0;
+
+    /** 打印调试日志（DEBUG 等级） */
+    function 打印日志(操作="null") {
+        // 感觉更新岁数那里的日志还是自己打好点。
+        console.debug(`[DEBUG] (${操作}) 显示状态：${显示} | 显示日：${显示 % 2 == 0} | 嘎了没：${!鸭子们[哪只鸭子].没嘎} | 哪只鸭子：${哪只鸭子} | 总鸭子数：${鸭子们.length - 1}`);
+    }
 
     function 格式化岁数(岁数) {
         const 年 = Math.floor(岁数);
@@ -49,9 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (鸭子没嘎) {
                 const 鸭子出生 = 鸭子们[哪只鸭子].出生;
                 活了多久 = (现在 - 鸭子出生) / 1000 / (365 * 24 * 60 * 60); // 年
-                鸭子占比 = 活了多久 / 6;
-                岁数 = 80 * 鸭子占比;
-                岁数 = 格式化岁数(岁数);
+                if (显示 < 2) {
+                    鸭子占比 = 活了多久 / 6;
+                    活了多久 = 80 * 鸭子占比;
+                }
+                岁数 = 格式化岁数(活了多久);
                 console.log(`%c[log] 当前时间: ${现在} | 哪只鸭子: ${鸭子们[哪只鸭子].名字} | 活了多久(实际): ${格式化岁数(活了多久)} | 鸭子占比: ${鸭子占比}`, "color: cyan");
             } else {
                 // TODO: 显示那只鸭子嘎前活了相当于人多久
@@ -63,14 +72,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // 更新显示内容
-        document.getElementById("age").innerHTML = 岁数[0];
-        document.getElementById("name").innerHTML = 鸭子们[哪只鸭子].名字;
-        
-        // 根据showDay控制是否显示“日”
-        if (showDay) {
-            document.getElementById("day").innerHTML = 岁数[1];
+        document.getElementById("age").innerText = 岁数[0];
+        document.getElementById("name").innerText = 鸭子们[哪只鸭子].名字;
+
+        // 根据显示状态控制实际还是相当于
+        if (显示 < 2) {
+            document.getElementById("岁数类型").innerText = "相当于人";
         } else {
-            document.getElementById("day").innerHTML = "";
+            document.getElementById("岁数类型").innerText = "";
+        }
+        
+        // 根据显示状态控制是否显示“日”
+        if (显示 % 2 == 0) {
+            document.getElementById("day").innerText = 岁数[1];
+        } else {
+            document.getElementById("day").innerText = "";
         }
     }
 
@@ -82,20 +98,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 添加按钮点击事件来切换显示“日”
     document.getElementById("toggleDay").addEventListener("click", () => {
-        if (showDay) { // 如果是那只鸭子的第一个状态
-            showDay = false;  // 切换显示状态
-        } else {
-            if (哪只鸭子 == 2) { // 最后一只
+        打印日志("更新显示 - Before");
+        显示 += 1;
+        if (显示 > 3 /* 上面显示加完大于 3 表示原来是 3 */ || !鸭子们[哪只鸭子].没嘎) {
+            // 如果嘎了 (!没嘎)，则只有一种显示。
+            if (哪只鸭子 == 鸭子们.length - 1) { // 最后一只
                 哪只鸭子 = 0; // 回到第一只
             } else {
                 哪只鸭子 += 1;
             }
-            if (鸭子们[哪只鸭子].没嘎) {
-                // 如果嘎了 (!没嘎)，则只有一种显示。这里保持嘎了的鸭子的 showDay 为 false
-                // 就可以在下次点击直接切换到下一只鸭子。
-                showDay = true;
-            }
+            显示 = 0;
         }
+        打印日志("更新显示 - Updated");
         更新岁数();  // 更新显示
     });
 });
