@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(`%c[log] 当前时间: ${当前时间}`, "color: cyan");
 
     // ----- 寒暑假日期，仅为大概 -----
-    const 暑假开始 = new Date(当前时间.getFullYear(), 8, 1);
-    const 暑假结束 = new Date(当前时间.getFullYear(), 10, 1);
-    const 寒假开始 = new Date(当前时间.getFullYear(), 0, 20);
-    const 寒假结束 = new Date(当前时间.getFullYear(), 1, 17);
+    const 暑假开始 = new Date(当前时间.getFullYear(), 6, 7);
+    const 暑假结束 = new Date(当前时间.getFullYear(), 8, 1);
+    const 寒假开始 = new Date(当前时间.getFullYear(), 0, 19);
+    const 寒假结束 = new Date(当前时间.getFullYear(), 1, 16);
     // ------------------------------
 
     function 获取下一个寒假开始时间(现在) {
