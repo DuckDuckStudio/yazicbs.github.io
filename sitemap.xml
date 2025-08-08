@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 由 DuckDuckStudio/Sitemap_Creator 于 8/4/2025, 06:02:37 生成 -->
+<!-- 由 DuckDuckStudio/Sitemap_Creator 于 8/9/2025, 00:15:00 生成 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
               xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
@@ -107,11 +107,15 @@
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/online_tools/index.html</loc>
-    <lastmod>2025-08-03T02:09:28+08:00</lastmod>
+    <lastmod>2025-08-09T00:09:20+08:00</lastmod>
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/online_tools/%E5%AE%9E%E9%AA%8C%E6%80%A7%E5%B7%A5%E5%85%B7/%E6%B0%B4%E4%B8%8B%E9%9F%B3%E6%95%88/index.html</loc>
-    <lastmod>2025-08-03T02:09:28+08:00</lastmod>
+    <lastmod>2025-08-09T00:09:20+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/online_tools/%E6%97%B6%E9%92%9F/index.html</loc>
+    <lastmod>2025-08-09T00:09:20+08:00</lastmod>
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/versions/index.html</loc>
