@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
      * @returns 返回带有样式的时间文本。
      */
     function style(timeText) {
-        return timeText.toLocaleString().replace(":", "<span class=\"comma\">:</span>");
+        return timeText.toLocaleString().replace(/:/g, "<span class=\"comma\">:</span>");
     }
 
     // 每秒更新一次
