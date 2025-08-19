@@ -2,18 +2,18 @@ import { readFileSync } from 'fs';
 import { sync } from 'glob';
 import { relative } from 'path';
 
-// 修改正则表达式，以匹配绝对路径或包含驱动器的路径
+// 匹配绝对路径或包含驱动器的路径
 const pattern = /(?:[A-Z]:\\)/g;
 const files = ['**/*.html', '**/*.js', '**/*.css'];
 
 // 自定义跳过文件列表（使用相对路径）
 const skipFiles = [
-    'Tools/Fufu_Tools/minimum/index.html',
+    "Tools/Fufu_Tools/minimum/index.html",
 ];
 
 // 自定义跳过文件夹列表（使用相对路径）
 const skipFolders = [
-    'Tools/Fufu_Tools/wiki',
+    "Tools/Fufu_Tools/wiki",
 ];
 
 let foundPath = false; // 用于跟踪是否已经找到路径
@@ -56,5 +56,5 @@ files.forEach(globPattern => {
 if (foundPath) {
     process.exit(1); // 如果发现路径，退出并且有非零状态码
 } else {
-    console.log('✓ 所有文件检测完毕，未发现本地路径');
+    console.log("✓ 所有文件检测完毕，未发现本地路径");
 }
