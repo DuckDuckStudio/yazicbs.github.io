@@ -29,8 +29,8 @@ def check_link(url: str, IGNORE_URLS: list[str]) -> tuple[str | int, str]:
             sleep(1)
             response = requests.head(url, allow_redirects=True)
 
-        if response.status_code == 412:
-            return "412 Precondition Failed", "warning"
+        if response.status_code in [412, 403, 401]:
+            return response.status_code, "warning"
         elif response.status_code == 404:
             return "404 Not Found", "failed"
         elif 400 <= response.status_code < 500:
