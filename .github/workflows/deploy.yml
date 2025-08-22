@@ -69,7 +69,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: 上传工件
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           # 上传整个仓库
           path: '.'
