@@ -15,12 +15,12 @@
             let dayOfWeek = currentDate.getDay(); // 返回一周中的第几天，周日->0，周一->1...
             //---
             if (Math.random() > 0.5) {
-                window.location.href = 'https://www.cnhls.com/';// %50几率跳转华莱士官网(周四亦如此)
+                window.location.href = "https://www.cnhls.com/";// %50几率跳转华莱士官网(周四亦如此)
             } else { // 没随机到时
                 if (dayOfWeek === 4) { // 如果今天疯狂星期四
-                    window.location.href = 'http://www.kfc.com.cn/kfccda/index.aspx';
+                    window.location.href = "https://www.kfc.com.cn/kfccda/index.aspx";
                 } else {
-                    window.location.href = 'https://www.mcdonalds.com.cn/';
+                    window.location.href = "https://www.mcdonalds.com.cn/";
                 }
             }
         </script>
