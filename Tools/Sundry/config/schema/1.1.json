@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://example.com/sundry-config-1.1.schema.json",
+    "$id": "https://duckduckstudio.github.io/yazicbs.github.io/Tools/Sundry/config/schema/1.1.json",
     "title": "Sundry 配置文件版本 1.1 Schema",
     "description": "Sundry 配置文件 config.json 版本 1.1 Schema",
     "type": "object",
