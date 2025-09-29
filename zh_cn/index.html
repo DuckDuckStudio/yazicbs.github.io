@@ -1016,7 +1016,7 @@ https://space.bilibili.com/2054654702/
                                                                                 </h6>
                                                                             </div>
                                                                         </div>
-                                                                        -->
+                                                                    -->
                                                                     <div class="s-item-text">
                                                                         <div class="s-component s-text">
                                                                             <div class="s-component-content s-font-body">
@@ -1205,13 +1205,20 @@ https://space.bilibili.com/2054654702/
                                                     /*
                                                     * JS输出分类: 提交
                                                     */
-                                                    const repoUrl = "https://api.github.com/repos/DuckDuckStudio/yazicbs.github.io/commits";
 
-                                                    fetch(repoUrl)
+                                                    fetch("https://api.github.com/repos/DuckDuckStudio/yazicbs.github.io/commits")
                                                         .then(response => response.json())
                                                         .then(data => {
-                                                            let latestCommitMessage = data[0].commit.message.split('\n')[0]; // 获取最新提交的消息的第一行
-                                                            const latestCommitTime = new Date(data[0].commit.committer.date); // 获取最新提交的时间，并转换为 Date 对象
+                                                            let latestCommitMessage;
+                                                            let latestCommitTime;
+                                                            for (let i = 0; i < data.length; i++) {
+                                                                latestCommitMessage = data[i].commit.message.split('\n')[0]; // 获取提交的消息的第一行
+                                                                latestCommitTime = new Date(data[i].commit.committer.date); // 获取提交的时间，并转换为 Date 对象
+                                                                if (!(latestCommitMessage.includes("自动更新网站地图") || latestCommitMessage.includes("build(deps)"))) {
+                                                                    break;
+                                                                }
+                                                                console.debug(`[DEBUG(提交)] 跳过网站地图或依赖更新提交: ${latestCommitMessage}`)
+                                                            }
 
                                                             // 格式化日期
                                                             const year = latestCommitTime.getFullYear();
@@ -1230,12 +1237,12 @@ https://space.bilibili.com/2054654702/
                                                                 return `<a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues/${issueNumber}" target="_blank">${match}</a>`;
                                                             });
 
-                                                            document.getElementById('commitMessage').innerHTML = latestCommitMessage;
-                                                            document.getElementById('commitTime').innerHTML = formattedDateTime;
+                                                            document.getElementById("commitMessage").innerHTML = latestCommitMessage;
+                                                            document.getElementById("commitTime").innerHTML = formattedDateTime;
                                                         })
                                                         .catch(error => {
-                                                            console.error('[ERROR(提交)]无法获取GitHub上的最新提交信息:', error);
-                                                            document.getElementById('commitMessage').innerHTML = '[加载失败，请检查网络或联系网站管理员]';
+                                                            console.error("[ERROR(提交)]无法获取GitHub上的最新提交信息:", error);
+                                                            document.getElementById("commitMessage").innerHTML = "[加载失败，请检查网络或联系网站管理员]";
                                                         });
                                                 </script>
                                             </div>
