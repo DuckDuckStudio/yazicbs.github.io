@@ -38,7 +38,7 @@ function Guess_number(n) {
       //
       // Number.isInteger() 判断的是他是不是整数类型 (整型)
       // MDN Docs: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
-      Guess_number_init(guess_max, guess_min);
+      Guess_number_init(guess_min, guess_max);
       console.log("[Game\\Guess Number] 恭喜, 您猜对了！\n[Game\\Guess Number] 已自动初始化下一局游戏, 如需修改范围请重新使用 Guess_number_init(最小数, 最大数) 初始化");
     }
   } else {

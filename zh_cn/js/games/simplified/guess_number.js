@@ -15,6 +15,9 @@ function gm_init(min, max) {
   guess_min = min;
   gm_random_number = Math.floor(Math.random() * (max - min + 1)) + min;
   if (Number.isNaN(guess_max) && Number.isNaN(guess_min)) { // 避免重复输出, 还是不懂去了自己试下就知道了
+    // 可是这样判断下去在自动 init 后使用 gm_init 就没有这个输出了呀...
+    // 也许应该统一用这里的输出而不是各自输出
+    // 或者在这个函数中加个参数控制是否输出这句？
     console.log(`[Game\\Guess Number] 已成功初始化猜数字游戏 (Max:${guess_max} | Min:${guess_min})`);
   }
 }
@@ -37,7 +40,7 @@ function gm(n) {
       //
       // Number.isInteger() 判断的是他是不是整数类型 (整型)
       // MDN Docs: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
-      gm_init(guess_max, guess_min);
+      gm_init(guess_min, guess_max);
       console.log("[Game\\Guess Number] 恭喜, 您猜对了！\n[Game\\Guess Number] 已自动初始化下一局游戏, 如需修改范围请重新使用 gm_init(最小数, 最大数) 初始化");
     }
   } else {
