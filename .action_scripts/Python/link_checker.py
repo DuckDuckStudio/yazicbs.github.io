@@ -12,6 +12,8 @@ def main() -> int:
     IGNORE_URLS = [
         # 常时
         "https://duckduckstudio.github.io/yazicbs.github.io/Interesting/sounds/*.mp3",
+        # 临时因多次 429 忽略
+        "https://ipapi.co/json/"
     ] # 忽略的链接
 
     # 正则匹配链接
