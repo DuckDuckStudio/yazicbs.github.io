@@ -60,7 +60,7 @@ https://space.bilibili.com/2054654702/
             }
 
             button {
-                background-color: #4CAF50; /* Green */
+                background-color: #4CAF50;
                 border: none;
                 color: white;
                 padding: 15px 32px;
@@ -92,13 +92,6 @@ https://space.bilibili.com/2054654702/
 
                 <!-- 声音文件位于https://duckduckstudio.github.io/yazicbs.github.io/Interesting/duck_forever/sounds/*.mp3 -->
                 <!-- 每次循环从中选一个音频进行循环。每次循环只循环其中的一个音频 -->
-            </div>
-        </div>
-
-        <div class="container" style="margin-right: 1%; margin-left: 1%;">
-            <div style="text-align: center;">
-                <p><strong>[你知道吗]</strong></p>
-                <p id="random-sentence"></p>
             </div>
         </div>
 
@@ -140,29 +133,6 @@ https://space.bilibili.com/2054654702/
                 // 播放音频
                 audioElement.play();
             }
-        </script>
-
-        <!-- 随机展示JS -->
-        <script>
-            // [你知道吗] - [你不用知道]
-            const sentences = [
-                "b站UP主 银斑三傻 为本页面提供了视频制作音频",
-                "音频是完全随机的哦",
-                "我录的鸭子怕手机",
-                "啪啪啪(扇翅膀声)",
-                "[你知道吗] - [你不用知道]",
-                "本页面使用了 芙芙工具箱通用样式",
-            ];
-    
-            // 每次访问随机
-            const randomIndex = Math.floor(Math.random() * sentences.length);
-    
-            const randomSentence = sentences[randomIndex];
-            console.log(`[你知道吗]\n${randomSentence}`);
-    
-            const randomSentenceElement = document./*Here start ERROR*/getElementById("random-sentence");
-            randomSentenceElement.textContent = sentences[randomIndex];
-            // --
         </script>
     </body>
 </html>
