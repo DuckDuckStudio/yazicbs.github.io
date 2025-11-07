@@ -60,6 +60,10 @@
                         "maintainer_can_modify": {
                             "type": "boolean",
                             "description": "是否允许维护者修改您的 PR 内容"
+                        },
+                        "mention_self_when_reviewer": {
+                            "type": "boolean",
+                            "description": "自己在 Auth.csv 中作为包修改的审查者时，是否在 PR 中请求自己审查"
                         }
                     }
                 }
@@ -71,13 +75,9 @@
                 "verify": {
                     "type": "object",
                     "properties": {
-                        "check_url": {
-                            "type": "boolean",
-                            "description": "verify 时验证清单中的 URL 是否有效 (#68)"
-                        },
                         "show_warning_on_non-clean_windows": {
                             "type": "boolean",
-                            "description": "在非干净的 Windows 上验证时显示警告 (#99)"
+                            "description": "在非干净的 Windows 上验证时显示警告"
                         }
                     }
                 },
@@ -89,11 +89,11 @@
                             "properties": {
                                 "prune_merged_branches": {
                                     "type": "boolean",
-                                    "description": "prune 时清理远程中已合并的 PR 的分支 (#98)"
+                                    "description": "prune 时清理远程中已合并的 PR 的分支"
                                 },
                                 "prune_closed_branches": {
                                     "type": "boolean",
-                                    "description": "prune 时清理远程中已关闭的 PR 的分支 (#98)"
+                                    "description": "prune 时清理远程中已关闭的 PR 的分支"
                                 }
                             }
                         }
