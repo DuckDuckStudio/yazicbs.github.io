@@ -10,9 +10,15 @@
 
 /* 随机 */
 // 歌单列表
-var playlists = [
+const playlists = [
     // Sweet
     [
+        {
+            name: "Cocopops",
+            artist: "Ivoris",
+            url: "https://music.163.com/song/media/outer/url?id=2056938905.mp3",
+            cover: "https://p1.music.126.net/bqmwH5ZWE6hx9fQmWRHWIw==/109951168687208254.jpg"
+        },
         {
             name: "Floating Star",
             artist: "Kirara Magic / Shion Lee",
@@ -26,7 +32,7 @@ var playlists = [
             cover: "https://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg"
         },
     ],
-    // 崩铁
+    // 游戏
     [
         {
             name: "太空漫步",
@@ -34,9 +40,6 @@ var playlists = [
             url: "https://music.163.com/song/media/outer/url?id=2034615687.mp3",
             cover: "https://p2.music.126.net/RWIGyShmnjmUxizXco6fVg==/109951168505830245.jpg"
         },
-    ],
-    // 原神
-    [
         {
             name: "柔灯轻漾时",
             artist: "HOYO-MiX",
@@ -73,9 +76,6 @@ var playlists = [
             url: "https://music.163.com/song/media/outer/url?id=1492275685.mp3",
             cover: "https://p1.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg"
         },
-    ],
-    // 明日方舟
-    [
         {
             name: "相见欢",
             artist: "塞壬唱片-MSR / MeLo_绿萝组",
@@ -98,10 +98,10 @@ var playlists = [
     // 纯音乐
     [
         {
-            name: "Fallen Angel",
-            artist: "UnicornPhantom",
-            url: "https://music.163.com/song/media/outer/url?id=2071485908.mp3",
-            cover: "https://p2.music.126.net/RnkKxlngZH2A0KEphrBGnw==/109951168826312208.jpg"
+            name: "Groovy Hammond",
+            artist: "Aiert Erkoreka",
+            url: "https://music.163.com/song/media/outer/url?id=2032764441.mp3",
+            cover: "https://p2.music.126.net/n-JiSxH7Ojep-_9F1DUV9g==/109951168489951532.jpg?param=130y130" // 用原图会出现奇怪纹样
         },
         {
             name: "This Is For You",
@@ -109,8 +109,32 @@ var playlists = [
             url: "https://music.163.com/song/media/outer/url?id=2119282905.mp3",
             cover: "https://p2.music.126.net/6_oOAFwqRnW1m_S7EZk5OQ==/109951169274100743.jpg"
         },
+        {
+            name: "小樱",
+            artist: "饭碗的彼岸",
+            url: "https://music.163.com/song/media/outer/url?id=406070435.mp3",
+            cover: "https://p2.music.126.net/r-hU2OrynWPGkDwUvrb41A==/109951168982804106.jpg"
+        },
+        {
+            name: "風の住む街",
+            artist: "原作: 磯村由紀子 / 演奏: 浅绯色的喵", // 原作网易云上要 VIP
+            url: "https://music.163.com/song/media/outer/url?id=1445990834.mp3",
+            cover: "https://p2.music.126.net/hVPUfLNsSnnWbUSa5kaPqg==/109951164927740327.jpg"
+        },
     ],
-    /* 春节
+    // 当初是你要分开，分开就分开
+    // 现在又要用真爱，把我哄回来
+    // 爱情不是你想买，想买就能卖
+    // 让我挣开，让我明白，放手你的爱
+    [
+        {
+            name: "牵丝戏",
+            artist: "银临 / Aki阿杰",
+            url: "https://music.163.com/song/media/outer/url?id=30352891.mp3",
+            cover: "https://p2.music.126.net/Nd86SOcyCxU5Qu7jdZn_MQ==/7725168696876736.jpg"
+        }
+    ],
+    // 春节
     [
         {
             name: "春节序曲",
@@ -123,24 +147,105 @@ var playlists = [
             artist: "祖海",
             url: "https://music.163.com/song/media/outer/url?id=333750.mp3",
             cover: "https://p2.music.126.net/9HMwjKJ28PkHp609d98dJQ==/109951169761022710.jpg"
-        }
+        },
+        {
+            name: "好日子",
+            artist: "宋祖英 / 群星",
+            url: "https://music.163.com/song/media/outer/url?id=5234276.mp3",
+            cover: "https://p1.music.126.net/o2uQiqnOV9A-VHvPPEHhjw==/109951169874348518.jpg"
+        },
+        {
+            name: "难忘今宵",
+            artist: "李谷一",
+            url: "https://music.163.com/song/media/outer/url?id=395334.mp3",
+            cover: "https://p1.music.126.net/j0g_25GyPhar5xxJoGPZiA==/109951163910801634.jpg"
+        },
+        {
+            name: "我还有点小糊涂",
+            artist: "刘晨",
+            url: "https://music.163.com/song/media/outer/url?id=27901231.mp3",
+            cover: "https://p1.music.126.net/amPcqTUkdXszKQtEY9WqWw==/109951168835050751.jpg"
+        },
     ],
-    */
+    // ???
+    [
+        {
+            name: "欢乐斗哈基米",
+            artist: "困困困困困",
+            url: "https://music.163.com/song/media/outer/url?id=2628969575.mp3",
+            cover: "https://p1.music.126.net/-t_g6blKCa5OdsC8T4mHeA==/109951169976238666.jpg"
+        },
+        {
+            name: "蓝莲哈",
+            artist: "猫猫怕痛惹",
+            url: "https://music.163.com/song/media/outer/url?id=2733581267.mp3",
+            cover: "https://i2.hdslb.com/bfs/archive/4eb943cea87f05c201c472e1d7e12d2075eb3c4b.jpg"
+        },
+        {
+            name: "๏ เ เ ค เ ๏ ๏ ๏ ๏ ๏ เ ค เ",
+            artist: "黑瘦的鱼头",
+            url: "https://music.163.com/song/media/outer/url?id=2042083845.mp3",
+            cover: "https://i2.hdslb.com/bfs/archive/43520a6f08c77155c90d8894602a26e23913ef3a.jpg"
+        },
+    ],
+    // 哈?
+    [
+        {
+            name: "Arghena",
+            artist: "Laur / Feryquitous",
+            url: "https://music.163.com/song/media/outer/url?id=2086612075.mp3",
+            cover: "https://p2.music.126.net/OT6c2zfUIcO93FGnUe7HGg==/109951168951039968.jpg"
+        },
+        {
+            name: "PRAGMATISM -RESURRECTION-",
+            artist: "Laur",
+            url: "https://music.163.com/song/media/outer/url?id=1907125216.mp3",
+            cover: "https://p1.music.126.net/TyhOfIS34c1YLrTshe1YWg==/109951166856274537.jpg"
+        },
+        {
+            name: "Ringed Genesis",
+            artist: "Edelritter",
+            url: "https://music.163.com/song/media/outer/url?id=1401852639.mp3",
+            cover: "https://p1.music.126.net/u9x0JwJsEpN1Izm6q6877w==/109951164475253709.jpg"
+        },
+        {
+            name: "Straight into the lights",
+            artist: "Cosmograph",
+            url: "https://music.163.com/song/media/outer/url?id=2628998924.mp3",
+            cover: "https://p1.music.126.net/Kp43ZguChSa8Wj-P4zfbiQ==/109951169976456812.jpg"
+        },
+    ]
 ];
+
+// 歌单名称
+const playlistNames = {
+    0: "小甜甜",
+    1: "游戏",
+    2: "纯音乐",
+    3: `
+当初是你要分开，分开就分开
+现在又要用真爱，把我哄回来
+爱情不是你想买，想买就能卖
+让我挣开，让我明白，放手你的爱`,
+    4: "春节",
+    5: "??? 神曲，我懂得欣赏 ???",
+    6: "哈?",
+    default: "[WARN(歌单-选择-索引越界)] 未定义歌单名称"
+};
 
 // 歌单权重设置，权重越大被选中的概率越高
-var playlistWeights = [
-    0.8, // 小甜甜
-    0.9, // 崩铁
-    1, // 原神
-    1, // 明日方舟
+const playlistWeights = [
+    0.3, // 小甜甜
+    0.9, // 游戏
     1, // 纯音乐
-    // 1, // 春节
+    0.1, // 当初是你要分开，分开就分开
+    0.3, // 春节
+    0.01, // ???
+    0.001, // 哈?
 ];
-// [ '15.25%', '16.95%', '16.95%', '16.95%', '16.95%', '16.95%' ]
 
 // 计算权重总和
-var totalWeight = playlistWeights.reduce((sum, w) => sum + w, 0);
+const totalWeight = playlistWeights.reduce((sum, w) => sum + w, 0);
 
 // 按加权随机选择歌单索引
 function weightedRandomIndex(weights) {
@@ -158,18 +263,6 @@ function weightedRandomIndex(weights) {
 const randomPlaylistIndex = weightedRandomIndex(playlistWeights);
 const randomPlaylist = playlists[randomPlaylistIndex];
 
-/* 日志记录 */
-const playlistNames = {
-    0: "小甜甜",
-    1: "崩铁",
-    2: "原神",
-    3: "明日方舟",
-    4: "纯音乐",
-    // 5: "春节...啊？这么快就过节了？？？",
-    default: "[WARN(歌单-选择-索引越界)] 未定义歌单名称"
-    // 最后更新分类：2025/5/19
-};
-
 // 获取歌单名称
 const SongListSet = playlistNames[randomPlaylistIndex] || playlistNames.default;
 
@@ -177,7 +270,9 @@ if (SongListSet === playlistNames.default) {
     console.warn(`${SongListSet}，随机到的数字是${randomPlaylistIndex}`);
     console.debug("%c[FUN] 不喜欢没有边界感的调用。", "color: #d6aaff;")
 } else {
-    console.log(`[INFO(歌单)] 选中歌单 [${SongListSet}]`);
+    // 计算该歌单的随机权重百分比，四舍五入保留两位小数，并去掉小数点后面末尾的 0
+    const percent = ((playlistWeights[randomPlaylistIndex] / totalWeight) * 100).toFixed(2).replace(/\.?0+$/, '');
+    console.log(`[INFO(歌单)] 选中歌单 ${SongListSet} (${percent}%)`);
 }
 
 /* -----END----- */
