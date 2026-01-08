@@ -2,15 +2,15 @@ name: 向 GitHub Page 部署静态内容
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - "main"
     paths-ignore:
       - ".github/**"
+      - "!.github/workflows/deploy.yml"
       - ".action_scripts/**"
       - "!.action_scripts/JavaScript/yaml-json.mjs"
       - ".gitignore"
       - "README.md"
-      - "CONTRIBUTING.md"
-      - "LICENSE.txt"
   workflow_dispatch:
 
 # 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Page
@@ -61,6 +61,7 @@ jobs:
           rm -rv .github
           rm -rv .action_scripts
           rm -v .gitignore
+          rm -v eslint.config.mjs
           rm -v README.md
           rm -v Tools/chinese_git/notice/Notice.md
 
