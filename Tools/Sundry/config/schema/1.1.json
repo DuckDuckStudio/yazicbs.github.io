@@ -1,0 +1,114 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://duckduckstudio.github.io/yazicbs.github.io/Tools/Sundry/config/schema/1.1.json",
+    "title": "Sundry 配置文件版本 1.1 Schema",
+    "description": "Sundry 配置文件 config.json 版本 1.1 Schema",
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string",
+            "enum": [
+                "1.1"
+            ],
+            "description": "配置文件的版本"
+        },
+        "paths": {
+            "type": "object",
+            "properties": {
+                "winget-pkgs": {
+                    "type": "string",
+                    "description": "您的 winget-pkgs 本地仓库路径"
+                },
+                "winget-tools": {
+                    "type": "string",
+                    "description": "您的 winget-tools 本地仓库路径"
+                }
+            }
+        },
+        "repos": {
+            "type": "object",
+            "properties": {
+                "winget-pkgs": {
+                    "type": "string",
+                    "description": "您的 winget-pkgs 仓库，格式为 owner/repo"
+                },
+                "winget-tools": {
+                    "type": "string",
+                    "description": "您的 winget-tools 仓库，格式为 owner/repo"
+                }
+            }
+        },
+        "git": {
+            "type": "object",
+            "properties": {
+                "signature": {
+                    "type": "boolean",
+                    "description": "是否对提交签名"
+                }
+            }
+        },
+        "github": {
+            "type": "object",
+            "properties": {
+                "pr": {
+                    "type": "object",
+                    "properties": {
+                        "maintainer_can_modify": {
+                            "type": "boolean",
+                            "description": "是否允许维护者修改您的 PR 内容"
+                        }
+                    }
+                }
+            }
+        },
+        "tools": {
+            "type": "object",
+            "properties": {
+                "verify": {
+                    "type": "object",
+                    "properties": {
+                        "check_url": {
+                            "type": "boolean",
+                            "description": "verify 时验证清单中的 URL 是否有效 (#68)"
+                        },
+                        "show_warning_on_non-clean_windows": {
+                            "type": "boolean",
+                            "description": "在非干净的 Windows 上验证时显示警告 (#99)"
+                        }
+                    }
+                },
+                "prune": {
+                    "type": "object",
+                    "properties": {
+                        "remote": {
+                            "type": "object",
+                            "properties": {
+                                "prune_merged_branches": {
+                                    "type": "boolean",
+                                    "description": "prune 时清理远程中已合并的 PR 的分支 (#98)"
+                                },
+                                "prune_closed_branches": {
+                                    "type": "boolean",
+                                    "description": "prune 时清理远程中已关闭的 PR 的分支 (#98)"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "i18n": {
+            "type": "object",
+            "properties": {
+                "lang": {
+                    "type": "string",
+                    "enum": [
+                        "zh-cn",
+                        "en-us"
+                    ],
+                    "description": "Sundry 运行时使用的语言"
+                }
+            }
+        }
+    }
+}

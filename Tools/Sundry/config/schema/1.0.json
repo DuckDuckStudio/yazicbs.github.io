@@ -1,0 +1,37 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://duckduckstudio.github.io/yazicbs.github.io/Tools/Sundry/config/schema/1.0.json",
+    "title": "Sundry 配置文件版本 1.0 Schema",
+    "description": "Sundry 配置文件 config.json 版本 1.0 Schema",
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string",
+            "description": "Sundry 版本"
+        },
+        "winget-pkgs": {
+            "type": "string",
+            "description": "您的 winget-pkgs 本地仓库路径"
+        },
+        "winget-tools": {
+            "type": "string",
+            "description": "您的 winget-tools 本地仓库路径"
+        },
+        "pkgs-repo": {
+            "type": "string",
+            "description": "您的 winget-pkgs 仓库，格式为 owner/repo"
+        },
+        "tools-repo": {
+            "type": "string",
+            "description": "您的 winget-tools 仓库，格式为 owner/repo"
+        },
+        "signature": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no"
+            ],
+            "description": "是否对提交签名"
+        }
+    }
+}

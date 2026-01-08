@@ -1,0 +1,79 @@
+name: 向 GitHub Page 部署静态内容
+
+on:
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - ".github/**"
+      - ".action_scripts/**"
+      - "!.action_scripts/JavaScript/yaml-json.mjs"
+      - ".gitignore"
+      - "README.md"
+      - "CONTRIBUTING.md"
+      - "LICENSE.txt"
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Page
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许一次并发部署，跳过正在进行的运行和最新排队的运行之间的排队运行。
+# 但是，不要取消正在进行的运行，因为我们希望允许这些生产部署完成。
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 单个部署任务，因为我们只是部署
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 签出
+        uses: actions/checkout@v6.0.1
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "latest"
+
+      - name: 转换 api 文件
+        shell: bash
+        # YAML -> JSON
+        run: |-
+          cd .action_scripts/JavaScript
+          npm install js-yaml
+          cd ../..
+          echo ===============
+          node .action_scripts/JavaScript/yaml-json.mjs api/json/notifications.yaml
+          rm -v api/json/notifications.yaml
+          echo ===============
+          node .action_scripts/JavaScript/yaml-json.mjs api/json/fzxc.yaml
+          rm -v api/json/fzxc.yaml
+
+      - name: 移除不应部署的文件
+        shell: bash
+        run: |-
+          rm -rv .github
+          rm -rv .action_scripts
+          rm -v .gitignore
+          rm -v README.md
+          rm -v CONTRIBUTING.md
+          rm -v Tools/chinese_git/notice/Notice.md
+
+      - name: 设置页面
+        uses: actions/configure-pages@v5
+
+      - name: 上传工件
+        uses: actions/upload-pages-artifact@v4
+        with:
+          # 上传整个仓库
+          path: '.'
+
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

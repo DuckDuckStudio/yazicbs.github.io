@@ -1,0 +1,16 @@
+# IDE
+.idea/
+.vs/
+.vscode/
+
+# python
+.venv/
+
+# TEST
+test/
+test.*
+
+# npm
+node_modules/
+package-lock.json
+package.json

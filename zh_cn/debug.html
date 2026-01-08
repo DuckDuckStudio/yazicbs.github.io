@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<!-- Code by Duck Studio | 鸭鸭「カモ」 -->
+<!--
+    /*
+    WARN不用管，ERROR修不了。
+                    —— 鲁迅
+    ----------------------
+    放只小猫：
+    ⠀⠀⠀⠀⠀⠀＿＿
+        ／＞　　フ
+        | 　_　 _ l           喵~
+        ／` .ミ.ܫ.ノ
+        /　　　 　 |
+       /　 ヽ　　 ﾉ
+       │　　|　|　|
+    ／￣|　　 |　|　|
+    | (￣ヽ＿ヽ)__)
+    ＼二つ
+-->
+
+<!--
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+-->
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>鸭鸭工作室 | 鸭鸭「カモ」</title>
+        <meta content="width=device-width, initial-scale=1.0" id="viewport" name="viewport">
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/css/styles.css">
+        <!-- 样式CSS文件(同目录下的styles.css) -->
+        <link rel="preload stylesheet" media="screen"
+            href="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/css/main_v4.826422d2b6a94eabfe21.bundle.css"
+            as="style" type="text/css" onload="if(media!=='screen')media='screen'">
+        <!-- 页面样式表(MUST) --><!-- 该样式表有许多警告与未使用项 -->
+        <!-- 图标设置 -->
+        <link rel="icon" type="image/x-icon" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/main.png">
+        <!-- 指定网站在浏览器标签页上显示的图标 -->
+        <!-- 设置搜索与社交媒体显示 -->
+        <meta content="鸭鸭工作室 | 鸭鸭「カモ」" property="og:title">
+        <!-- 定义网页的标题，用于社交媒体分享时显示 -->
+        <meta content="https://duckduckstudio.github.io/yazicbs.github.io/" property="og:url">
+        <!-- 定义网页的URL地址 -->
+        <meta content="鸭鸭工作室 | 鸭鸭「カモ」" property="og:site_name">
+        <!-- 定义网站的名称 -->
+        <meta content="鸭鸭工作室的官方网站" property="og:description">
+        <!-- 定义网页的描述，用于社交媒体分享时显示 -->
+        <meta name="description" content="[鸭鸭工作室 | 鸭鸭「カモ」] 这是鸭鸭工作室(Duck Studio)的官方网站，你可以在这个网站上找到关于我的一些作品。">
+        <!-- 优化对于bing的结果描述 -->
+        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,Yzcbs,鸭子出版社" name="keywords">
+        <!-- 定义与网页相关的关键词 -->
+        <link rel="canonical" href="https://duckduckstudio.github.io/yazicbs.github.io/">
+        <!-- 指定网页的规范化 URL，即该网页的主要版本 -->
+
+        <script src="https://unpkg.com/vconsole@3.15.1/dist/vconsole.min.js"></script>
+        <!--https://unpkg.com/vconsole@latest/dist/vconsole.min.js-->
+        <script>
+            // VConsole 默认会挂载到 `window.VConsole` 上
+            var vConsole = new window.VConsole();
+        </script>
+
+        <script>
+            /*控制台输出DuckStudio*/
+            // 前面不要加空格
+            console.log(`
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+
+本站维护人员：
+鸭鸭「カモ」
+欢迎关注我的bilibili频道：@鸭鸭_カモ
+https://space.bilibili.com/2054654702/
+            `)
+        </script>
+
+        <!-- 自写优化css -->
+        <link rel="stylesheet" type="text/css" href="css/optimize.css">
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+        <style>
+            strong, b {
+                font-weight: bold; /* 加粗 */
+            }
+
+            /* For PC => Phone */
+            .my_name {
+                font-size: 74px;
+                font-weight: bold;
+            }
+
+            @media (max-width: 800px) {
+                .my_name {
+                    font-size: 50px;
+                    font-weight: bold;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 音乐组件 -->
+        <!-- 官方教程：https://aplayer.js.org/#/zh-Hans/ -->
+        <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
+        <div id="aplayer"></div>
+        <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+        <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/SongList.js"></script>
+        <!-- END -->
+        <div>
+            <div id="s-content" class="s-variation-default s-font-heading-hei s-font-title-default s-font-body-default s-font-button-hei s-font-weight-heading-default s-font-weight-title-default s-font-weight-body-default s-font-weight-button-default s-theme-alignment-center">
+                <div style="margin: auto;">
+                    <div class="css-2ezjh4 css-1mzqwyc0">
+                        <div class="page-wrapper">
+                            <ul class="slides s-page-1 " style="display: block; list-style-type: none;">
+                                <li class="slide s-section-1 s-first-visible-section css-3757m5">
+                                    <div class="waypoint"></div>
+                                    <a class="section-anchor"></a>
+                                    <!-- Start at here -->
+                                    <div>
+                                        <div class="s-bg-image s-bg-blurred s-bg-dark-text s-new-title-section s-section background-image transition lazyloaded"
+                                            data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"
+                                            style="background-repeat: no-repeat;
+                                                   background-size: cover;
+                                                   background-color: transparent;
+                                                   background-position: 50% 50%;
+                                                   background-image: url(&quot;https://duckduckstudio.github.io/yazicbs.github.io/pictures/bg.gif&quot;);">
+                                            <div class="blurred-layer loaded css-1tnf9eu css-1jcctwh0 loaded loaded">
+                                            </div>
+                                            <div class="container" style="z-index: 3;">
+                                                <div class="sixteen columns">
+                                                    <div class="s-title-group">
+                                                        <div class="s-title sb-title-left-align">
+                                                            <div class="s-component s-text">
+                                                                <div class="s-component-content s-font-title">
+                                                                    <p class="my_name">&nbsp;&nbsp;鸭鸭「カモ」</p>
+                                                                    <!-- 两个空格用来抵消「」产生的错位 -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="s-subtitle">
+                                                            <div class="s-component s-text">
+                                                                <h4 class="s-component-content s-font-heading">
+                                                                    <span class="text"></span>
+                                                                    <!-- 打字效果JS -->
+                                                                    <script>
+                                                                        // 获取要操作的 .text 标签
+                                                                        const text = document.querySelector('.text');
+
+                                                                        // 定义要显示的文字数组
+                                                                        const txt = [
+                                                                            "Sleep all day.",
+                                                                            "一只可爱的小鸭鸭",
+                                                                            "(躺在地上打滚)(尖叫)(对食物无差别攻击)",
+                                                                            "鸭子，你可以吃芝士汉堡",
+                                                                            "Want it, Merge it.",
+                                                                            "if 不能，至少不应该 fi",
+                                                                            "Also try F12.",
+                                                                            "不要按 Alt + F4",
+                                                                            "不管你有没有昼夜的概念，首先祝你早上 中午 晚上好！" // 确定位置 index 8
+                                                                        ];
+
+                                                                        // ----------- 处理各个时段的消息 -----------
+                                                                        // WARN: 确定的位置，请勿修改
+                                                                        const currentHour = new Date().getHours(); // 获取当前小时数
+                                                                        const timeIndex = 8;
+
+                                                                        if ((currentHour >= 0 && currentHour < 5) || (currentHour >= 21 && currentHour < 24)) {
+                                                                            txt[timeIndex] = "还不睡觉呢? 小猫~";
+                                                                        } else if (currentHour >= 5 && currentHour < 9) {
+                                                                            txt[timeIndex] = "早起的小虫有鸟吃~";
+                                                                        } else if (currentHour >= 9 && currentHour < 11) {
+                                                                            txt[timeIndex] = "一日之计在于晨，想好要做什么了吗？";
+                                                                        } else if (currentHour >= 11 && currentHour < 14) {
+                                                                            txt[timeIndex] = "o((>ω< ))o 太阳这么大要晒化掉了 (南方)";
+                                                                        } else if (currentHour >= 14 && currentHour < 17) {
+                                                                            txt[timeIndex] = "下午要做什么捏？";
+                                                                        } else if (currentHour >= 17 && currentHour < 19) {
+                                                                            txt[timeIndex] = "你那的晚霞好看吗？";
+                                                                        } else if (currentHour >= 19 && currentHour < 21) {
+                                                                            txt[timeIndex] = "⭐SUPER NIGHT TIME⭐";
+                                                                        }
+
+                                                                        console.debug(`%c[TEST(标语-时间)] 当前时间 ${new Date()} | ${currentHour}时 | ${txt[13]}`, "color: cyan;");
+
+                                                                        // 生成一个新的随机顺序的文字数组
+                                                                        function getRandomOrder(array) {
+                                                                            const shuffled = array.slice(); // 复制数组
+                                                                            for (let i = shuffled.length - 1; i > 0; i--) {
+                                                                                const j = Math.floor(Math.random() * (i + 1));
+                                                                                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // 交换元素
+                                                                            }
+                                                                            return shuffled;
+                                                                        }
+
+                                                                        // 定义当前正在操作的文字下标和字符下标
+                                                                        let currentOrder = getRandomOrder(txt); // 初始随机顺序
+                                                                        let currentIndex = 0;
+                                                                        let charIndex = 0;
+
+                                                                        // 定义打字和删除字的状态，默认为打字状态
+                                                                        let typing = true;
+
+                                                                        // 设置定时器，每200毫秒执行一次
+                                                                        setInterval(function () {
+                                                                            if (typing) {
+                                                                                // 正在打字状态，显示当前字符串的前charIndex个字符
+                                                                                text.innerHTML = currentOrder[currentIndex].slice(0, ++charIndex);
+                                                                            } else {
+                                                                                // 正在删除字状态，显示当前字符串的前charIndex个字符
+                                                                                text.innerHTML = currentOrder[currentIndex].slice(0, --charIndex);
+                                                                            }
+
+                                                                            // 判断打字或删除字是否完成
+                                                                            if (charIndex === currentOrder[currentIndex].length + 3) {
+                                                                                // 打字完成后停留时间较长（1000毫秒），然后切换到删除字状态
+                                                                                setTimeout(function () {
+                                                                                    typing = false;
+                                                                                }, 1000);
+                                                                            } else if (charIndex < 0) {
+                                                                                // 删除字完成后切换到下一个字符串的打字状态
+                                                                                typing = true;
+                                                                                charIndex = 0;
+                                                                                currentIndex++;
+                                                                                // 如果当前文字下标超过数组长度，生成新的随机顺序并重置为0
+                                                                                if (currentIndex >= currentOrder.length) {
+                                                                                    currentOrder = getRandomOrder(txt);
+                                                                                    currentIndex = 0;
+                                                                                }
+                                                                            }
+                                                                        }, 200);
+                                                                    </script>
+                                                                    <!---->
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="s-button-group">
+                                                        <div class="css-17vc2g2 css-fr6mkq0">
+                                                            <div class="s-button s-component">
+                                                                <div>
+                                                                    <div class="s-component-content css-owv3vc">
+                                                                        <a class="s-common-button css-chf7i2 s-font-button medium"
+                                                                            id="custom-btn"
+                                                                            href="https://github.com/DuckDuckStudio/"
+                                                                            data-component="button" target="_blank"
+                                                                            style="background-color: #0A5572; color: #FFFFFF; border-radius: 10px;">我的 GitHub 主页</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End in the here -->
+                                </li>
+                                <li class="slide s-section-2 css-1rkmeg4">
+                                    <div>
+                                        <!-------------------->
+                                        <div class="transition s-bg-white s-new-media-section s-section s-media-section s-top-padding-half background-image"
+                                            data-react-style="{}">
+                                            <div class="container">
+                                                <div class="columns sixteen">
+                                                </div>
+                                                <div class="s-mh s-layout-normal s-repeatable">
+                                                    <div>
+                                                        <div data-sorting-index="0" class="s-repeatable-item s-last-row">
+                                                            <div class="clearfix">
+                                                                <div>
+                                                                    <div class="s-item-text-group">
+                                                                        <div class="s-item-title">
+                                                                            <div class="s-component s-text">
+                                                                                <div class="hello_container">
+                                                                                    <h2><span id="hello-there">Hello，____你哪里的?</span></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-------------------->
+                                    </div>
+                                </li>
+                                <li class="slide s-section-3 css-1rkmeg4">
+                                    <div class="waypoint"></div>
+                                    <a class="section-anchor"></a>
+                                    <div>
+                                        <div class="transition collapse-bottom-padding s-new-media-section s-section s-rows-section background-image"
+                                            data-react-style="{}" style="text-align: left;">
+                                            <div class="container">
+                                                <div class="columns sixteen">
+                                                    <div class="s-title-group">
+                                                        <div class="s-title sb-title-left-align">
+                                                            <div class="s-component s-text">
+                                                                <h2 class="s-component-content s-font-title" style="text-align: left;">
+                                                                    <strong>我的作品</strong>
+                                                                </h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="s-subtitle">
+                                                            <div class="s-component s-text">
+                                                                <h4 class="s-component-content s-font-heading" style="text-align: left;">
+                                                                    来看看我的作品吧~
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--板块分界-->
+                                                <div class="columns sixteen">
+                                                    <div class="s-subtitle">
+                                                        <div class="s-component s-text">
+                                                            <h4 class="s-component-content s-font-heading" style="text-align: left;">
+                                                                [以下为初中时期的作品]
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--板块分界-->
+                                                <div class="s-media-left s-layout-mediaLeft s-repeatable">
+                                                    <div>
+                                                        <div data-sorting-index="5" class="s-repeatable-item s-last-row">
+                                                            <div class="clearfix">
+                                                                <div>
+                                                                    <div
+                                                                        class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                        <div class="s-item-media-group">
+                                                                            <div class="s-component s-media">
+                                                                                <div>
+                                                                                    <div class="s-component-content">
+                                                                                        <div class="s-img-wrapper">
+                                                                                            <a href="https://github.com/marketplace/actions/sitemap-creator-stable"
+                                                                                                target="_blank">
+                                                                                                <div class="s-ratio-box"
+                                                                                                    style="max-width: 720px; max-height: 450px;">
+                                                                                                    <!--大小设定-->
+                                                                                                    <div class="s-ratio-fill"
+                                                                                                        style="padding-bottom: 56.25%;">
+                                                                                                    </div>
+                                                                                                    <div class="s-img-wrapper">
+                                                                                                        <img alt="Sitemap Creator 展示图"
+                                                                                                            class="crop-default ls-is-cached"
+                                                                                                            width="720"
+                                                                                                            height="405"
+                                                                                                            src="https://duckduckstudio.github.io/yazicbs.github.io/pictures/repos/Sitemap_Creator/Sitemap_Creator.png">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--文本-->
+                                                                    <div class="ten columns s-right-in-row s-rva-text">
+                                                                        <div class="s-item-text-group half-offset-left">
+                                                                            <div class="s-item-title">
+                                                                                <div class="s-component s-text" style="display: flex; align-items: center;">
+                                                                                    <h3 class="s-component-content s-font-heading" style="font-size: 130%; margin-right: 5px;">
+                                                                                        Sitemap Creator
+                                                                                    </h3>
+                                                                                    (<a href="https://github.com/marketplace/actions/sitemap-creator-stable" target="_blank">Stable</a>&nbsp;|&nbsp;<a href="https://github.com/marketplace/actions/sitemap-creator-pre-release" target="_blank">Pre-Release</a>)
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="s-item-text">
+                                                                                <div class="s-component s-text">
+                                                                                    <div class="s-component-content s-font-body">
+                                                                                        <p>
+                                                                                            <strong>用 GitHub Action 🚀 在你的仓库中创建和更新网站地图。</strong>
+                                                                                        </p>
+                                                                                        <table style="width: 60%;">
+                                                                                            <caption>
+                                                                                                <p>为什么选择 Sitemap Creator 🏆</p>
+                                                                                            </caption>
+                                                                                            <thead>
+                                                                                                <tr>
+                                                                                                    <td>无需本地操作</td>
+                                                                                                    <td>✅</td>
+                                                                                                    <td>稳定更新</td>
+                                                                                                    <td>✅</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>完全免费</td>
+                                                                                                    <td>✅</td>
+                                                                                                    <td>修改时区</td>
+                                                                                                    <td>✅</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>指定更新/创建方式</td>
+                                                                                                    <td>✅</td>
+                                                                                                    <td>不遗漏页面</td>
+                                                                                                    <td>✅</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>忽略页面</td>
+                                                                                                    <td>✅</td>
+                                                                                                    <td>指定网站地图存放位置</td>
+                                                                                                    <td>✅</td>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tfoot>
+                                                                                                <tr>
+                                                                                                    <th colspan="4" style="text-align: center;">更多优点...✅</th>
+                                                                                                </tr>
+                                                                                            </tfoot>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 展示块分界 -->
+                                                        <br>
+                                                        <details>
+                                                            <summary>点我查看已归档的项目</summary>
+                                                            <div data-sorting-index="5" class="s-repeatable-item s-last-row">
+                                                                <div class="clearfix">
+                                                                    <div>
+                                                                        <div
+                                                                            class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                            <div class="s-item-media-group">
+                                                                                <div class="s-component s-media">
+                                                                                    <div>
+                                                                                        <div class="s-component-content">
+                                                                                            <div class="s-img-wrapper">
+                                                                                                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/"
+                                                                                                    target="_blank">
+                                                                                                    <div class="s-ratio-box"
+                                                                                                        style="max-width: 720px; max-height: 450px;">
+                                                                                                        <!--大小设定-->
+                                                                                                        <div class="s-ratio-fill"
+                                                                                                            style="padding-bottom: 56.25%;">
+                                                                                                        </div>
+                                                                                                        <div class="s-img-wrapper">
+                                                                                                            <img alt="芙芙工具箱的展示图"
+                                                                                                                class="crop-default ls-is-cached"
+                                                                                                                data-description="芙芙工具箱，一个开源的实用工具箱"
+                                                                                                                width="720"
+                                                                                                                height="405"
+                                                                                                                src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/展示图.png">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--文本-->
+                                                                        <div class="ten columns s-right-in-row s-rva-text">
+                                                                            <div class="s-item-text-group half-offset-left">
+                                                                                <div class="s-item-title">
+                                                                                    <div class="s-component s-text">
+                                                                                        <h3 class="s-component-content s-font-heading" style="font-size: 130%;">
+                                                                                            芙芙工具箱
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="s-item-text">
+                                                                                    <div class="s-component s-text">
+                                                                                        <div class="s-component-content s-font-body">
+                                                                                            <p>一个开源的实用工具箱。</p>
+                                                                                            <p>工具箱里的每个工具都是独立的，即如果你只需要某几个工具，你可以手动删除其他工具来减少空间占用。</p>
+                                                                                            <p><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/%E5%90%84%E4%B8%AA%E5%B7%A5%E5%85%B7%E6%96%87%E6%A1%A3/">可用工具</a>&nbsp;|&nbsp;<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/">官网</a>&nbsp;|&nbsp;<a href="https://github.com/DuckDuckStudio/Fufu_Tools" target="_blank">开源仓库</a></p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- 展示块分界 -->
+                                                            <br>
+                                                            <div data-sorting-index="5" class="s-repeatable-item s-last-row">
+                                                                <div class="clearfix">
+                                                                    <div>
+                                                                        <div
+                                                                            class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                            <div class="s-item-media-group">
+                                                                                <div class="s-component s-media">
+                                                                                    <div>
+                                                                                        <div class="s-component-content">
+                                                                                            <div class="s-img-wrapper">
+                                                                                                <a href="https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/chinese_git/"
+                                                                                                    target="_blank">
+                                                                                                    <div class="s-ratio-box"
+                                                                                                        style="max-width: 720px; max-height: 450px;">
+                                                                                                        <!--大小设定-->
+                                                                                                        <div class="s-ratio-fill"
+                                                                                                            style="padding-bottom: 56.25%;">
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="s-img-wrapper">
+                                                                                                            <img alt="中文Git展示图"
+                                                                                                                class="crop-default ls-is-cached"
+                                                                                                                data-description="中文Git展示图"
+                                                                                                                width="720"
+                                                                                                                height="405"
+                                                                                                                src="https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/chinese_git/photos/展示图.png">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--文本-->
+                                                                        <div class="ten columns s-right-in-row s-rva-text">
+                                                                            <div class="s-item-text-group half-offset-left">
+                                                                                <div class="s-item-title">
+                                                                                    <div class="s-component s-text">
+                                                                                        <h3 class="s-component-content s-font-heading" style="font-size: 130%;">
+                                                                                            中文Git
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="s-item-subtitle">
+                                                                                    <div class="s-component s-text">
+                                                                                        <h6 class="s-component-content s-font-body">
+                                                                                            <strong>
+                                                                                                使用中文命令操作 Git 的简单工具
+                                                                                            </strong>
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="s-item-text">
+                                                                                    <div class="s-component s-text">
+                                                                                        <div class="s-component-content s-font-body">
+                                                                                            <p>英语？不会。</p>
+                                                                                            <p>写代码就写代码背啥英语啊，你说是吧。</p>
+                                                                                            <p>你问我图片为什么被挤成那样了,,,谁叫我当时设计的不是16:9...</p>
+                                                                                            <p><a href="https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/chinese_git/" target="_blank">官网</a>&nbsp;|&nbsp;<a href="https://github.com/DuckDuckStudio/Chinese_git" target="_blank">开源仓库</a></p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!---->
+                                                        </details>
+                                                        <!-- 展示块分界 -->
+                                                        <br>
+                                                        <div data-sorting-index="5" class="s-repeatable-item s-last-row">
+                                                            <div class="clearfix">
+                                                                <div>
+                                                                    <div
+                                                                        class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                        <div class="s-item-media-group">
+                                                                            <div class="s-component s-media">
+                                                                                <div>
+                                                                                    <div class="s-component-content">
+                                                                                        <div class="s-img-wrapper">
+                                                                                            <a href="https://DuckDuckStudio.github.io/yazicbs.github.io/minecraft/"
+                                                                                                target="_blank">
+                                                                                                <div class="s-ratio-box"
+                                                                                                    style="max-width: 720px; max-height: 450px;">
+                                                                                                    <!--大小设定-->
+                                                                                                    <div class="s-ratio-fill"
+                                                                                                        style="padding-bottom: 56.25%;">
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="s-img-wrapper">
+                                                                                                        <img alt="某鸭的Minecraft世界的展示图"
+                                                                                                            class="crop-default ls-is-cached"
+                                                                                                            data-description="某鸭的Minecraft世界"
+                                                                                                            width="720"
+                                                                                                            height="405"
+                                                                                                            src="https://duckduckstudio.github.io/yazicbs.github.io/minecraft/photos/title.png">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--文本-->
+                                                                    <div class="ten columns s-right-in-row s-rva-text">
+                                                                        <div class="s-item-text-group half-offset-left">
+                                                                            <div class="s-item-title">
+                                                                                <div class="s-component s-text">
+                                                                                    <h3 class="s-component-content s-font-heading" style="font-size: 130%;">
+                                                                                        某鸭的minecraft世界
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="s-item-subtitle">
+                                                                                <div class="s-component s-text">
+                                                                                    <h6 class="s-component-content s-font-body">
+                                                                                        <strong>
+                                                                                            在minecraft中的一方天地
+                                                                                        </strong>
+                                                                                    </h6>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="s-item-text">
+                                                                                <div class="s-component s-text">
+                                                                                    <div class="s-component-content s-font-body">
+                                                                                        <p>
+                                                                                            这是我的一个minecraft世界展示网站，里面包含了我建的建筑等的展示图。
+                                                                                        </p>
+                                                                                        <p>
+                                                                                            (有部分建筑是从b站学来的)
+                                                                                        </p>
+                                                                                        <a href="https://DuckDuckStudio.github.io/yazicbs.github.io/minecraft/">[点我直达]</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!---->
+                                                        <!-- 展示块分界 -->
+                                                        <br>
+                                                        <!-- 我猜你在找原神日常的页面哪去了，这个页面转仅本地了 -->
+                                                        <!--板块分界-->
+                                                        <div class="columns sixteen">
+                                                            <div class="s-subtitle">
+                                                                <div class="s-component s-text">
+                                                                    <h4 class="s-component-content s-font-heading" style="text-align: left;">
+                                                                        [以下为小学时期的作品，皆已归档]
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--板块分界-->
+                                                        <div data-sorting-index="4" class="s-repeatable-item">
+                                                            <div class="clearfix">
+                                                                <div>
+                                                                    <div
+                                                                        class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                        <div class="s-item-media-group">
+                                                                            <div class="s-component s-media">
+                                                                                <div>
+                                                                                    <div class="s-component-content">
+                                                                                        <div class="s-img-wrapper">
+                                                                                            <div class="s-ratio-box"
+                                                                                                style="max-width: 720px; max-height: 543px;">
+                                                                                                <div class="s-ratio-fill"
+                                                                                                    style="padding-bottom: 75.42%;">
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="s-img-wrapper">
+                                                                                                    <img alt="鸭鸭跑酷的展示图"
+                                                                                                        class="crop-default ls-is-cached"
+                                                                                                        data-description="一个支持多种游玩方式的跑酷游戏的展示图"
+                                                                                                        width="720"
+                                                                                                        height="543"
+                                                                                                        src="https://duckduckstudio.github.io/yazicbs.github.io/pictures/鸭鸭跑酷.png">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ten columns s-right-in-row s-rva-text">
+                                                                        <div class="s-item-text-group half-offset-left">
+                                                                            <div class="s-item-title">
+                                                                                <div class="s-component s-text">
+                                                                                    <h3 class="s-component-content s-font-heading" style="font-size: 130%;">
+                                                                                        鸭鸭跑酷
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="s-item-subtitle">
+                                                                                <div class="s-component s-text">
+                                                                                    <h6 class="s-component-content s-font-body">
+                                                                                        <strong>最新版本v3.3.9(不再维护)</strong>
+                                                                                    </h6>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="s-item-text">
+                                                                                <div class="s-component s-text">
+                                                                                    <div class="s-component-content s-font-body">
+                                                                                        <p>这个游戏有各种跑酷关卡来让您游玩。</p>
+                                                                                        <p>
+                                                                                            支持单人游玩和双人游玩和三人游玩。(已整合)
+                                                                                        </p>
+                                                                                        <p data-default-letter-spacing="0"
+                                                                                            data-default-font-size="17"
+                                                                                            style="font-size: 17px; letter-spacing: 0px;">
+                                                                                            <strong>目前仅支持电脑端。</strong>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 展示块分界 -->
+                                                    <br>
+                                                    <div data-sorting-index="5" class="s-repeatable-item s-last-row">
+                                                        <div class="clearfix">
+                                                            <div>
+                                                                <div
+                                                                    class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                    <div class="s-item-media-group">
+                                                                        <div class="s-component s-media">
+                                                                            <div>
+                                                                                <div class="s-component-content">
+                                                                                    <div class="s-img-wrapper">
+                                                                                        <a href="https://scratch.mit.edu/projects/607666265"
+                                                                                            target="_blank">
+                                                                                            <div class="s-ratio-box"
+                                                                                                style="max-width: 720px; max-height: 405px;">
+                                                                                                <div class="s-ratio-fill"
+                                                                                                    style="padding-bottom: 56.25%;">
+                                                                                                </div>
+                                                                                                <div class="s-img-wrapper">
+                                                                                                    <img alt="数字华容道的展示图"
+                                                                                                        class="crop-default ls-is-cached"
+                                                                                                        data-description="一款经典的数字华容道游戏的展示图"
+                                                                                                        width="720"
+                                                                                                        height="405"
+                                                                                                        src="https://duckduckstudio.github.io/yazicbs.github.io/pictures/数字华容道.png">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ten columns s-right-in-row s-rva-text">
+                                                                    <div class="s-item-text-group half-offset-left">
+                                                                        <div class="s-item-title">
+                                                                            <div class="s-component s-text">
+                                                                                <h3 class="s-component-content s-font-heading" style="font-size: 130%;">
+                                                                                    数字华容道
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-item-subtitle">
+                                                                            <div class="s-component s-text">
+                                                                                <h6 class="s-component-content s-font-body">
+                                                                                    <strong>如有BUG可在下方进行反馈</strong>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-item-text">
+                                                                            <div class="s-component s-text">
+                                                                                <div class="s-component-content s-font-body">
+                                                                                    <p><i><del>我当然知道图片中的英文翻译（可能）有问题...</del></i></p>
+                                                                                    <p>这是一款经典的数字华容道游戏，玩家在游戏中通过<strong>移动游戏界面中相邻数字方块</strong>，<strong>使其按照1-23的顺序排列</strong>，同时<strong>左上角记录相应所用时间</strong>。</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 展示块分界 -->
+                                                    <br>
+                                                    <div data-sorting-index="0" class="s-repeatable-item">
+                                                        <div class="clearfix">
+                                                            <div>
+                                                                <div class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                    <div class="s-item-media-group">
+                                                                        <div class="s-component s-media">
+                                                                            <div>
+                                                                                <div class="s-component-content">
+                                                                                    <div class="s-img-wrapper">
+                                                                                        <div class="s-ratio-box"
+                                                                                            style="max-width: 720px; max-height: 450px;">
+                                                                                            <div class="s-ratio-fill"
+                                                                                                style="padding-bottom: 62.5%;">
+                                                                                            </div>
+                                                                                            <div class="s-img-wrapper">
+                                                                                                <img alt="鸭鸭小镇"
+                                                                                                    class="crop-default"
+                                                                                                    data-description="鸭鸭小镇的展示图"
+                                                                                                    width="720" height="450"
+                                                                                                    src="https://duckduckstudio.github.io/yazicbs.github.io/pictures/鸭鸭小镇.png">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ten columns s-right-in-row s-rva-text">
+                                                                    <div class="s-item-text-group half-offset-left">
+                                                                        <div class="s-item-title">
+                                                                            <div class="s-component s-text">
+                                                                                <h3 class="s-component-content s-font-heading" style="font-size: 130%;">
+                                                                                    鸭鸭小镇
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-item-subtitle">
+                                                                            <div class="s-component s-text">
+                                                                                <h6 class="s-component-content s-font-body">
+                                                                                    <strong>来我们做的小镇地图玩玩吧~</strong>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-item-text">
+                                                                            <div class="s-component s-text">
+                                                                                <div class="s-component-content s-font-body">
+                                                                                    <p>有跑酷、彩蛋、观测台等有趣的玩法，</p>
+                                                                                    <p>快来鸭鸭小镇和我们一起玩鸭~</p>
+                                                                                    <p>(Tip:<strong>我不会再对此作品进行任何更新，且他们<a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues/216" target="_blank">似乎将这些内容删除了</a>。</strong>)</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 展示块分界 -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--第三栏 START-->
+                                <!--周年庆祝-->
+                                <li class="slide s-section-3 css-1rkmeg4">
+                                    <div class="waypoint"></div>
+                                    <a class="section-anchor"></a>
+                                    <div>
+                                        <div class="transition collapse-bottom-padding s-new-media-section s-section s-rows-section background-image"
+                                            data-react-style="{}" style="text-align: left;">
+                                            <div class="container">
+                                                <div class="columns sixteen">
+                                                    <div class="s-title-group">
+                                                        <div class="s-title sb-title-left-align">
+                                                            <div class="s-component s-text">
+                                                                <h2 class="s-component-content s-font-title" style="text-align: left;">
+                                                                    <strong>周年庆祝</strong>
+                                                                </h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <details>
+                                                    <summary>2024 年</summary>
+                                                    <!-- 展示块分界 -->
+                                                    <br>
+                                                    <div data-sorting-index="5" class="s-repeatable-item s-last-row">
+                                                        <div class="clearfix">
+                                                            <div>
+                                                                <div class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                    <div class="s-item-media-group">
+                                                                        <div class="s-component s-media">
+                                                                            <div>
+                                                                                <div class="s-component-content">
+                                                                                    <div class="s-img-wrapper">
+                                                                                        <div class="s-ratio-box"
+                                                                                            style="max-width: 720px; max-height: 405px;">
+                                                                                            <div class="s-ratio-fill"
+                                                                                                style="padding-bottom: 56.25%;">
+                                                                                            </div>
+                                                                                            <div class="s-img-wrapper">
+                                                                                                <img alt="某鸭的小站建站 3 周年贺图"
+                                                                                                    class="crop-default ls-is-cached"
+                                                                                                    data-description="某鸭的小站建站 3 周年贺图"
+                                                                                                    width="720" height="405"
+                                                                                                    src="https://duckduckstudio.github.io/yazicbs.github.io/pictures/周年庆祝/2024-3.png">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ten columns s-right-in-row s-rva-text">
+                                                                    <div class="s-item-text-group half-offset-left">
+                                                                        <div class="s-item-title">
+                                                                            <div class="s-component s-text">
+                                                                                <h3 class="s-component-content s-font-heading" style="font-size: 130%;">
+                                                                                    某鸭的小站建站 3 周年啦！
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-item-subtitle">
+                                                                            <div class="s-component s-text">
+                                                                                <h6 class="s-component-content s-font-body">
+                                                                                    <strong>2024年</strong>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-item-text">
+                                                                            <div class="s-component s-text">
+                                                                                <div class="s-component-content s-font-body">
+                                                                                    <p>晚了些做贺图，还好提前做了计时显示，才没有错过这个值得庆祝的时刻。</p>
+                                                                                    <p>人生就像网站一样，记录着你的亮点，也记录下了你的不足(BUG)。</p>
+                                                                                    <p>人，并不能一下子做出完美的事，也不可能做出完美的事。就像这个网站，你不可能一次性将他写好，往往需要经过几十几百甚至上千次的提交才能写的像样一点。</p>
+                                                                                    <p>...总之，<strong>路，还很长。</strong>希望接下来的我，也可以像以前一样坚持的活下去。</p>
+                                                                                    <p><strong>加油！一定能行的！</strong></p>
+                                                                                    <p style="text-align: right;">2024年5月17日</p>
+                                                                                    <p style="text-align: right;">网站唯一的维护者：鸭鸭「カモ」</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+                                                </details>
+                                                <details>
+                                                    <summary>2025 年</summary>
+                                                    <!-- 展示块分界 -->
+                                                    <br>
+                                                    <div data-sorting-index="5" class="s-repeatable-item s-last-row">
+                                                        <div class="clearfix">
+                                                            <div>
+                                                                <div class="ten columns s-right-in-row s-rva-text">
+                                                                    <div class="s-item-text-group half-offset-left">
+                                                                        <div class="s-item-title">
+                                                                            <div class="s-component s-text">
+                                                                                <h3 class="s-component-content s-font-heading" style="font-size: 130%;">
+                                                                                    某鸭的小站建站 4 周年啦🎉
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-item-subtitle">
+                                                                            <div class="s-component s-text">
+                                                                                <h6 class="s-component-content s-font-body">
+                                                                                    <strong>2025年</strong>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-item-text">
+                                                                            <div class="s-component s-text">
+                                                                                <div class="s-component-content s-font-body">
+                                                                                    <p>感觉好像没什么好写的，那索性不写了。</p>
+                                                                                    <p>顺便提下：歌单更新了！刷新页面来随机新的歌单！</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+                                                </details>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--第三栏 END-->
+                                <!--第四栏 START-->
+                                <!--本栏和作品集类似，用于展示个人-->
+                                <li class="slide s-section-3 css-1rkmeg4">
+                                    <div class="waypoint"></div>
+                                    <a class="section-anchor"></a>
+                                    <div>
+                                        <div class="transition collapse-bottom-padding s-new-media-section s-section s-rows-section background-image"
+                                            data-react-style="{}" style="text-align: left;">
+                                            <div class="container">
+                                                <div class="columns sixteen">
+                                                    <div class="s-title-group">
+                                                        <div class="s-title sb-title-left-align">
+                                                            <div class="s-component s-text">
+                                                                <h2 class="s-component-content s-font-title" style="text-align: left;">
+                                                                    <strong>我是什么样的人</strong>
+                                                                </h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-sorting-index="5" class="s-repeatable-item s-last-row">
+                                                    <div class="clearfix">
+                                                        <div>
+                                                            <div class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                <div class="s-item-media-group">
+                                                                    <div class="s-component s-media">
+                                                                        <div>
+                                                                            <div class="s-component-content">
+                                                                                <div class="s-img-wrapper">
+                                                                                    <div class="s-ratio-box"
+                                                                                        style="max-width: 720px; max-height: 405px;">
+                                                                                        <div class="s-ratio-fill"
+                                                                                            style="padding-bottom: 56.25%;">
+                                                                                        </div>
+                                                                                        <div class="s-img-wrapper">
+                                                                                            <img alt="个鸭展示图"
+                                                                                                class="crop-default ls-is-cached"
+                                                                                                data-description="个鸭展示图"
+                                                                                                width="720" height="405"
+                                                                                                src="https://duckduckstudio.github.io/yazicbs.github.io/pictures/duck.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ten columns s-right-in-row s-rva-text">
+                                                                <div class="s-item-text-group half-offset-left">
+                                                                    <!--  需要再用 标题和副标题
+                                                                        <div class="s-item-title">
+                                                                            <div class="s-component s-text">
+                                                                                <h3 class="s-component-content s-font-heading" style="font-size: 130%;">
+                                                                                    某鸭的小站建站 3 周年啦！
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-item-subtitle">
+                                                                            <div class="s-component s-text">
+                                                                                <h6 class="s-component-content s-font-body">
+                                                                                    <strong>2024年</strong>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    -->
+                                                                    <div class="s-item-text">
+                                                                        <div class="s-component s-text">
+                                                                            <div class="s-component-content s-font-body">
+                                                                                <p>
+                                                                                    <a href="https://github.com/DuckDuckStudio/Sundry/" target="_blank">Sundry</a>(WinGet 包清单相关维护工具)
+                                                                                    &nbsp;|&nbsp;
+                                                                                    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/" target="_blank">芙芙工具箱</a>
+                                                                                    &nbsp;|&nbsp;
+                                                                                    <a href="https://github.com/DuckDuckStudio/GitHub-Labels-Manager" target="_blank">GLM</a>(GitHub Labels Manager)
+                                                                                </p>
+                                                                                <p>等工具的作者。</p>
+                                                                                <p>GitHub Star: <strong><span id="total-stars">[计算中...]</span></strong></p>
+                                                                                <p>不会聊天...(万能的关键字)</p>
+                                                                                <p>音游人、单机游戏玩家。公共交通爱好者。高中生。</p>
+                                                                                <p style="font-weight: bold;">编程方面:</p>
+                                                                                <p>程序: C♯、Python3、极少的 C++、Scratch3</p>
+                                                                                <p>Web: js(Node.js)、docsify、html、css</p>
+                                                                                <p>CI/CD: GitHub Action</p>
+                                                                                <p>脚本: PowerShell、batch、bash</p>
+                                                                                <script>
+                                                                                    /* 
+                                                                                    * JS输出分类: 位置
+                                                                                    */
+                                                                                    fetch("https://ipapi.co/json/")
+                                                                                        .then(response => response.json())
+                                                                                        .then(data => {
+                                                                                            const city = data.city; // 城市 Zhangzhou
+                                                                                            const province = data.region; // 省份 Fujian
+                                                                                            const country = data.country_code; // 国家代码 CN
+
+                                                                                            const cityMessages = {
+                                                                                                "CN": {
+                                                                                                    "Fujian": "福建",
+                                                                                                    "Guangdong": "广东",
+                                                                                                    "HeBei": "河北",
+                                                                                                    // 四个直辖市
+                                                                                                    "Beijing": "北京",
+                                                                                                    "Shanghai": "上海",
+                                                                                                    "Tianjin": "天津",
+                                                                                                    "Chongqing": "重庆",
+                                                                                                },
+                                                                                            };
+
+                                                                                            let welcomeMessage = "";
+
+                                                                                            if (country === "CN") {
+                                                                                                if (cityMessages[country] && cityMessages[country][province]) {
+                                                                                                    welcomeMessage = `你好，${cityMessages[country][province]}！`;
+                                                                                                } else {
+                                                                                                    console.warn("[WARN(位置-映射)] 你所在的地区没有被映射，请提交Issue或PR补充，记得带上控制台输出[TEST(位置)]")
+                                                                                                    welcomeMessage = `你好，${province}！`;
+                                                                                                }
+                                                                                            } else if (country === "JP") {
+                                                                                                welcomeMessage = `こんにちは、${province}！`;
+                                                                                            } else {
+                                                                                                welcomeMessage = `Hello, ${province}!`;
+                                                                                            }
+
+                                                                                            console.debug(`%c[TEST(位置)] ${country} | ${province} | ${city}`, "color: cyan;");
+
+                                                                                            const helloSpan = document.getElementById("hello-there");
+                                                                                            helloSpan.textContent = welcomeMessage;
+                                                                                        })
+                                                                                        .catch(error => console.error("[ERROR(位置)]获取地区失败:", error));
+
+                                                                                    // ------- 位置 ↑ --- GitHub 状态 ↓ -------
+
+                                                                                    /* 
+                                                                                    * JS输出分类: GitHub状态
+                                                                                    */
+
+                                                                                    const USERNAME = 'DuckDuckStudio';
+
+                                                                                    async function getTotalStars() {
+                                                                                        try {
+                                                                                            let totalStars = 0;
+                                                                                            let page = 1;
+                                                                                            let hasMoreRepos = true;
+
+                                                                                            while (hasMoreRepos) {
+                                                                                                const response = await fetch(`https://api.github.com/users/${USERNAME}/repos?per_page=100&page=${page}`);
+
+                                                                                                if (!response.ok) {
+                                                                                                    throw new Error(`[ERROR(GitHub状态-API)] GitHub API 错误: ${response.statusText}`);
+                                                                                                }
+
+                                                                                                const repos = await response.json();
+                                                                                                if (repos.length === 0) {
+                                                                                                    hasMoreRepos = false;
+                                                                                                } else {
+                                                                                                    for (const repo of repos) {
+                                                                                                        totalStars += repo.stargazers_count;
+                                                                                                    }
+                                                                                                    page++;
+                                                                                                }
+                                                                                            }
+
+                                                                                            //console.log(`一共获取到: ${totalStars} ⭐`);
+                                                                                            document.getElementById('total-stars').innerText = `${totalStars} ⭐`;
+                                                                                        } catch (error) {
+                                                                                            console.error('[ERROR(GitHub状态-替换)] GitHub Star 自动替换出错:', error);
+                                                                                            document.getElementById('total-stars').innerText = `❌ 数据获取出错，参阅输出以获取更多信息`;
+                                                                                        }
+                                                                                    }
+
+                                                                                    getTotalStars();
+                                                                                </script>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 展示块分界 -->
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--第四栏 END-->
+                            </ul>
+                        </div>
+                        <div class=" s-bg-gray s-footer-section s-section show-strikingly-logo background-image lazyloaded"
+                            data-react-style="{}">
+                            <div class="container s-layout-grid">
+                                <!-- 第一列 -->
+                                <div class="columns four half-fixed">
+                                    <div class="s-footer-text" style="text-align: left;">
+                                        <div class="s-component s-text">
+                                            <div class="s-component-content s-font-body">
+                                                <p data-default-letter-spacing="0" data-default-font-size="17" style="font-size: 17px; letter-spacing: 0px;">
+                                                    <strong>关于本网站</strong>
+                                                </p>
+                                                <p>本网站由<strong>鸭鸭「カモ」</strong>建立，</p>
+                                                <p><strong>全站更新时间：<span id="commitTime">[加载中...]</span></strong></p>
+                                                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/">点我查看我的一些小工具</a>
+                                                <br>
+                                                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Interesting/">⚠别点我⚠</a>
+                                                <br>
+                                                <p>本网站专为电脑端制作，手机端如有显示问题敬请谅解，谢谢！</p>
+                                                <!-- 周年庆祝 -->
+                                                <p id="year-happy" style="display: none;"><strong>庆祝某鸭的小站建立 <span id="year-difference">[计算中...]</span> 周年!</strong></p>
+                                                <p>©Duck studio 2021 - <span id="now_year">2024</span></p>
+                                                <script>
+                                                    /* 周年庆祝文本显示(自动修改&显示) */
+                                                    window.onload = function () {
+                                                        var Now = new Date();
+                                                        var currentYear = Now.getFullYear(); // 获取当前年份
+                                                        var startTimeString = currentYear + "-05-14T15:16:17+08:00";
+                                                        var StartTime = new Date(startTimeString); // 转换成日期对象
+
+                                                        // 计算目标时间加上 48 小时后的时间
+                                                        const EndTime = new Date(StartTime.getTime() + (48 * 60 * 60 * 1000)); // 48 小时的毫秒数
+
+                                                        if (Now >= StartTime) {
+                                                            if (Now <= EndTime) {
+                                                                document.getElementById("year-happy").style.display = "block";
+                                                            }
+                                                        }
+                                                    };
+
+                                                    /* 替换年份 */
+                                                    const currentYear = new Date().getFullYear(); // 获取当前年份
+
+                                                    document.getElementById("now_year").textContent = currentYear; // 版权
+                                                    document.getElementById("year-difference").textContent = currentYear - 2021; // 周年庆祝
+                                                </script>
+                                                <!-- END -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 第二列 -->
+                                <div class="columns four half-fixed">
+                                    <div class="s-footer-text" style="text-align: left;">
+                                        <div class="s-component s-text">
+                                            <div class="s-component-content s-font-body">
+                                                <p><a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues" target="_blank">问题反馈</a></p>
+                                                <p><strong>全站最新修改内容:</strong></p>
+                                                <p><strong><span id="commitMessage">[加载中...]</span></strong></p>
+                                                <!-- 使用GitHub API 获取最新 Commit message -->
+                                                <script>
+                                                    /*
+                                                    * JS输出分类: 提交
+                                                    */
+
+                                                    fetch("https://api.github.com/repos/DuckDuckStudio/yazicbs.github.io/commits")
+                                                        .then(response => response.json())
+                                                        .then(data => {
+                                                            let latestCommitMessage;
+                                                            let latestCommitTime;
+                                                            for (let i = 0; i < data.length; i++) {
+                                                                latestCommitMessage = data[i].commit.message.split('\n')[0]; // 获取提交的消息的第一行
+                                                                latestCommitTime = new Date(data[i].commit.committer.date); // 获取提交的时间，并转换为 Date 对象
+                                                                if (!(latestCommitMessage.includes("自动更新网站地图") || latestCommitMessage.includes("build(deps)"))) {
+                                                                    break;
+                                                                }
+                                                                console.debug(`[DEBUG(提交)] 跳过网站地图或依赖更新提交: ${latestCommitMessage}`)
+                                                            }
+
+                                                            // 格式化日期
+                                                            const year = latestCommitTime.getFullYear();
+                                                            const month = (latestCommitTime.getMonth() + 1).toString().padStart(2, '0'); // 月份从0开始，需要加1，并补齐两位数
+                                                            const day = latestCommitTime.getDate().toString().padStart(2, '0'); // 获取日期，并补齐两位数
+
+                                                            // 格式化时间
+                                                            const hours = latestCommitTime.getHours().toString().padStart(2, '0'); // 获取小时，并补齐两位数
+                                                            const minutes = latestCommitTime.getMinutes().toString().padStart(2, '0'); // 获取分钟，并补齐两位数
+
+                                                            // 构建完整的日期时间字符串
+                                                            const formattedDateTime = `${year}年${month}月${day}日 ${hours}时${minutes}分`;
+
+                                                            // 替换 #123 为链接
+                                                            latestCommitMessage = latestCommitMessage.replace(/#(\d+)/g, function (match, issueNumber) {
+                                                                return `<a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues/${issueNumber}" target="_blank">${match}</a>`;
+                                                            });
+
+                                                            document.getElementById("commitMessage").innerHTML = latestCommitMessage;
+                                                            document.getElementById("commitTime").innerHTML = formattedDateTime;
+                                                        })
+                                                        .catch(error => {
+                                                            console.error("[ERROR(提交)]无法获取GitHub上的最新提交信息:", error);
+                                                            document.getElementById("commitMessage").innerHTML = "[加载失败，请检查网络或联系网站管理员]";
+                                                        });
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 第三列 -->
+                                <div class="columns four half-fixed">
+                                    <div class="s-footer-text" style="text-align: left;">
+                                        <div class="s-component s-text">
+                                            <div class="s-component-content s-font-body">
+                                                <!--<p data-default-letter-spacing="0" data-default-font-size="17"
+                                                    style="font-size: 17px; letter-spacing: 0px;">
+                                                    <b>标题</b>
+                                                </p>-->
+                                                <img src="https://duckduckstudio.github.io/yazicbs.github.io/font/做根号的自己.png" style="width: 100%; height: 100%;" alt="做更好的自己">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FUN JS by鸭鸭「カモ」 -->
+        <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/games/simplified/guess_number.js"></script>
+        <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/Festivals.js"></script>
+        <!-------------------------->
+    </body>
+</html>

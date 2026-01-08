@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- Code by Duck Studio -->
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>芙芙工具箱&nbsp;|&nbsp;config.ini 文件说明</title>
+        <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/Fufu_Tools.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="芙芙工具箱 - config.ini 文件说明" name="description">
+        <!--定义了网页的描述，用于搜索引擎显示网页摘要-->
+        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,DuckDuckStudio,Fufu_Tools,芙芙工具箱,文档" name="keywords">
+        <!--定义与网页相关的关键词-->
+        <script>
+            // 前面不要加空格
+            console.log(`
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+
+本站维护人员：
+鸭鸭「カモ」
+欢迎关注我的bilibili频道：@鸭鸭_カモ
+https://space.bilibili.com/2054654702/
+回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
+            `)
+        </script>
+        <style>
+            body {
+                background-color: #6dc0ede1; /* 蓝色背景 */
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* 扩距
+            *    margin-top: 1%;
+            *    margin-bottom: 1%;
+            *    margin-left: 1%;
+            *    margin-right: 1%;
+            *    such as: <div class="container" style="margin-right: 1%; margin-left: 1%;">左右扩距</div>
+            */
+            
+            .container {
+                background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+
+            h1 {
+                color: #333;
+                font-size: 40px;
+            }
+
+            h2 {
+                color: #333;
+                font-size: 24px; /* 调整标题文本大小 */
+                margin-bottom: 10px; /* 调整标题与下方段落的间距 */
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: center;">
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/展示图.png" alt="展示图" width="960" height="540">
+            </div>
+            <p>&nbsp;</p>
+
+            <div style="text-align: center;">
+                <h1>芙芙工具箱 config.ini 文件说明</h1>
+                <i>适用于芙芙工具箱&nbsp;for&nbsp;windows</i>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="container">
+                <h2 id="主要配置文件">主要配置文件</h2>
+                <p>(位于<code>.\config.ini</code>)</p>
+                <p>您一般不需要去修改主要配置文件</p>
+            </div>
+
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="[实验性]休息一下配置文件">[实验性]休息一下配置文件</h2>
+                <p>(位于<code>.\Tools\【实验性工具】\休息一下\config.ini</code>)</p>
+                <p>您可以通过编辑<code>time_s</code>的值来自定义提醒时间，默认为<code>7200</code>(2h)，单位为秒(s)，实际输入时不要带单位。</p>
+            </div>
+
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="获取目录中的文件名配置文件">获取目录中的文件名配置文件</h2>
+                <p>(位于<code>.\Tools\文件名\config.ini</code>)</p>
+                <ul>
+                    <li>
+                        <h3>Ignored file format (忽略的文件后缀)</h3>
+                        <p>您可以通过编辑<code>Ignored file format</code>的值来自定义获取时忽略的文件后缀，以<code>,</code>分隔，输入时不要带<code>.</code>，用一个空格(<code>&nbsp;</code>)来表示不带后缀的文件。</p>
+                        <p>示例：<code>Ignored&nbsp;file&nbsp;format&nbsp;=&nbsp;png,&nbsp;,jpeg</code>&nbsp;(忽略后缀名为<code>png</code>、<code>jpeg</code>与不带后缀名的文件)</p>
+                        <p><strong>将值设为<code>No_Ignored</code>以跳过忽略规则，空值将忽略没有后缀的文件。</strong></p>
+                    </li>
+                    <li>
+                        <h3>Ignored folders (忽略的文件夹)</h3>
+                        <p>您可以通过编辑<code>Ignored folders</code>的值来自定义获取时忽略的文件夹，以<code>,</code>分隔。</p>
+                        <p>示例：<code>Ignored&nbsp;folders&nbsp;=&nbsp;.vs,.vscode,.git,配置文件</code>&nbsp;(忽略名为<code>.vs</code>、<code>.vscode</code>、<code>.git</code>与<code>配置文件</code>的文件夹。)</p>
+                    </li>
+                    <li>
+                        <h3>Specified file format (指定的文件后缀)</h3>
+                        <p>您可以通过编辑<code>Specified file format</code>的值来自定义获取时只获取的文件后缀，以<code>,</code>分隔，输入时不要带<code>.</code>，用一个空格(<code>&nbsp;</code>)来表示不带后缀的文件。</p>
+                        <p>示例：<code>Specified&nbsp;file&nbsp;format&nbsp;=&nbsp;png,&nbsp;,jpeg</code>&nbsp;(只获取后缀名为<code>png</code>、<code>jpeg</code>与不带后缀名的文件)</p>
+                        <p><strong>将值设为<code>No_Specified</code>以跳过指定规则，空值将指定没有后缀的文件。</strong></p>
+                    </li>
+                </ul>
+                <h3>提醒:</h3>
+                <p><code>Specified file format</code>建议不要与其他参数共用，避免输出杂乱。</p>
+                <p><code>Specified file format</code>的优先级最高，在定义了<code>Specified file format</code>时将不会执行其他规则。</p>
+            </div>
+
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="查看电脑配置配置文件">查看电脑配置配置文件</h2>
+                <p>(位于<code>.\Tools\查看电脑配置\config.ini</code>)</p>
+                <p>您可以在工具中对配置文件进行修改。</p>
+                <p>如果你已设置 总是显示详细信息 ，则你可以使用同目录下的<code>fast_return_default_config.py</code>工具快速还原默认配置。</p>
+                <p>如果你希望手动还原，则你可以手动修改配置文件中的<code>always_open_more_info</code>的值为<code>False</code>。</p>
+            </div>
+
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="缓存清理配置文件">缓存清理配置文件</h2>
+                <p>(位于<code>.\Tools\缓存清理\config.ini</code>)</p>
+                <ul>
+                    <li>
+                        <h3>customer_temp_folder (自定义缓存文件夹)</h3>
+                        <p>你可以通过指定该项的值指定<strong>一个</strong>缓存文件夹，将值修改为<code>False</code>即可取消设置。</p>
+                    </li>
+                    <li>
+                        <h3>always_clear_ctr (总是同步清理自定义缓存文件夹)</h3>
+                        <p>使用该项时，<code>customer_temp_folder</code>必须先指定一个值。</p>
+                        <p>你可以在程序中修改该项为<code>True</code>，将该项手动修改为<code>False</code>即可取消设置。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="连接检测相关工具配置文件">连接检测相关工具配置文件</h2>
+                <p>(位于<code>.\Tools\连接检测\config.ini</code>)</p>
+                <p>注意：该配置文件在连接检测相关工具中通用。</p>
+                <ul>
+                    <li>
+                        <h3>time (自定义检测间隔)</h3>
+                        <p>你可以通过指定该类下的项的值来指定检测间隔，单位为秒(s)，指定时请不要带单位。</p>
+                        <ul>
+                            <li>
+                                <h4>wait (网络连接检测工具的间隔)</h4>
+                                <p>指定该项的值来指定<strong>网络连接检测</strong>工具的检测间隔。</p>
+                                <p>默认值为<code>10</code>。</p>
+                            </li>
+                            <li>
+                                <h4>wait-github (GitHub连接检测工具的间隔)</h4>
+                                <p>指定该项的值来指定<strong>GitHub连接检测</strong>工具的检测间隔。</p>
+                                <p>默认值为<code>15</code>。</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>url 类下的 url 项 (自定义检测链接)</h3>
+                        <p>你可以通过指定该项的值来指定检测时使用的url。</p>
+                        <p>默认值为<code>https://www.bilibili.com/</code></p>
+                    </li>
+                    <li>
+                        <h3>Translation 类下的 Error-message 项 (是否翻译错误信息)</h3>
+                        <p>你可以修改此项来选择出错时获取<strong>更详细的英文信息(<code>False</code>)</strong>或者<strong>更简洁的中文信息(<code>True</code>)</strong>。</p>
+                        <p>默认值为<code>True</code>。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="随机密码生成配置文件">随机密码生成配置文件</h2>
+                <p>(位于<code>.\Tools\随机密码生成\config.ini</code>)</p>
+                <p>您可以直接在工具中对配置文件进行修改。</p>
+                <h3>注意</h3>
+                <p>工具中修改时会自动忽略<code>;</code>，因为<code>;</code>在ini中被视为注释。</p>
+                <p>工具中修改时会自动转义<code>%</code>为<code>%%</code>，您不用手动转义。</p>
+            </div>
+
+            <br>
+            <div class="container">
+                <h2 id="自动打包py文件">自动打包py文件</h2>
+                <p>(位于<code>.\Tools\【实验性工具】\自动化\自动打包所有py文件\config.ini</code>)</p>
+                <p>你可以通过修改<code>Compile_C</code>的值来指定使用Nuitka打包时使用的编译器，默认为<code>mingw64</code></p>
+                <p>可选值有<code>clang</code>、<code>mingw64</code></p>
+                <p>附加选项:</p>
+                <p><i>对于 v1.3.6 及之前的版本:</i></p>
+                <p>由于构建指令时的特殊结构，<strong>理论上</strong>您也可以在<code>Compile_C</code>的值中添加附加参数。</p>
+                <p>默认的打包指令为<code>python -m nuitka (--disable-console) --output-dir=\"{output_dir}\" --show-progress (--windows-icon-from-ico=\"{icon_path}\") --onefile --remove-output --{compile} {file_path}</code></p>
+                <p>例如，你可以将<code>Compile_C</code>的值设为<code>clang --show-memory</code>来添加<code>--show-memory</code>参数。</p>
+                <p><strong>虽然您可以这样做，但这样做出现的错误我将不会处理。</strong></p>
+                <p><i>对于 v1.3.7 及之后的版本:</i></p>
+                <p>由于在 v1.3.7 版本中对命令传递方式的修改 (字符串 → 列表)，前面的参数添加方式将不再适用。</p>
+            </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: right;">
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
+                <p>最后更新：<strong>2024/5/22</strong></p>
+                <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
+            </div>
+        </div>
+    </body>
+</html>

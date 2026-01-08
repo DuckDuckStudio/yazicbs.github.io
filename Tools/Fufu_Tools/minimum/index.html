@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Code by Duck Studio -->
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>芙芙工具箱&nbsp;最低系统要求</title>
+        <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/Fufu_Tools.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="芙芙工具箱 - 最低系统要求" name="description">
+        <!--定义了网页的描述，用于搜索引擎显示网页摘要-->
+        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,DuckDuckStudio,Fufu_Tools,芙芙工具箱" name="keywords">
+        <!--定义与网页相关的关键词-->
+        <script>
+            // 前面不要加空格
+            console.log(`
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+
+本站维护人员：
+鸭鸭「カモ」
+欢迎关注我的bilibili频道：@鸭鸭_カモ
+https://space.bilibili.com/2054654702/
+回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
+            `)
+        </script>
+        <style>
+            body {
+                background-color: #6dc0ede1; /* 蓝色背景 */
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* 扩距
+            *    margin-top: 1%;
+            *    margin-bottom: 1%;
+            *    margin-left: 1%;
+            *    margin-right: 1%;
+            *    such as: <div class="container" style="margin-right: 1%; margin-left: 1%;">左右扩距</div>
+            */
+            
+            .container {
+                background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+
+            h1 {
+                color: #333;
+                font-size: 40px;
+            }
+
+            h2 {
+                color: #333;
+                font-size: 24px; /* 调整标题文本大小 */
+                margin-bottom: 10px; /* 调整标题与下方段落的间距 */
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: center;">
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/展示图.png" alt="展示图" width="960" height="540">
+            </div>
+            <p>&nbsp;</p>
+
+            <div style="text-align: center;">
+                <h1>最低系统要求</h1>
+                <i>适用于芙芙工具箱&nbsp;for&nbsp;windows</i>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="container">
+                <h2>最低要求：</h2>
+                <i>对于<strong>lite</strong>版↓</i>
+                <p>Windows&nbsp;<strong>7</strong></p>
+                <p>Python&nbsp;<strong>3.7</strong>&nbsp;<i>(Tip: Python 3.9 及以上版本不支持 Windows7)</i></p>
+                <hr>
+                <i>对于打包版↓</i>
+                <p>Windows&nbsp;<strong>10</strong></p>
+                <p><i>(打包py/pyw文件)</i> Python&nbsp;3.7&nbsp;+&nbsp;Nuitka/Pyinstaller</p>
+            </div>
+            
+            <div class="container">
+                <h2>如何验证配置</h2>
+                <ul>
+                    <li>
+                        <p>你可以使用这个命令来验证 Python 是否正确配置：</p>
+                        <p><code>python --version</code></p>
+                        <p>一般情况下，你将会看到类似这样的输出：</p>
+                        <p><code>
+                            PS &gt; python --version<br>
+                            Python 3.13.3
+                        </code></p>
+                        <p>Python 后面带的数字代表你使用的 Python 版本。</p>
+                    </li>
+                    <li>
+                        <p>你可以使用这个命令来验证 Pyinstaller 是否正确配置：</p>
+                        <p><code>pyinstaller --version</code></p>
+                        <p>一般情况下，你将会看到类似这样的输出：</p>
+                        <p><code>
+                            PS &gt; pyinstaller --version<br>
+                            6.12.0
+                        </code></p>
+                        <p>这个数字代表你使用的 Pyinstaller 版本。</p>
+                    </li>
+                    <li>
+                        <p>你可以参考 Nuitka 文档来配置 Nuitka: <a href="https://pypi.org/project/Nuitka/#requirements" target="_blank">Nuitka · PyPI</a></p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h2>注意事项</h2>
+                <ul>
+                    <li>
+                        <p>版本带<code>lite</code>的，要先安装 Python 并安装库文件后才能使用。</p>
+                    </li>
+                    <li>
+                        <p>使用<code>lite</code>版自带的安装库文件程序前必须先安装 Python 并<strong>正确配置环境变量</strong>。</p>
+                    </li>
+                    <li>
+                        <p>使用<code>.bat</code>后缀的小工具时请<strong>确保您的终端支持<code>UTF-8</code>编码</strong></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: right;">
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/">回到首页</a>
+                <p>最后更新：<strong>2025/5/20</strong></p>
+                <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues" target="_blank">[提交<strong>本页面</strong>的反馈]</a><br>
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues" target="_blank">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    background-color: #f5f5dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0; /* 防止默认外边距影响居中 */
+}
+
+.container {
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

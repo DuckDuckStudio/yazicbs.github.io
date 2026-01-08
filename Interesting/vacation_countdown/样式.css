@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #eadbbf;
+}
+
+.container {
+    text-align: center;
+}
+
+/* For PC */
+#Time-Remaining {
+    font-size: 1200%;
+}
+
+.seconds {
+    font-size: 300%;
+}
+
+.comma {
+    color: #888;
+    font-size: 0.7em;
+}
+
+/* For Phone */
+@media (max-width: 900px) {
+    #Time-Remaining {
+        font-size: 450%;
+    }
+    
+    .seconds {
+        font-size: 200%;
+    }
+}

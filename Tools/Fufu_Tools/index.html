@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!-- Code by Duck Studio -->
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>芙芙工具箱 - 一个开源的实用工具箱</title>
+        <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/Fufu_Tools.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="芙芙工具箱 - 一个开源的实用工具箱" name="description">
+        <!--定义了网页的描述，用于搜索引擎显示网页摘要-->
+        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,DuckDuckStudio,Fufu_Tools,芙芙工具箱" name="keywords">
+        <!--定义与网页相关的关键词-->
+        <script>
+            // 前面不要加空格
+            console.log(`
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+
+本站维护人员：
+鸭鸭「カモ」
+欢迎关注我的bilibili频道：@鸭鸭_カモ
+https://space.bilibili.com/2054654702/
+回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
+            `)
+        </script>
+        <style>
+            body {
+                background-color: #6dc0ede1; /* 蓝色背景 */
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* 扩距
+            *    margin-top: 1%;
+            *    margin-bottom: 1%;
+            *    margin-left: 1%;
+            *    margin-right: 1%;
+            *    such as: <div class="container" style="margin-right: 1%; margin-left: 1%;">左右扩距</div>
+            */
+            
+            .container {
+                background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+            
+            ul {
+                padding: 0; /* 去除列表默认的内边距 */
+                list-style: none; /* 去除列表的默认样式 */
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .warning {
+                background-color: #fff8c5;
+                text-align: center;
+                border-bottom: 2px solid #eed888;
+                border-radius: 4px;
+                margin-bottom: 1%;
+            }
+        </style>
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 1%; margin-right: 1%; margin-left: 1%;">
+            <div class="warning">该仓库于 2025 年 11 月 23 日被所有者归档，现为只读。</div>
+
+            <div style="text-align: center;">
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/展示图.png" alt="展示图" width="960" height="540">
+                <h1 style="font-size: 40px;">芙芙工具箱</h1>
+                <i>一个开源的实用工具箱</i>
+            </div>
+            <p>&nbsp;</p>
+            <!-- 推荐理由 -->
+            <h2>代码全部开源，拒绝恶意代码</h2>
+            <a href="https://www.github.com/DuckDuckStudio/Fufu_Tools/" target="_blank">
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/开源.png" alt="Github仓库展示图" width="892" height="400">
+                <!-- 1784 x 772 -->
+            </a>
+
+            <div style="text-align: right;">
+                <h2>查看文档，解决你的一切疑惑</h2>
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki" target="_blank">
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/wiki.png" alt="wiki展示图" style="width: 50%; height: 50%;">
+                    <!-- 1220 x 668 -->
+                </a>
+            </div>
+
+            <h2>含有众多实用小工具，满足你的各种需求</h2>
+            <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/程序.png" alt="程序展示图" width="724" height="325">
+            <!-- 724 x 325 -->
+
+            <hr />
+
+            <div style="text-align: center;">
+                <h2 style="font-size: 35px;">现在下载&nbsp;芙芙工具箱</h2>
+            </div>
+
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>正式版</th>
+                            <th>预览版</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>工具箱</td>
+                            <td><a id="toolbox-stable-version">加载中...</a></td>
+                            <td><a id="toolbox-pre-release-version">加载中...</a></td>
+                        </tr>
+                        <tr>
+                            <td>开发工具包</td>
+                            <td><a id="devtools-stable-version">加载中...</a></td>
+                            <td><a id="devtools-pre-release-version">加载中...</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="text-align: center;">
+                <h2>相关链接</h2>
+            </div>
+
+            <div class="container" style="text-align: center;">
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/minimum/"><strong>系统要求</strong></a>
+                &nbsp;|&nbsp;
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/" target="_blank"><strong>开源仓库</strong></a>
+                &nbsp;|&nbsp;
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/latest">最新版本<strong>更新内容</strong></a>
+                &nbsp;|&nbsp;
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/versions/"><strong>版本说明</strong></a>
+                &nbsp;|&nbsp;
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/分类解释/"><strong>分类解释</strong></a>
+                &nbsp;|&nbsp;
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">官方<strong>文档</strong></a>
+                &nbsp;|&nbsp;
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues" target="_blank">反馈<strong>问题</strong> / 提出<strong>建议</strong></a>
+                &nbsp;|&nbsp;
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">作者主页</a>
+                &nbsp;|&nbsp;
+                <a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/&sharesource=qzone&title=芙芙工具箱&pics=https://duckduckstudio.github.io/yazicbs.github.io/icos/Fufu_Tools.png&summary=由%20鸭鸭「カモ」%20制作的一个开源的实用工具箱" target="_blank">分享到QQ空间</a>
+            </div>
+
+            <div style="text-align: center;">
+                <h2>许可文件概览</h2>
+            </div>
+
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><span style="color: #38a449;">✓</span> 许可</th>
+                            <th><span style="color: #f85149;">✕</span> 禁止</th>
+                            <th><span style="color: #4493f8;">[!]</span> 条件</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span style="color: #38a449;">✓</span> 代码使用</td>
+                            <td><span style="color: #f85149;">✕</span> 发表完整代码</td>
+                            <td><span style="color: #4493f8;">[!]</span> 遵守许可文件</td>
+                        </tr>
+                        <tr>
+                            <td><span style="color: #38a449;">✓</span> 发表使用部分代码的程序</td>
+                            <td><span style="color: #f85149;">✕</span> 将复制品提供给第三方</td>
+                            <td><span style="color: #4493f8;">[!]</span> 标注原作者</td>
+                        </tr>
+                        <tr>
+                            <td><span style="color: #38a449;">✓</span> 闭源</td>
+                            <td><span style="color: #f85149;">✕</span> 保证</td>
+                            <td><span style="color: #4493f8;">[!]</span> 指定“不推广”</td>
+                        </tr>
+                        <tr>
+                            <td><span style="color: #38a449;">✓</span> 发行版使用</td>
+                            <td><span style="color: #f85149;">✕</span> 额外声明</td>
+                            <td><span style="color: #4493f8;">[!]</span> 司法管辖区位于 中国福建省厦门市</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span style="color: #f85149;">✕</span> 使用部分著作权</td>
+                            <td><span style="color: #4493f8;">[!]</span> 以最新版许可文件为准</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span style="color: #f85149;">✕</span> 商业用途</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>本概览不作为最终协议内容，仅作简单总结。最终协议请查看<a href="https://github.com/DuckDuckStudio/Fufu_Tools/blob/main/LICENSE" target="_blank">LICENSE文件</a></strong> <span style="float: right;">许可文件最后更新:</span></p>
+                <p><strong>对于许可文件，以最新版为准，请注意许可文件更新公告！(见右侧→)</strong> <span style="float: right;">2025年3月24日 更新软著登记号</span></p>
+            </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: right;">
+                <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues" target="_blank">[提交<strong>本页面</strong>的反馈]</a><br>
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues" target="_blank">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
+            </div>
+        </div>
+
+        <script>
+            // 获取版本号并更新HTML内容
+            function getLatestVersion(repo, stable_version, pre_release_version) {
+                fetch(`https://api.github.com/repos/${repo}/releases`)
+                    .then(response => response.json()) // 将响应转为 json 格式
+                    .then(data => {
+                        // 查找最新的 Stable 版本
+                        const latestStableVersion = data
+                            .filter(release => !release.prerelease) // 筛选返回的 json 中的 "prerelease" 为 false 的版本
+                            .sort((a, b) => new Date(b.published_at) - new Date(a.published_at))[0]; // 按发布时间排序，取最新的版本
+
+                        // 查找最新的 Pre-release 版本
+                        const latestPreReleaseVersion = data
+                            .filter(release => release.prerelease) // 筛选返回的 json 中的 "prerelease" 为 true 的版本
+                            .sort((a, b) => new Date(b.published_at) - new Date(a.published_at))[0]; // 按发布时间排序，取最新的版本
+
+                        // 确定都有获取到
+                        if (latestStableVersion && latestPreReleaseVersion) {
+                            if (new Date(latestStableVersion.published_at) > new Date(latestPreReleaseVersion.published_at)) {
+                                // 如果最新的 Stable 版本比最新的 Pre-release 版本新，则都显示 Stable 版本
+                                document.getElementById(stable_version).innerHTML = latestStableVersion.tag_name;
+                                document.getElementById(stable_version).href = latestStableVersion.html_url;
+                                document.getElementById(pre_release_version).innerHTML = latestStableVersion.tag_name;
+                                document.getElementById(pre_release_version).href = latestStableVersion.html_url;
+                            } else {
+                                // 否则各显示各的
+                                document.getElementById(stable_version).innerHTML = latestStableVersion.tag_name;
+                                document.getElementById(stable_version).href = latestStableVersion.html_url;
+                                document.getElementById(pre_release_version).innerHTML = latestPreReleaseVersion.tag_name;
+                                document.getElementById(pre_release_version).href = latestPreReleaseVersion.html_url;
+                            }
+                        } else if (latestStableVersion) {
+                            // 如果只有 Stable 版本
+                            document.getElementById(stable_version).innerHTML = latestStableVersion.tag_name;
+                            document.getElementById(stable_version).href = latestStableVersion.html_url;
+                            document.getElementById(pre_release_version).innerHTML = "暂无预览版本";
+                        } else if (latestPreReleaseVersion) {
+                            // 如果只有 Pre-release 版本
+                            document.getElementById(stable_version).innerHTML = "暂无正式版本";
+                            document.getElementById(pre_release_version).innerHTML = latestPreReleaseVersion.tag_name;
+                            document.getElementById(pre_release_version).href = latestPreReleaseVersion.html_url;
+                        } else {
+                            // 如果啥都没有
+                            document.getElementById(stable_version).innerHTML = "暂无正式版本";
+                            document.getElementById(pre_release_version).innerHTML = "暂无预览版本";
+                        }
+                    })
+                    .catch(error => {
+                        console.error(`获取最新发行版时出错: ${error}`);
+                        document.getElementById(stable_version).innerHTML = "获取失败";
+                        document.getElementById(pre_release_version).innerHTML = "获取失败";
+                    })
+            }
+
+            // 调用 getLatestVersion 方法获取并更新版本信息
+            getLatestVersion("DuckDuckStudio/Fufu_Tools", "toolbox-stable-version", "toolbox-pre-release-version");
+            getLatestVersion("DuckDuckStudio/Fufu_Dev_Tools", "devtools-stable-version", "devtools-pre-release-version");
+        </script>
+    </body>
+</html>
