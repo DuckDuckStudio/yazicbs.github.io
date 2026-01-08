@@ -62,7 +62,6 @@ jobs:
           rm -rv .action_scripts
           rm -v .gitignore
           rm -v README.md
-          rm -v CONTRIBUTING.md
           rm -v Tools/chinese_git/notice/Notice.md
 
       - name: 设置页面
