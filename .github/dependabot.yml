@@ -13,10 +13,6 @@ updates:
     directory: "Tools/Fufu_Tools/wiki/files/text/" # Location of package manifests
     schedule:
       interval: "daily"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: ".action_scripts/JavaScript/" # Location of package manifests
-    schedule:
-      interval: "daily"
   - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
