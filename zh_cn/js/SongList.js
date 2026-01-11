@@ -170,6 +170,12 @@ const playlists = [
     // ???
     [
         {
+            name: "寂寞的人伤心的歌 ↑",
+            artist: "龙梅子、杨海彪",
+            url: "https://music.163.com/song/media/outer/url?id=2702118660.mp3",
+            cover: "http://p2.music.126.net/ebmUcD4mWVjsIM68ljkDAw==/109951171089744954.jpg"
+        },
+        {
             name: "欢乐斗哈基米",
             artist: "困困困困困",
             url: "https://music.163.com/song/media/outer/url?id=2628969575.mp3",
@@ -239,8 +245,8 @@ const playlistWeights = [
     0.9, // 游戏
     1, // 纯音乐
     0.1, // 当初是你要分开，分开就分开
-    0.3, // 春节
-    0.01, // ???
+    0.5, // 春节
+    0.1, // ???
     0.001, // 哈?
 ];
 
