@@ -35,6 +35,8 @@ def check_link(url: str, IGNORE_URLS: list[str]) -> tuple[str | int, str]:
             return "404 Not Found", "failed"
         elif 400 <= response.status_code < 500:
             return response.status_code, "failed"
+        elif url.startswith("http://"):
+            return "Mixed Content，请改用 https://", "failed"
         else:
             return response.status_code, "passed"
     except requests.ConnectionError:
