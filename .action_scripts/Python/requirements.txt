@@ -1,2 +1,1 @@
-requests==2.32.5
-colorama==0.4.6
+catfood==1.0.4

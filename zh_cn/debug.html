@@ -56,7 +56,7 @@ ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
         <link rel="canonical" href="https://duckduckstudio.github.io/yazicbs.github.io/">
         <!-- 指定网页的规范化 URL，即该网页的主要版本 -->
 
-        <script src="https://unpkg.com/vconsole@3.15.1/dist/vconsole.min.js"></script>
+        <script type="module" src="https://unpkg.com/vconsole@3.15.1/dist/vconsole.min.js"></script>
         <!--https://unpkg.com/vconsole@latest/dist/vconsole.min.js-->
         <script>
             // VConsole 默认会挂载到 `window.VConsole` 上
@@ -109,8 +109,8 @@ https://space.bilibili.com/2054654702/
         <!-- 官方教程：https://aplayer.js.org/#/zh-Hans/ -->
         <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
         <div id="aplayer"></div>
-        <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
-        <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/SongList.js"></script>
+        <script type="module" src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+        <script type="module" src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/SongList.mjs"></script>
         <!-- END -->
         <div>
             <div id="s-content" class="s-variation-default s-font-heading-hei s-font-title-default s-font-body-default s-font-button-hei s-font-weight-heading-default s-font-weight-title-default s-font-weight-body-default s-font-weight-button-default s-theme-alignment-center">
@@ -186,7 +186,7 @@ https://space.bilibili.com/2054654702/
                                                                             txt[timeIndex] = "⭐SUPER NIGHT TIME⭐";
                                                                         }
 
-                                                                        console.debug(`%c[TEST(标语-时间)] 当前时间 ${new Date()} | ${currentHour}时 | ${txt[13]}`, "color: cyan;");
+                                                                        console.debug(`%c[TEST(标语-时间)] 当前时间 ${new Date()} | ${currentHour}时 | ${txt[timeIndex]}`, "color: cyan;");
 
                                                                         // 生成一个新的随机顺序的文字数组
                                                                         function getRandomOrder(array) {
@@ -1060,7 +1060,7 @@ https://space.bilibili.com/2054654702/
                                                                                 <p>音游人、单机游戏玩家。公共交通爱好者。高中生。</p>
                                                                                 <p style="font-weight: bold;">编程方面:</p>
                                                                                 <p>程序: C♯、Python3、极少的 C++、Scratch3</p>
-                                                                                <p>Web: js(Node.js)、docsify、html、css</p>
+                                                                                <p>Web: JS(Node.js)、TS、docsify、html、css</p>
                                                                                 <p>CI/CD: GitHub Action</p>
                                                                                 <p>脚本: PowerShell、batch、bash</p>
                                                                                 <script>
@@ -1188,7 +1188,7 @@ https://space.bilibili.com/2054654702/
                                                 <p>本网站专为电脑端制作，手机端如有显示问题敬请谅解，谢谢！</p>
                                                 <!-- 周年庆祝 -->
                                                 <p id="year-happy" style="display: none;"><strong>庆祝某鸭的小站建立 <span id="year-difference">[计算中...]</span> 周年!</strong></p>
-                                                <p>©Duck studio 2021 - <span id="now_year">2024</span></p>
+                                                <p>©Duck studio 2021 - <span id="now_year">2026</span></p>
                                                 <script>
                                                     /* 周年庆祝文本显示(自动修改&显示) */
                                                     window.onload = function () {
@@ -1296,8 +1296,8 @@ https://space.bilibili.com/2054654702/
             </div>
         </div>
         <!-- FUN JS by鸭鸭「カモ」 -->
-        <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/games/simplified/guess_number.js"></script>
-        <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/Festivals.js"></script>
+        <script type="module" src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/games/simplified/guess_number.mjs"></script>
+        <script type="module" src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/Festivals.mjs"></script>
         <!-------------------------->
     </body>
 </html>

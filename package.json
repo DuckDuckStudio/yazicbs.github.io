@@ -1,0 +1,37 @@
+{
+  "name": "yazicbs.github.io",
+  "version": "2026.1.14",
+  "description": "鸭鸭「カモ」的个人网站",
+  "keywords": [
+    "website"
+  ],
+  "homepage": "https://github.com/DuckDuckStudio/yazicbs.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/DuckDuckStudio/yazicbs.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuckDuckStudio/yazicbs.github.io.git"
+  },
+  "license": "UNLICENSED",
+  "author": "鸭鸭「カモ」",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint --rule \"semi: [error, always]\""
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.1",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@eslint/css": "^0.14.1",
+    "@eslint/js": "^9.39.2",
+    "@eslint/json": "^0.14.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.0.8",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
+    "typescript-eslint": "^8.53.0"
+  }
+}

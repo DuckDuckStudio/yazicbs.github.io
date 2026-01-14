@@ -12,5 +12,19 @@ test.*
 
 # npm
 node_modules/
-package-lock.json
-package.json
+
+# TypeScript / tsc
+**/*.js
+**/*.js.map
+
+**/*.mjs
+**/*.mjs.map
+
+**/*.d.ts
+**/*.d.ts.map
+
+**/*.d.mts
+**/*.d.mts.map
+
+# Eslint
+!eslint.config.js
