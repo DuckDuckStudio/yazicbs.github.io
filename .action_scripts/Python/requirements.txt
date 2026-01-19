@@ -1,1 +1,1 @@
-catfood==1.0.4
+catfood==1.0.5
