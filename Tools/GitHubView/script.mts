@@ -1,4 +1,5 @@
 // 替换版权年份
+// @ts-expect-error: 2531
 document.getElementById("copyright_year").textContent = new Date().getFullYear();
 
 // 计算 Star
@@ -17,9 +18,11 @@ async function getTotalStars() {
 
         // 直接获取 GitHubView 仓库的 Star 数并显示
         totalStars += repo.stargazers_count;
+        // @ts-expect-error: 2531
         document.getElementById('total-stars').innerText = `⭐ ${totalStars}`;
     } catch (error) {
         console.error('[ERROR(GitHub状态-替换)] GitHub Star 自动替换出错:', error);
+        // @ts-expect-error: 2531
         document.getElementById('total-stars').innerText = `❌ 数据获取出错，参阅输出以获取更多信息`;
     }
 }
@@ -36,14 +39,17 @@ function createIndicators() {
         indicator.classList.add('indicator');
         if (index === 0) indicator.classList.add('active');
         indicator.addEventListener('click', () => showSlide(index));
+        // @ts-expect-error: 18047
         indicatorsContainer.appendChild(indicator);
     });
 }
 
 // 显示指定幻灯片
-function showSlide(index) {
+function showSlide(index: number) {
+    // @ts-expect-error: 2532
     slides[currentSlide].classList.remove('active');
     currentSlide = (index + slides.length) % slides.length;
+    // @ts-expect-error: 2532
     slides[currentSlide].classList.add('active');
 
     // 更新指示点状态

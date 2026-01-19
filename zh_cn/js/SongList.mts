@@ -224,7 +224,7 @@ const playlists = [
 ];
 
 // 歌单名称
-const playlistNames = {
+const playlistNames: Record<number, string> & { default: string } = {
     0: "小甜甜",
     1: "游戏",
     2: "纯音乐",
@@ -254,12 +254,12 @@ const playlistWeights = [
 const totalWeight = playlistWeights.reduce((sum, w) => sum + w, 0);
 
 // 按加权随机选择歌单索引
-function weightedRandomIndex(weights) {
+function weightedRandomIndex(weights: number[]): number {
     // 具体概率请见测试文件夹中的概率测试，并将 weights 改为前面定义的歌单权重。
-    var r = Math.random() * totalWeight;
-    var acc = 0;
-    for (var i = 0; i < weights.length; i++) {
-        acc += weights[i];
+    const r = Math.random() * totalWeight;
+    let acc = 0;
+    for (let i = 0; i < weights.length; i++) {
+        acc += weights[i]!;
         if (r < acc) return i;
     }
     return weights.length - 1; // fallback
@@ -274,17 +274,19 @@ const SongListSet = playlistNames[randomPlaylistIndex] || playlistNames.default;
 
 if (SongListSet === playlistNames.default) {
     console.warn(`${SongListSet}，随机到的数字是${randomPlaylistIndex}`);
-    console.debug("%c[FUN] 不喜欢没有边界感的调用。", "color: #d6aaff;")
+    console.debug("%c[FUN] 不喜欢没有边界感的调用。", "color: #d6aaff;");
 } else {
     // 计算该歌单的随机权重百分比，四舍五入保留两位小数，并去掉小数点后面末尾的 0
-    const percent = ((playlistWeights[randomPlaylistIndex] / totalWeight) * 100).toFixed(2).replace(/\.?0+$/, '');
+    const percent = ((playlistWeights[randomPlaylistIndex]! / totalWeight) * 100).toFixed(2).replace(/\.?0+$/, '');
     console.log(`[INFO(歌单)] 选中歌单 ${SongListSet} (${percent}%)`);
 }
 
 /* -----END----- */
 
 /* 创建 APlayer 对象 */
-var ap = new APlayer({
+declare const APlayer: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+// @ts-expect-error: 6133
+const ap = new APlayer({ // eslint-disable-line @typescript-eslint/no-unused-vars
     element: document.getElementById("aplayer"),
     showlrc: false,
     fixed: true,

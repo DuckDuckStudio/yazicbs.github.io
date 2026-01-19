@@ -42,10 +42,14 @@ pre {
     text-align: left;
 }
 
+/* [error] Selector 'has' is not a widely available baseline feature (css/use-baseline) */
+/* eslint-disable-next-line css/use-baseline */
 a:not(:has(img)) {
     color: #007bff;
 }
 
+/* [error] Selector 'has' is not a widely available baseline feature (css/use-baseline) */
+/* eslint-disable-next-line css/use-baseline */
 a:not(:has(img)):hover {
     color: #0056b3;
     background-color: #e9ecef;

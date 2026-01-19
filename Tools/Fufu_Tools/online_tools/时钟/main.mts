@@ -11,19 +11,23 @@ ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
 欢迎关注我的bilibili频道：@鸭鸭_カモ
 https://space.bilibili.com/2054654702/
 回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
-`)
+`);
 
 document.addEventListener("DOMContentLoaded", () => {
     /**
      * 更新页面上显示的时间。
      */
     function updateClock() {
-        let now = new Date();
-        const hours = String(now.getHours()).padStart(2, "0");
-        const minutes = String(now.getMinutes()).padStart(2, "0");
-        const seconds = String(now.getSeconds()).padStart(2, "0");
-        now = `${hours}:${minutes}:${seconds}`;
-        document.getElementById("Clock").innerHTML = style(now);
+        const now: Date = new Date();
+        const hours: string = String(now.getHours()).padStart(2, "0");
+        const minutes: string = String(now.getMinutes()).padStart(2, "0");
+        const seconds: string = String(now.getSeconds()).padStart(2, "0");
+        const clockElement: HTMLElement | null = document.getElementById("Clock");
+        if (clockElement) {
+            clockElement.innerHTML = style(`${hours}:${minutes}:${seconds}`);
+        } else {
+            console.error("未找到 id 为 'Clock' 的元素。");
+        }
     }
 
     /**
@@ -31,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
      * @param {string} timeText 
      * @returns 返回带有样式的时间文本。
      */
-    function style(timeText) {
+    function style(timeText: string) {
         return timeText.toLocaleString().replace(/:/g, "<span class=\"comma\">:</span>");
     }
 

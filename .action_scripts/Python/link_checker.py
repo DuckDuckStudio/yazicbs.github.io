@@ -54,7 +54,7 @@ def check_files(DIRECTORY: str, IGNORE_FOLDERS: list[str], IGNORE_FILES: list[st
         
         for file in files:
             # 忽略指定的文件
-            if (file in IGNORE_FILES) or (not file.endswith((".html", ".css", ".js", ".md"))):
+            if (file in IGNORE_FILES) or (not file.endswith((".html", ".css", ".js", ".mjs", ".ts", ".mts", ".md"))):
                 continue
             
             file_path = os.path.join(root, file)

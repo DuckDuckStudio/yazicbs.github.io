@@ -8,7 +8,7 @@ on:
       - ".github/**"
       - "!.github/workflows/deploy.yml"
       - ".action_scripts/**"
-      - "!.action_scripts/JavaScript/yaml-json.mjs"
+      - "!.action_scripts/JavaScript/yaml-json.mts"
       - ".gitignore"
       - "README.md"
   workflow_dispatch:
@@ -39,14 +39,33 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: "latest"
+          node-version: latest
+
+      - name: 设置 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+
+      - name: 安装依赖
+        run: |-
+          echo "========================= Python / pip ========================="
+          python -m pip install --upgrade pip
+          pip install -r .action_scripts/Python/requirements.txt
+          echo "========================= TS / JS / npm ========================="
+          npm install
+
+      - name: 编译 TypeScript 代码
+        shell: bash
+        run: |-
+          npx tsc .action_scripts/JavaScript/yaml-json.mts --lib "esnext" --types "node" --declaration false --declarationMap false --sourceMap false
+          npx tsc --declaration false --declarationMap false --sourceMap false
+          python .action_scripts/Python/tsClear.py
 
       - name: 转换 api 文件
         shell: bash
         # YAML -> JSON
         run: |-
           cd .action_scripts/JavaScript
-          npm install js-yaml
           cd ../..
           echo ===============
           node .action_scripts/JavaScript/yaml-json.mjs api/json/notifications.yaml
@@ -60,10 +79,12 @@ jobs:
         run: |-
           rm -rv .github
           rm -rv .action_scripts
+          rm -rv node_modules
           rm -v .gitignore
-          rm -v eslint.config.mjs
+          rm -v eslint.config.js
           rm -v README.md
           rm -v Tools/chinese_git/notice/Notice.md
+          rm -v tsconfig.json
 
       - name: 设置页面
         uses: actions/configure-pages@v5

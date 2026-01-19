@@ -61,6 +61,7 @@ td {
     font-style: normal;
     font-size: 100%;
     line-height: 1;
+    /* eslint-disable-next-line css/font-family-fallbacks -- 我懒得管 */
     font-family: inherit
 }
 

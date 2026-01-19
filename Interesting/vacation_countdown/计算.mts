@@ -11,7 +11,7 @@ ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
 欢迎关注我的bilibili频道：@鸭鸭_カモ
 https://space.bilibili.com/2054654702/
 回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
-`)
+`);
 
 document.addEventListener('DOMContentLoaded', () => {
     // 定义时间
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const winter_vacation_end = new Date(startDate.getFullYear(), 1, 16);
     // ------------------------------
 
-    function getNextWinterVacationStart(now) {
+    function getNextWinterVacationStart(now: Date) {
         let nextWinterStart = new Date(now.getFullYear() + 1, 0, 20);
         if (now < winter_vacation_start) {
             nextWinterStart = winter_vacation_start;
@@ -35,43 +35,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateTime() {
         const now = new Date();
-        let message_a = '';
+        let message_a;
+        let message_b;
         let seconds = 0;
 
         if (now < winter_vacation_start) {
             // 当前时间在寒假之前
+            // @ts-expect-error: 2362, 2363
             seconds = Math.floor((winter_vacation_start - now) / 1000);
             message_a = `距离寒假还有...`;
             message_b = formatSeconds(seconds);
         } else if (now < winter_vacation_end) {
             // 当前时间在寒假期间
+            // @ts-expect-error: 2362, 2363
             seconds = Math.floor((winter_vacation_end - now) / 1000);
             message_a = `距离寒假结束还有...`;
             message_b = formatSeconds(seconds);
         } else if (now < summer_vacation_start) {
             // 当前时间在寒假结束之后，暑假开始之前
+            // @ts-expect-error: 2362, 2363
             seconds = Math.floor((summer_vacation_start - now) / 1000);
             message_a = `距离暑假还有...`;
             message_b = formatSeconds(seconds);
         } else if (now < summer_vacation_end) {
             // 当前时间在暑假期间
+            // @ts-expect-error: 2362, 2363
             seconds = Math.floor((summer_vacation_end - now) / 1000);
             message_a = `距离暑假结束还有...`;
             message_b = formatSeconds(seconds);
         } else {
             // 当前时间在暑假结束之后
             const nextWinterStart = getNextWinterVacationStart(now);
+            // @ts-expect-error: 2362, 2363
             seconds = Math.floor((nextWinterStart - now) / 1000);
             message_a = `距离寒假还有...`;
             message_b = formatSeconds(seconds);
         }
 
         // 更新显示内容
+        // @ts-expect-error: 2531
         document.getElementById('all-title').innerHTML = message_a;
+        // @ts-expect-error: 2531
         document.getElementById('Time-Remaining').innerHTML = message_b;
     }
 
-    function formatSeconds(seconds) {
+    function formatSeconds(seconds: number) {
         return seconds.toLocaleString().replace(/,/g, '<span class="comma">,</span>');
     }
 

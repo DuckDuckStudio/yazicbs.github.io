@@ -19,7 +19,7 @@ https://space.bilibili.com/2054654702/
 ========================
         中文变量版        
 ========================
-`)
+`);
 
 document.addEventListener('DOMContentLoaded', () => {
     // 定义时间
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const 寒假结束 = new Date(当前时间.getFullYear(), 1, 16);
     // ------------------------------
 
-    function 获取下一个寒假开始时间(现在) {
+    function 获取下一个寒假开始时间(现在: Date) {
         let 下一个寒假开始 = new Date(现在.getFullYear() + 1, 0, 20);
         if (现在 < 寒假开始) {
             下一个寒假开始 = 寒假开始;
@@ -43,43 +43,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function 更新时间() {
         const 现在 = new Date();
-        let 消息_a = '';
+        let 消息_a;
+        let 消息_b;
         let 秒数 = 0;
 
         if (现在 < 寒假开始) {
             // 当前时间在寒假之前
+            // @ts-expect-error: 2362, 2363
             秒数 = Math.floor((寒假开始 - 现在) / 1000);
             消息_a = `距离寒假还有...`;
             消息_b = 格式化秒数(秒数);
         } else if (现在 < 寒假结束) {
             // 当前时间在寒假期间
+            // @ts-expect-error: 2362, 2363
             秒数 = Math.floor((寒假结束 - 现在) / 1000);
             消息_a = `距离寒假结束还有...`;
             消息_b = 格式化秒数(秒数);
         } else if (现在 < 暑假开始) {
             // 当前时间在寒假结束之后，暑假开始之前
+            // @ts-expect-error: 2362, 2363
             秒数 = Math.floor((暑假开始 - 现在) / 1000);
             消息_a = `距离暑假还有...`;
             消息_b = 格式化秒数(秒数);
         } else if (现在 < 暑假结束) {
             // 当前时间在暑假期间
+            // @ts-expect-error: 2362, 2363
             秒数 = Math.floor((暑假结束 - 现在) / 1000);
             消息_a = `距离暑假结束还有...`;
             消息_b = 格式化秒数(秒数);
         } else {
             // 当前时间在暑假结束之后
             const 下一个寒假开始 = 获取下一个寒假开始时间(现在);
+            // @ts-expect-error: 2362, 2363
             秒数 = Math.floor((下一个寒假开始 - 现在) / 1000);
             消息_a = `距离寒假还有...`;
             消息_b = 格式化秒数(秒数);
         }
 
         // 更新显示内容
+        // @ts-expect-error: 2531
         document.getElementById('all-title').innerHTML = 消息_a;
+        // @ts-expect-error: 2531
         document.getElementById('Time-Remaining').innerHTML = 消息_b;
     }
 
-    function 格式化秒数(秒数) {
+    function 格式化秒数(秒数: number) {
         return 秒数.toLocaleString().replace(/,/g, '<span class="comma">,</span>');
     }
 

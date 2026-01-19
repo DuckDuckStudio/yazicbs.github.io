@@ -8,6 +8,10 @@
 |-----------------|-------------|----------|
 | [![处理自动合并标签](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/handle_auto_merge_labels.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/handle_auto_merge_labels.yml) | [![生成 Sitemap](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/generate-sitemap.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/generate-sitemap.yml) | [![Dependabot Updates](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/dependabot/dependabot-updates) |
 
+| Eslint |
+|--------|
+| [![Eslint](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/eslint.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/eslint.yml) |
+
 ## 关于本网页
 本网站由 **鸭鸭「カモ」** 编写与维护，如有任何问题可以[提交Issues](https://github.com/DuckDuckStudio/yazicbs.github.io/issues)进行反馈。  
 Code by **鸭鸭「カモ」**，保留本网站最终解释权。    
@@ -28,22 +32,22 @@ Code by **鸭鸭「カモ」**，保留本网站最终解释权。
   * 猜数字
   ```html
   <!-- 控制台猜数字 by鸭鸭「カモ」 -->
-  <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/games/guess_number.js"></script>
+  <script type="module" src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/games/guess_number.mjs"></script>
   ```
     * 简略版 - 你在[这个页面](https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/index.html)的控制台上可以玩到。简略版会抛个WARN，不过你不用管。
     ```html
     <!-- 控制台猜数字简略版 by鸭鸭「カモ」 -->
-    <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/games/simplified/guess_number.js"></script>
+    <script type="module" src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/games/simplified/guess_number.mjs"></script>
     ```
 * 节日  
 ```html
 <!-- 节日庆祝 by鸭鸭「カモ」 -->
-<script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/Festivals.js"></script>
+<script type="module" src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/Festivals.mjs"></script>
 ```
 * 计算(离)寒暑假还剩多少秒 - [Demo](https://duckduckstudio.github.io/yazicbs.github.io/Interesting/vacation_countdown/)
 ```html
 <!-- (离)寒暑假还有多久 by鸭鸭「カモ」 -->
-<script src="https://duckduckstudio.github.io/yazicbs.github.io/Interesting/vacation_countdown/计算_中.js"></script>
+<script type="module" src="https://duckduckstudio.github.io/yazicbs.github.io/Interesting/vacation_countdown/计算_中.mjs"></script>
 ```
 
 ## Q&A
