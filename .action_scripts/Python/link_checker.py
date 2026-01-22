@@ -10,8 +10,8 @@ def main() -> int:
     IGNORE_FOLDERS = ["没有"] # 忽略的文件夹
     IGNORE_FILES = ["没有"] # 忽略的文件
     IGNORE_URLS = [
-        # 临时因多次 429 忽略
-        "https://ipapi.co/json/"
+        "https://ipapi.co/json/", # 429
+        "https://www.clarity.ms/tag/" # 405
     ] # 忽略的链接
 
     # 正则匹配链接
