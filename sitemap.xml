@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 由 DuckDuckStudio/Sitemap_Creator 于 1/19/2026, 16:19:25 生成 -->
+<!-- 由 DuckDuckStudio/Sitemap_Creator 于 1/22/2026, 13:28:00 生成 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
               xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
@@ -155,6 +155,6 @@
   </url>
   <url>
     <loc>https://DuckDuckStudio.github.io/yazicbs.github.io/zh_cn/index.html</loc>
-    <lastmod>2026-01-19T11:12:15+08:00</lastmod>
+    <lastmod>2026-01-22T13:27:44+08:00</lastmod>
   </url>
 </urlset>
