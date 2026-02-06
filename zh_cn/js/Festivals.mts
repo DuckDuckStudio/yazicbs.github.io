@@ -29,7 +29,8 @@ if (日期对象 && 日期对象[2] && ((日期对象[1] === '腊月' && parseIn
     灯笼样式.href = 'https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/css/灯笼.css'; 
     document.head.appendChild(灯笼样式); // 动态引入 CSS 文件
 
-    document.body.innerHTML += `
+    document.body.insertAdjacentHTML(
+        "beforeend", `
         <div class="deng-box1">
             <div class="deng">
                 <div class="xian"></div>
@@ -58,5 +59,5 @@ if (日期对象 && 日期对象[2] && ((日期对象[1] === '腊月' && parseIn
                 </div>
             </div>
         </div>
-    `; // 动态插入 HTML 内容
+    `);
 }
