@@ -147,6 +147,7 @@ https://space.bilibili.com/2054654702/
 
                                                                         // 定义要显示的文字数组
                                                                         const txt = [
+                                                                            "不管你有没有昼夜的概念，首先祝你早上 中午 晚上好！", // 确定位置 index 0
                                                                             "Sleep all day.",
                                                                             "一只可爱的小鸭鸭",
                                                                             "(躺在地上打滚)(尖叫)(对食物无差别攻击)",
@@ -154,14 +155,12 @@ https://space.bilibili.com/2054654702/
                                                                             "Want it, Merge it.",
                                                                             "if 不能，至少不应该 fi",
                                                                             "Also try F12.",
-                                                                            "不要按 Alt + F4",
-                                                                            "不管你有没有昼夜的概念，首先祝你早上 中午 晚上好！" // 确定位置 index 8
                                                                         ];
 
                                                                         // ----------- 处理各个时段的消息 -----------
                                                                         // WARN: 确定的位置，请勿修改
                                                                         const currentHour = new Date().getHours(); // 获取当前小时数
-                                                                        const timeIndex = 8;
+                                                                        const timeIndex = 0;
 
                                                                         if ((currentHour >= 0 && currentHour < 5) || (currentHour >= 21 && currentHour < 24)) {
                                                                             txt[timeIndex] = "还不睡觉呢? 小猫~";
@@ -170,7 +169,7 @@ https://space.bilibili.com/2054654702/
                                                                         } else if (currentHour >= 9 && currentHour < 11) {
                                                                             txt[timeIndex] = "一日之计在于晨，想好要做什么了吗？";
                                                                         } else if (currentHour >= 11 && currentHour < 14) {
-                                                                            txt[timeIndex] = "o((>ω< ))o 太阳这么大要晒化掉了 (南方)";
+                                                                            txt[timeIndex] = "o((>ω< ))o 太阳这么大要晒化掉了";
                                                                         } else if (currentHour >= 14 && currentHour < 17) {
                                                                             txt[timeIndex] = "下午要做什么捏？";
                                                                         } else if (currentHour >= 17 && currentHour < 19) {
@@ -1041,21 +1040,21 @@ https://space.bilibili.com/2054654702/
                                                                         <div class="s-component s-text">
                                                                             <div class="s-component-content s-font-body">
                                                                                 <p>
-                                                                                    <a href="https://github.com/DuckDuckStudio/Sundry/" target="_blank">Sundry</a>(WinGet 包清单相关维护工具)
+                                                                                    <a href="https://github.com/DuckDuckStudio/Sundry/" target="_blank">Sundry</a>
                                                                                     &nbsp;|&nbsp;
-                                                                                    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/" target="_blank">芙芙工具箱</a>
-                                                                                    &nbsp;|&nbsp;
-                                                                                    <a href="https://github.com/DuckDuckStudio/GitHub-Labels-Manager" target="_blank">GLM</a>(GitHub Labels Manager)
+                                                                                    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/" target="_blank" title="该仓库于 2025 年 11 月 23 日被所有者归档，现为只读">芙芙工具箱</a>
+                                                                                    &nbsp;等工具的作者。
                                                                                 </p>
-                                                                                <p>等工具的作者。</p>
                                                                                 <p>GitHub Star: <strong><span id="total-stars">[计算中...]</span></strong></p>
-                                                                                <p>不会聊天...(万能的关键字)</p>
-                                                                                <p>音游人、单机游戏玩家。公共交通爱好者。高中生。</p>
+                                                                                <p>不会聊天... (万能的关键字)</p>
+                                                                                <p>音游人、单机游戏玩家；公共交通爱好者；高中生。</p>
+                                                                                <p>偶尔贡献于 <a href="https://github.com/microsoft/winget-pkgs", target="_blank">Windows 包管理器清单社区</a>。</p>
                                                                                 <p style="font-weight: bold;">编程方面:</p>
                                                                                 <p>程序: C♯、Python3、极少的 C++、Scratch3</p>
-                                                                                <p>Web: JS(Node.js)、TS、docsify、html、css</p>
+                                                                                <p>Web: JS(Node.js)、TS、docsify、html、css，我承认我不怎么会写网页</p>
                                                                                 <p>CI/CD: GitHub Action</p>
-                                                                                <p>脚本: PowerShell、batch、bash</p>
+                                                                                <p>脚本: PowerShell、batch、bash，只会写点简单的</p>
+                                                                                <p>我承认我的技术非常一般，完全达不到产品要求。</p>
                                                                                 <script>
                                                                                     /* 
                                                                                     * JS输出分类: 位置
