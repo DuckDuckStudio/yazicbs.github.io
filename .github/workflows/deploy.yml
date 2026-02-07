@@ -85,6 +85,9 @@ jobs:
           rm -v README.md
           rm -v Tools/chinese_git/notice/Notice.md
           rm -v tsconfig.json
+          rm -v package.json
+          rm -v package-lock.json
+          rm -v serve.json
 
       - name: 设置页面
         uses: actions/configure-pages@v5
