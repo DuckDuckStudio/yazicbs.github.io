@@ -1,7 +1,5 @@
 // 网页左下角的歌单
-// Song url: https://music.163.com/song/media/outer/url?id=****.mp3 (****处填音乐id)
 // APlayer doc: https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0
-
 // 别加歌词别加歌词，弄过了，样式不好弄
 
 /* 
@@ -18,6 +16,12 @@ const playlists = [
             artist: "Ivoris",
             url: "https://music.163.com/song/media/outer/url?id=2056938905.mp3",
             cover: "https://p1.music.126.net/bqmwH5ZWE6hx9fQmWRHWIw==/109951168687208254.jpg"
+        },
+        {
+            name: "Bubblegum Party",
+            artist: "Chevy / Luxid",
+            url: "https://music.163.com/song/media/outer/url?id=1982988968.mp3",
+            cover: "https://p2.music.126.net/-y9EksPi0Wbf7coUGTGiLg==/109951167893871328.jpg"
         },
         {
             name: "Floating Star",
@@ -122,25 +126,52 @@ const playlists = [
             cover: "https://p2.music.126.net/hVPUfLNsSnnWbUSa5kaPqg==/109951164927740327.jpg"
         },
     ],
-    // 当初是你要分开，分开就分开
-    // 现在又要用真爱，把我哄回来
-    // 爱情不是你想买，想买就能卖
-    // 让我挣开，让我明白，放手你的爱
+    // 日推
     [
         {
             name: "牵丝戏",
             artist: "银临 / Aki阿杰",
             url: "https://music.163.com/song/media/outer/url?id=30352891.mp3",
             cover: "https://p2.music.126.net/Nd86SOcyCxU5Qu7jdZn_MQ==/7725168696876736.jpg"
+        },
+        {
+            name: "ドリームイーター (nakotanmaru ver.)",
+            artist: "なこたんまる / PIKASONIC",
+            url: "https://music.163.com/song/media/outer/url?id=2003904108.mp3",
+            cover: "https://p2.music.126.net/6wIU0mH6s6Pg3tLm0yU-pg==/109951168114426991.jpg"
         }
     ],
     // 春节
     [
         {
+            name: "我爱你中国弦乐版",
+            artist: "徐鲤",
+            url: "https://music.163.com/song/media/outer/url?id=174451.mp3",
+            cover: "https://p1.music.126.net/x6pVwc6ysKZ9S01jYlYiAw==/97856534887060.jpg"
+        },
+        {
             name: "春节序曲",
             artist: "中国人民解放军军乐团",
             url: "https://music.163.com/song/media/outer/url?id=395304.mp3",
             cover: "https://p1.music.126.net/j0g_25GyPhar5xxJoGPZiA==/109951163910801634.jpg"
+        },
+        {
+            name: "福到财到好运来",
+            artist: "小琢",
+            url: "https://music.163.com/song/media/outer/url?id=3336751526.mp3",
+            cover: "https://p2.music.126.net/Q-SqmfnioSZTB_psHAcknQ==/109951172551749640.jpg"
+        },
+        {
+            name: "好春天（翻自 舒岩）",
+            artist: "何欢浪",
+            url: "https://music.163.com/song/media/outer/url?id=2092714332.mp3",
+            cover: "https://p1.music.126.net/cy-3B-Usv2bBEjKC5sBg2Q==/109951168997829413.jpg"
+        },
+        {
+            name: "新年大吉",
+            artist: "张朋娜",
+            url: "https://music.163.com/song/media/outer/url?id=2674382810.mp3",
+            cover: "https://p2.music.126.net/LUTJwFbBzLz4JOhq9B8m-g==/109951170476012033.jpg"
         },
         {
             name: "好运来",
@@ -159,13 +190,7 @@ const playlists = [
             artist: "李谷一",
             url: "https://music.163.com/song/media/outer/url?id=395334.mp3",
             cover: "https://p1.music.126.net/j0g_25GyPhar5xxJoGPZiA==/109951163910801634.jpg"
-        },
-        {
-            name: "我还有点小糊涂",
-            artist: "刘晨",
-            url: "https://music.163.com/song/media/outer/url?id=27901231.mp3",
-            cover: "https://p1.music.126.net/amPcqTUkdXszKQtEY9WqWw==/109951168835050751.jpg"
-        },
+        }
     ],
     // ???
     [
@@ -197,6 +222,12 @@ const playlists = [
     // 哈?
     [
         {
+            name: "Classy Kitty",
+            artist: "Snakywine",
+            url: "https://music.163.com/song/media/outer/url?id=1819778023.mp3",
+            cover: "https://p2.music.126.net/an_FmSgntLKKtKTBSVyIDw==/109951165720495513.jpg"
+        },
+        {
             name: "Arghena",
             artist: "Laur / Feryquitous",
             url: "https://music.163.com/song/media/outer/url?id=2086612075.mp3",
@@ -215,6 +246,12 @@ const playlists = [
             cover: "https://p1.music.126.net/u9x0JwJsEpN1Izm6q6877w==/109951164475253709.jpg"
         },
         {
+            name: "Unwelcome school",
+            artist: "ミツキヨ",
+            url: "https://music.163.com/song/media/outer/url?id=2002662300.mp3",
+            cover: "https://p1.music.126.net/j27QnQZ2tx5fGz6FvRVUqA==/109951168632506887.jpg"
+        },
+        {
             name: "Straight into the lights",
             artist: "Cosmograph",
             url: "https://music.163.com/song/media/outer/url?id=2628998924.mp3",
@@ -228,11 +265,7 @@ const playlistNames: Record<number, string> & { default: string } = {
     0: "小甜甜",
     1: "游戏",
     2: "纯音乐",
-    3: `
-当初是你要分开，分开就分开
-现在又要用真爱，把我哄回来
-爱情不是你想买，想买就能卖
-让我挣开，让我明白，放手你的爱`,
+    3: "日推",
     4: "春节",
     5: "??? 神曲，我懂得欣赏 ???",
     6: "哈?",
@@ -241,13 +274,13 @@ const playlistNames: Record<number, string> & { default: string } = {
 
 // 歌单权重设置，权重越大被选中的概率越高
 const playlistWeights = [
-    0.3, // 小甜甜
-    0.9, // 游戏
+    0.2, // 小甜甜
+    0.7, // 游戏
     1, // 纯音乐
-    0.1, // 当初是你要分开，分开就分开
-    0.5, // 春节
-    0.1, // ???
-    0.001, // 哈?
+    0.5, // 日推
+    2, // 春节
+    0.001, // ???
+    0.1, // 哈?
 ];
 
 // 计算权重总和
