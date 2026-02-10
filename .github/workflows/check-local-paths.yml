@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: 检查本地路径
-        uses: DuckDuckStudio/Check_Locale_Paths@2.0.0
+        uses: DuckDuckStudio/Check_Locale_Paths@2.0.1
         with:
           skip_files: Tools/Fufu_Tools/minimum/index.html
           skip_folders: Tools/Fufu_Tools/wiki,node_modules
