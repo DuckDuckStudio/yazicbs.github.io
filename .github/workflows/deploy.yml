@@ -52,7 +52,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r .action_scripts/Python/requirements.txt
           echo "========================= TS / JS / npm ========================="
-          npm install
+          npm ci
 
       - name: 编译 TypeScript 代码
         shell: bash
