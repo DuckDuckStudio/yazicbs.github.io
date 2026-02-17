@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const 现在 = new Date();
         let 消息_a;
         let 消息_b;
-        let 秒数 = 0;
+        let 秒数;
 
         if (现在 < 寒假开始) {
             // 当前时间在寒假之前

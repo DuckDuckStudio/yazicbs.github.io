@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const now = new Date();
         let message_a;
         let message_b;
-        let seconds = 0;
+        let seconds;
 
         if (now < winter_vacation_start) {
             // 当前时间在寒假之前
