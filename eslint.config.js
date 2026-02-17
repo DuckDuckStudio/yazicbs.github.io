@@ -31,12 +31,6 @@ export default defineConfig(
             extends: ["json/recommended"]
         },
         {
-            files: ["**/*.json5"],
-            plugins: { json },
-            language: "json/json5",
-            extends: ["json/recommended"]
-        },
-        {
             files: ["**/*.css"],
             ignores: [
                 "zh_cn/css/main_v4.826422d2b6a94eabfe21.bundle.css" // 外部 CSS
