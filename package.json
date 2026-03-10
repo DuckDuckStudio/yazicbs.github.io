@@ -24,7 +24,7 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@eslint/css": "^0.14.1",
+    "@eslint/css": "^1.0.0",
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^1.1.0",
     "@types/js-yaml": "^4.0.9",
