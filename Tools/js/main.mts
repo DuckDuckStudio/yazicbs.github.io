@@ -23,6 +23,16 @@ const projects: ProjectInfo[] = [
         repo: "DuckDuckStudio/PinAction"
     },
     {
+        name: "GitHubView",
+        url: "GitHubView/index.html",
+        repo: "DuckDuckStudio/GitHubView"
+    },
+    {
+        name: "中文Git",
+        url: "chinese_git/index.html",
+        repo: "DuckDuckStudio/Chinese_git"
+    },
+    {
         name: "芙芙工具箱",
         url: "Fufu_Tools/index.html",
         repo: "DuckDuckStudio/FuFu_Tools"
@@ -33,14 +43,9 @@ const projects: ProjectInfo[] = [
         repo: "DuckDuckStudio/highlight-ad-extension"
     },
     {
-        name: "中文Git",
-        url: "chinese_git/index.html",
-        repo: "DuckDuckStudio/Chinese_git"
-    },
-    {
-        name: "GitHubView",
-        url: "GitHubView/index.html",
-        repo: "DuckDuckStudio/GitHubView"
+        name: "GitHub Labels Manager (GLM)",
+        url: "https://github.com/DuckDuckStudio/GitHub-Labels-Manager",
+        repo: "DuckDuckStudio/GitHub-Labels-Manager"
     }
 ];
 
@@ -100,7 +105,7 @@ async function fetchWithTimeout<T>(url: string, timeout = 5000): Promise<T> {
 async function getProjectRow(project: ProjectInfo): Promise<string> {
     // 如果项目没有 repo 字段，直接返回不包含版本信息的表格行
     if (!project.repo) {
-        return `<tr><td><a href="${project.url}">${project.name}</a></td><td></td><td></td></tr>`;
+        return `<tr><td><a href="${project.url}">${project.name}</a></td><td>-</td><td>-</td></tr>`;
     }
 
     let archived = false;
@@ -141,19 +146,35 @@ async function getProjectRow(project: ProjectInfo): Promise<string> {
 }
 
 /**
- * 填充项目表格，将项目列表中的每个项目转换为表格行，并插入到表格主体中；如果表格主体元素未找到，则抛出错误
+ * 渲染项目表格的初始状态，先将表格主体清空，然后为每个项目添加一行占位内容（显示“加载中...”），并为每行设置唯一的 id 以便后续替换
+ */
+function renderInitialTable(): void {
+    const tbody = document.getElementById("project-table-body");
+    if (!tbody) throw new Error("未找到表格主体元素 #project-table-body");
+    tbody.innerHTML = "";
+    projects.forEach((project, idx) => {
+        // 每行加唯一 id 方便后续替换
+        tbody.innerHTML += `<tr id="project-table-row-${idx}"><td><a href="${project.url}">${project.name}</a></td><td>加载中...</td><td>加载中...</td></tr>`;
+    });
+}
+
+/**
+ * 填充项目表格，先渲染初始状态，然后并发请求每个项目的版本信息和发布日期，并更新对应行的内容；如果请求失败或超时，则在对应行显示相应的错误信息
+ * @returns 返回一个 Promise，解析为 void；如果表格主体元素未找到，则抛出错误
  */
 async function fillProjectTable(): Promise<void> {
+    renderInitialTable();
     const tbody = document.getElementById("project-table-body");
-    if (tbody) {
-        tbody.innerHTML = ""; // 清空表格内容
-        for (const project of projects) {
-            const row = await getProjectRow(project);
-            tbody.innerHTML += row; // 追加表格行
+    if (!tbody) throw new Error("未找到表格主体元素 #project-table-body");
+    // 并发请求并更新每一行
+    await Promise.all(projects.map(async (project, idx) => {
+        const rowHtml = await getProjectRow(project);
+        const rowElem = document.getElementById(`project-table-row-${idx}`);
+        if (rowElem) {
+            // 只替换当前行内容
+            rowElem.outerHTML = rowHtml;
         }
-    } else {
-        throw new Error("未找到表格主体元素 #project-table-body");
-    }
+    }));
 }
 
 // 等待 DOM 内容加载完成后填充项目表格，如果文档已经加载完成，则直接调用填充函数
