@@ -52,18 +52,26 @@ const projects: ProjectInfo[] = [
 /**
  * 格式化日期字符串
  * @param dateStr 日期字符串
- * @returns 格式化后的日期字符串，格式为 "YYYY 年 MM 月 DD 日"；如果输入无效，则返回空字符串
+ * @param includeTime 是否包含时分秒，默认为 false
+ * @returns 格式化后的日期字符串，格式为 "YYYY 年 MM 月 DD 日" 或 "YYYY 年 MM 月 DD 日 HH:MM:SS"；如果输入无效，则返回空字符串
  */
-function formatDate(dateStr: string): string {
+function formatDate(dateStr: string, includeTime = false): string {
     if (dateStr) {
         const d = new Date(dateStr);
         if (!isNaN(d.getTime())) {
             const y = d.getFullYear();
             const m = (d.getMonth() + 1).toString().padStart(2, "0");
             const day = d.getDate().toString().padStart(2, "0");
-            return `${y} 年 ${m} 月 ${day} 日`;
+            if (includeTime) {
+                const h = d.getHours().toString().padStart(2, "0");
+                const min = d.getMinutes().toString().padStart(2, "0");
+                const s = d.getSeconds().toString().padStart(2, "0");
+                return `${y} 年 ${m} 月 ${day} 日 ${h}:${min}:${s}`;
+            } else {
+                return `${y} 年 ${m} 月 ${day} 日`;
+            }
         } else {
-            return "发布日期格式无效";
+            return "日期格式无效";
         }
     } else {
         return "未获取到发布日期";
@@ -89,6 +97,19 @@ async function fetchWithTimeout<T>(url: string, timeout = 5000): Promise<T> {
             signal: controller.signal
         });
         if (!response.ok) {
+            // 处理速率限制
+            if (response.status === 403 || response.status === 429) {
+                // 检查 X-RateLimit-Reset 头部
+                const reset = response.headers.get("X-RateLimit-Reset");
+                let resetMsg = "";
+                if (reset) {
+                    // GitHub 返回的是 UTC 秒时间戳
+                    const resetTime = new Date(Number(reset) * 1000);
+                    // 使用 formatDate 格式化
+                    resetMsg = `，请在 ${formatDate(resetTime.toISOString(), true)} 之后重试`;
+                }
+                throw new Error(`你太快了 (${response.status})${resetMsg}`);
+            }
             throw new Error(`请求响应状态码 ${response.status}`);
         }
         return response.json();
