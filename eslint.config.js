@@ -18,7 +18,8 @@ export default defineConfig(
             files: ["**/*.json"],
             ignores: [
                 "package-lock.json", // 由 npm 生成
-                "tsconfig.json" // 由 npx tsc --init 生成，我想她应该允许注释
+                "tsconfig.json", // 由 npx tsc --init 生成，我想她应该允许注释
+                "tsconfig.node.json" // 也是 TS 配置文件
             ],
             plugins: { json },
             language: "json/json",

@@ -59,8 +59,8 @@ jobs:
       - name: 编译 TypeScript 代码
         shell: bash
         run: |-
-          npx tsc .action_scripts/JavaScript/yaml-json.mts --lib "esnext" --types "node" --declaration false --declarationMap false --sourceMap false
-          npx tsc --declaration false --declarationMap false --sourceMap false
+          npx tsc -p tsconfig.json --declaration false --declarationMap false --sourceMap false
+          npx tsc -p tsconfig.node.json --declaration false --declarationMap false --sourceMap false
           python .action_scripts/Python/tsClear.py
 
       - name: 转换 api 文件
