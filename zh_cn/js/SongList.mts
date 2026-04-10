@@ -98,6 +98,12 @@ const playlists = [
             url: "https://music.163.com/song/media/outer/url?id=1445990834.mp3",
             cover: "https://p2.music.126.net/hVPUfLNsSnnWbUSa5kaPqg==/109951164927740327.jpg"
         },
+        {
+            name: "没有共产党就没有新中国",
+            artist: "中国之声结束曲",
+            url: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Audios/Songs/CMGVoiceOfChinaSignOffMusic.m4a",
+            cover: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Images/Songs/中国之声.jpg"
+        },
     ],
     // 日推
     [
