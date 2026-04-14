@@ -9,33 +9,6 @@
 /* 随机 */
 // 歌单列表
 const playlists = [
-    // Sweet
-    [
-        {
-            name: "Cocopops",
-            artist: "Ivoris",
-            url: "https://music.163.com/song/media/outer/url?id=2056938905.mp3",
-            cover: "https://p1.music.126.net/bqmwH5ZWE6hx9fQmWRHWIw==/109951168687208254.jpg"
-        },
-        {
-            name: "Bubblegum Party",
-            artist: "Chevy / Luxid",
-            url: "https://music.163.com/song/media/outer/url?id=1982988968.mp3",
-            cover: "https://p2.music.126.net/-y9EksPi0Wbf7coUGTGiLg==/109951167893871328.jpg"
-        },
-        {
-            name: "Floating Star",
-            artist: "Kirara Magic / Shion Lee",
-            url: "https://music.163.com/song/media/outer/url?id=1830190033.mp3",
-            cover: "https://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg"
-        },
-        {
-            name: "Aurora VIP",
-            artist: "Kirara Magic / Shion Lee",
-            url: "https://music.163.com/song/media/outer/url?id=1830187577.mp3",
-            cover: "https://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg"
-        },
-    ],
     // 游戏
     [
         {
@@ -124,6 +97,12 @@ const playlists = [
             artist: "原作: 磯村由紀子 / 演奏: 浅绯色的喵", // 原作网易云上要 VIP
             url: "https://music.163.com/song/media/outer/url?id=1445990834.mp3",
             cover: "https://p2.music.126.net/hVPUfLNsSnnWbUSa5kaPqg==/109951164927740327.jpg"
+        },
+        {
+            name: "没有共产党就没有新中国",
+            artist: "中国之声结束曲",
+            url: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Audios/Songs/CMGVoiceOfChinaSignOffMusic.m4a",
+            cover: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Images/Songs/中国之声.jpg"
         },
     ],
     // 日推
@@ -262,25 +241,23 @@ const playlists = [
 
 // 歌单名称
 const playlistNames: Record<number, string> & { default: string } = {
-    0: "小甜甜",
-    1: "游戏",
-    2: "纯音乐",
-    3: "日推",
-    4: "春节",
-    5: "??? 神曲，我懂得欣赏 ???",
-    6: "哈?",
+    0: "游戏",
+    1: "纯音乐",
+    2: "日推",
+    3: "春节",
+    4: "??? 神曲，我懂得欣赏 ???",
+    5: "哈?",
     default: "[WARN(歌单-选择-索引越界)] 未定义歌单名称"
 };
 
 // 歌单权重设置，权重越大被选中的概率越高
 const playlistWeights = [
-    0.2, // 小甜甜
-    0.7, // 游戏
+    1, // 游戏
     1, // 纯音乐
-    0.5, // 日推
-    0.3, // 春节
-    0.001, // ???
-    0.1, // 哈?
+    0.8, // 日推
+    0.1, // 春节
+    0.01, // ???
+    0.01, // 哈?
 ];
 
 // 计算权重总和
@@ -295,7 +272,7 @@ function weightedRandomIndex(weights: number[]): number {
         acc += weights[i]!;
         if (r < acc) return i;
     }
-    return weights.length - 1; // fallback
+    return weights.length - 1; // fallback (ts2366)
 }
 
 // 使用加权随机
