@@ -252,12 +252,12 @@ const playlistNames: Record<number, string> & { default: string } = {
 
 // 歌单权重设置，权重越大被选中的概率越高
 const playlistWeights = [
-    0.7, // 游戏
+    1, // 游戏
     1, // 纯音乐
-    0.5, // 日推
-    0.3, // 春节
-    0.001, // ???
-    0.1, // 哈?
+    0.8, // 日推
+    0.1, // 春节
+    0.01, // ???
+    0.01, // 哈?
 ];
 
 // 计算权重总和
@@ -272,7 +272,7 @@ function weightedRandomIndex(weights: number[]): number {
         acc += weights[i]!;
         if (r < acc) return i;
     }
-    return weights.length - 1; // fallback
+    return weights.length - 1; // fallback (ts2366)
 }
 
 // 使用加权随机
