@@ -9,10 +9,11 @@ updates:
     directory: ".action_scripts/Python/" # Location of package manifests
     schedule:
       interval: "daily"
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "Tools/Fufu_Tools/wiki/files/text/" # Location of package manifests
-    schedule:
-      interval: "daily"
+  # 芙芙工具箱已经归档很久了
+  # - package-ecosystem: "pip" # See documentation for possible values
+  #   directory: "Tools/Fufu_Tools/wiki/files/text/" # Location of package manifests
+  #   schedule:
+  #     interval: "daily"
   - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
