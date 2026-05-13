@@ -17,7 +17,7 @@
   "type": "module",
   "main": "index.html",
   "scripts": {
-    "lint": "npx eslint --rule \"semi: [error, always]\""
+    "lint": "npx eslint --rule \"semi: [error, always]\" --max-warnings 0"
   },
   "dependencies": {
     "js-yaml": "^4.1.1",
@@ -28,9 +28,9 @@
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^1.2.0",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^25.6.2",
+    "@types/node": "^25.7.0",
     "eslint": "^10.3.0",
     "globals": "^17.6.0",
-    "typescript-eslint": "^8.59.2"
+    "typescript-eslint": "^8.59.3"
   }
 }
