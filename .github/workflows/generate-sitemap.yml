@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: 更新网站地图
-        uses: DuckDuckStudio/Sitemap_Creator@9f84010f23e845730e6c42d93c5b04e50cf68b4b # 1.0.15
+        uses: DuckDuckStudio/Sitemap_Creator@90d4026b88835d67fa224f9aa4567ae7808c28e3 # 2.0.0
         with:
           file_type: "html"
           ignore_file: "debug.html,404.html,跳转页面"
