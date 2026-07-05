@@ -1,0 +1,5 @@
+LERVE:3
+[更新说明]
+中文Git v3.2 已发布
+你可以使用 中文git 更新 命令来更新到最新版本
+发行说明: https://github.com/DuckDuckStudio/Chinese_git/releases/tag/v3.2

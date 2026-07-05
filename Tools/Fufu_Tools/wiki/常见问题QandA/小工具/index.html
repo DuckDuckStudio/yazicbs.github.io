@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Code by Duck Studio -->
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>芙芙工具箱&nbsp;|&nbsp;小工具文档</title>
+        <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/Fufu_Tools.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="芙芙工具箱 - 小工具文档" name="description">
+        <!--定义了网页的描述，用于搜索引擎显示网页摘要-->
+        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,DuckDuckStudio,Fufu_Tools,芙芙工具箱,文档" name="keywords">
+        <!--定义与网页相关的关键词-->
+        <script>
+            // 前面不要加空格
+            console.log(`
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+
+本站维护人员：
+鸭鸭「カモ」
+欢迎关注我的bilibili频道：@鸭鸭_カモ
+https://space.bilibili.com/2054654702/
+回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
+            `)
+        </script>
+        <style>
+            body {
+                background-color: #6dc0ede1; /* 蓝色背景 */
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* 扩距
+            *    margin-top: 1%;
+            *    margin-bottom: 1%;
+            *    margin-left: 1%;
+            *    margin-right: 1%;
+            *    such as: <div class="container" style="margin-right: 1%; margin-left: 1%;">左右扩距</div>
+            */
+            
+            .container {
+                background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+
+            h1 {
+                color: #333;
+                font-size: 40px;
+            }
+
+            h2 {
+                color: #333;
+                font-size: 24px; /* 调整标题文本大小 */
+                margin-bottom: 10px; /* 调整标题与下方段落的间距 */
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: center;">
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/展示图.png" alt="展示图" width="960" height="540">
+            </div>
+            <p>&nbsp;</p>
+
+            <div style="text-align: center;">
+                <h1>芙芙工具箱小工具使用常见问题(Q&A)</h1>
+                <i>适用于芙芙工具箱&nbsp;for&nbsp;windows</i>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="container">
+                <h2 id="error-module">Q:小工具运行时出现错误<code>No module named &#39;xxx&#39;</code> 或 打不开pyw文件且任务管理器中没python进程</h2>
+                <p><em>Note:此步骤需要联网</em><br>
+                A:<br>
+                如果你在运行小工具(lite版)时出现类似这样(<code>No module named &#39;xxx&#39;</code>)的错误，请安装缺失的库文件。</p>
+                <img src="https://duckduckstudio.github.io/Fufu_Tools/photos/%E7%BC%BA%E5%B0%91%E5%BA%93%E6%96%87%E4%BB%B6.png" alt="缺少库文件" style="width: 70%; height: 70%;">
+                <p>安装库文件以解决此问题：</p>
+                <ol>
+                    <li><p><code>cd</code>到芙芙工具箱目录</p></li>
+                    <li><p>运行<code>pip install -r 环境配置/requirements.txt</code>(镜像源在命令后面加上<code>-i https://pypi.tuna.tsinghua.edu.cn/simple</code>) 命令</p></li>
+                </ol>
+                <p>如果在安装完库文件后仍然无法运行小工具（在出现相同错误的情况下）或者你使用的是打包版本的小工具，请 <strong><a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">提交Issues</a></strong>。</p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="path-error">Q:运行需要输入路径的小工具时出现错误<code>系统找不到指定的路径</code></h2>
+                <p>A:<br>
+                请<strong>检查你输入的路径是否有误</strong>，如果有误，请修正。如果无误，请尝试<code>以管理员身份运行</code>运行小工具。如错误重复出现，请 <strong><a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">提交Issues</a></strong>。<br></p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="run-error">Q:我无法运行打包后的小工具</h2>
+                <p>A:<br>
+                请检查你的系统版本：<br>
+                =&gt; 如果你的系统版本是<strong>win8及以下</strong>，您将<strong>无法运行</strong>芙芙工具箱。<br>
+                <em>Note:芙芙工具箱打包版已于2023/12/26停止对win10以下版本的系统的支持。</em><br></p>
+                <p>=&gt; 如果你的系统版本是<strong>win10及以上</strong>，请尝试<code>以管理员身份运行</code>运行小工具。如错误重复出现，请 <strong><a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">提交Issues</a></strong>。<br></p>
+                <p>=&gt; 如果是杀毒软件报毒，请关闭杀毒软件后再运行。或者将芙芙工具箱加入信任列表。亦或者下载lite版使用。(lite版目前没出现报毒的问题)<br>
+                <em>Note:杀软报毒有可能是因为芙芙工具箱的部分小工具需要联网导致的误识别。</em><br></p>
+                <p>=&gt; 如果你使用的不是Windows系统：很抱歉，您暂时无法使用芙芙工具箱(包括lite版)，因为我们暂时还没支持其他系统。请使用Windows系统。<br></p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="reset-config">Q:我该如何重置某些工具的config</h2>
+                <p>A:</p>
+                <p>方案1：</p>
+                <p>前往<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/#files">芙芙工具箱文档的索引页面</a>下载对应的config.ini文件进行替换。</p>
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/photos/config文件.png" style="width: 70%; height: 70%;" alt="配置文件下载位置截图">
+                <p>方案2：</p>
+                <p>前往<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/#files">芙芙工具箱文档的索引页面</a>下载对应的重置config.py文件放到对应目录后执行。</p>           
+            </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: right;">
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
+                <p>最后更新：<strong>2024/6/22</strong></p>
+                <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- Code by Duck Studio -->
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>芙芙工具箱&nbsp;|&nbsp;主程序文档</title>
+        <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/Fufu_Tools.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="芙芙工具箱 - 主程序文档" name="description">
+        <!--定义了网页的描述，用于搜索引擎显示网页摘要-->
+        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,DuckDuckStudio,Fufu_Tools,芙芙工具箱,文档" name="keywords">
+        <!--定义与网页相关的关键词-->
+        <script>
+            // 前面不要加空格
+            console.log(`
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+
+本站维护人员：
+鸭鸭「カモ」
+欢迎关注我的bilibili频道：@鸭鸭_カモ
+https://space.bilibili.com/2054654702/
+回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
+            `)
+        </script>
+        <style>
+            body {
+                background-color: #6dc0ede1; /* 蓝色背景 */
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* 扩距
+            *    margin-top: 1%;
+            *    margin-bottom: 1%;
+            *    margin-left: 1%;
+            *    margin-right: 1%;
+            *    such as: <div class="container" style="margin-right: 1%; margin-left: 1%;">左右扩距</div>
+            */
+            
+            .container {
+                background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+
+            h1 {
+                color: #333;
+                font-size: 40px;
+            }
+
+            h2 {
+                color: #333;
+                font-size: 24px; /* 调整标题文本大小 */
+                margin-bottom: 10px; /* 调整标题与下方段落的间距 */
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: center;">
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/展示图.png" alt="展示图" width="960" height="540">
+            </div>
+            <p>&nbsp;</p>
+
+            <div style="text-align: center;">
+                <h1>芙芙工具箱主程序使用常见问题(Q&A)</h1>
+                <i>适用于芙芙工具箱&nbsp;for&nbsp;windows</i>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="container">
+                <h2 id="open-lite-program">Q：我不知道该用什么打开lite版的主程序</h2>
+                <p>A:<br>
+                如果你在打开lite版的主程序时遇到下面的情况，你<strong>可能还未在你的操作系统中安装python</strong>。请<strong>下载最新版的python并配置环境变量<code>PATH</code></strong>。<br>
+                <img src="https://duckduckstudio.github.io/Fufu_Tools/photos/%E6%9C%AA%E5%AE%89%E8%A3%85python.png" alt="选择应用打开"><br>
+                相关连接：<br></p>
+                <blockquote>
+                <p><a href="https://www.python.org/downloads/">下载python</a><br></p>
+                </blockquote>
+            </div>
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="add-python-to-path">Q：我该如何添加python到系统PATH环境变量</h2>
+                <p><em>Note:此方法同样适用于设置<code>pip</code>环境变量</em><br>
+                A:<br>
+                =&gt; 对于还未安装python的，请<strong>在安装python时选上<code>Add python.exe to PATH</code></strong>。<br>
+                <img src="https://duckduckstudio.github.io/Fufu_Tools/photos/python_PATH.png" alt="添加python PATH"><br></p>
+                <p>=&gt; 对于已安装python的，请<strong>找到python安装路径，并复制python安装路径</strong>(例如<code>&quot;D:\user_name\Python\&quot;</code>)。<br>
+                然后打开控制面板(对于win10以下的版本)或者<strong>按下<code>win</code>+<code>i</code>组合键</strong>(对于win10及更高版本)打开设置。<br>
+                在设置中选择 <strong><code>系统</code>&gt;<code>系统信息</code>&gt;<code>高级系统设置</code></strong><br>
+                <img src="https://duckduckstudio.github.io/Fufu_Tools/photos/%E6%89%93%E5%BC%80%E9%AB%98%E7%BA%A7%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE.png" alt="打开高级系统设置"><br>
+                在出现的窗口中选择<strong>环境变量</strong>，然后在出现的窗口中选择<strong>系统变量的Path变量</strong>，选择<strong>编辑</strong>PATH，将python安装路径的路径<strong>添加到PATH</strong>后重启设备 <em>(可选)</em> 即可。<br>
+                <img src="https://duckduckstudio.github.io/Fufu_Tools/photos/Set_python_PATH.png" alt="设置PATH"><br>
+                检验：请在命令行(终端)中运行以下指令来测试环境变量<br>
+                对于python：<code>python --version</code><br>
+                对于pip：<code>pip --version</code><br>
+                如果你看到类似这样的输出就代表配置成功，否则请尝试重启系统。<br></p>
+                <code>PS C:\Users\user_name&gt; pip --version<br>
+                pip 23.3.2 from D:\...\Python\Lib\site-packages\pip (python 3.12)<br>
+                PS C:\Users\user_name&gt; python --version<br>
+                Python 3.12.0<br>
+                PS C:\Users\user_name&gt;<br>
+                </code>
+            </div>
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="program-path-issue">Q：为什么我在我的电脑上用主程序打开程序时会出现找不到路径</h2>
+                <p><em>Note:在v1.2.8版本及以后的版本中，编码已统一为UTF-8，理应来说不会再出现这种问题。</em></p>
+                <p>A:</p>
+                <p>请尝试执行以下步骤：</p>
+                <ul>
+                    <li>
+                        <p>1. 请确保你的芙芙工具箱为最新版本</p>
+                    </li>
+                    <li>
+                        <p>2. 请确保你没有在非简体中文的系统中使用v1.2.7及以下版本的芙芙工具箱，如果是，请更新到最新版本</p>
+                    </li>
+                    <li>
+                        <p>3. 请确保目录及文件没有出现乱码</p>
+                    </li>
+                </ul>
+                <p>如果以上步骤仍然无法解决问题，请<strong><a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">提交Issues</a></strong></p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="windows7-compatibility-issue">Q：我在Windows7/win7上无法运行芙芙工具箱的打包版</h2>
+                <p><em>Note:芙芙工具箱已于2023年12月停止支持Windows10以下的系统。</em></p>
+                <p>A:</p>
+                <p>请尝试使用lite版。</p>
+                <p>详细最低系统要求，请查看这个链接→<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/minimum/" target="_blank">[芙芙工具箱的最低系统要求]</a></p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="why-always-license">Q：为什么每次更新都要重新查看LICENSE</h2>
+                <p>A:</p>
+                <p>这样可以及时了解到LICENSE文件的变动。</p>
+            </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: right;">
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
+                <p>最后更新：<strong>2024/5/19</strong></p>
+                <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{
+    "information": {
+        "version": "v2.10"
+    },
+    "application": {
+        "notice": {
+            "time": "",
+            "level": "",
+            "content": ""
+        },
+        "run": {
+            "auto_check_update": "True",
+            "auto_get_notice": "True"
+        }
+    }
+}

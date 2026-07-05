@@ -1,0 +1,108 @@
+name: 向 GitHub Page 部署静态内容
+
+on:
+  push:
+    branches:
+      - "main"
+    paths-ignore:
+      - ".github/**"
+      - "!.github/workflows/deploy.yml"
+      - ".action_scripts/**"
+      - "!.action_scripts/JavaScript/yaml-json.mts"
+      - ".gitignore"
+      - "README.md"
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Page
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许一次并发部署，跳过正在进行的运行和最新排队的运行之间的排队运行。
+# 但是，不要取消正在进行的运行，因为我们希望允许这些生产部署完成。
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 单个部署任务，因为我们只是部署
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 签出
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: latest
+
+      - name: 设置 Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: 3.x
+
+      - name: 安装 Python 依赖
+        shell: bash
+        run: |-
+          python -m pip install --upgrade pip
+          pip install -r .action_scripts/Python/requirements.txt
+
+      - name: 安装 npm 依赖
+        shell: bash
+        run: |-
+          npm ci
+
+      - name: 编译 TypeScript 代码
+        shell: bash
+        run: |-
+          npx tsc -p tsconfig.json --declaration false --declarationMap false --sourceMap false
+          npx tsc -p tsconfig.node.json --declaration false --declarationMap false --sourceMap false
+          python .action_scripts/Python/tsClear.py
+
+      - name: 转换 api 文件
+        shell: bash
+        # YAML -> JSON
+        run: |-
+          cd .action_scripts/JavaScript
+          cd ../..
+          echo ===============
+          node .action_scripts/JavaScript/yaml-json.mjs api/json/notifications.yaml
+          rm -v api/json/notifications.yaml
+          echo ===============
+          node .action_scripts/JavaScript/yaml-json.mjs api/json/fzxc.yaml
+          rm -v api/json/fzxc.yaml
+
+      - name: 移除不应部署的文件
+        shell: bash
+        run: |-
+          rm -rv .github
+          rm -rv .action_scripts
+          rm -rv node_modules
+          rm -v .gitignore
+          rm -v eslint.config.js
+          rm -v README.md
+          rm -v Tools/chinese_git/notice/Notice.md
+          rm -v tsconfig.json
+          rm -v package.json
+          rm -v package-lock.json
+          rm -v serve.json
+
+      - name: 设置页面
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: 上传工件
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          # 上传整个仓库
+          path: '.'
+
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

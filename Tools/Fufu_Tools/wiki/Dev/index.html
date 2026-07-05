@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Code by Duck Studio -->
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>芙芙工具箱&nbsp;|&nbsp;开发工具&nbsp;文档</title>
+        <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/Fufu_Tools.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="芙芙工具箱 - 开发工具 文档" name="description">
+        <!--定义了网页的描述，用于搜索引擎显示网页摘要-->
+        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,DuckDuckStudio,Fufu_Tools,芙芙工具箱,文档" name="keywords">
+        <!--定义与网页相关的关键词-->
+        <script>
+            // 前面不要加空格
+            console.log(`
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+
+本站维护人员：
+鸭鸭「カモ」
+欢迎关注我的bilibili频道：@鸭鸭_カモ
+https://space.bilibili.com/2054654702/
+回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
+            `)
+        </script>
+        <style>
+            body {
+                background-color: #6dc0ede1; /* 蓝色背景 */
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* 扩距
+            *    margin-top: 1%;
+            *    margin-bottom: 1%;
+            *    margin-left: 1%;
+            *    margin-right: 1%;
+            *    such as: <div class="container" style="margin-right: 1%; margin-left: 1%;">左右扩距</div>
+            */
+            
+            .container {
+                background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+
+            h1 {
+                color: #333;
+                font-size: 40px;
+            }
+
+            h2 {
+                color: #333;
+                font-size: 24px; /* 调整标题文本大小 */
+                margin-bottom: 10px; /* 调整标题与下方段落的间距 */
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: center;">
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/展示图.png" alt="展示图" width="960" height="540">
+            </div>
+            <p>&nbsp;</p>
+
+            <div style="text-align: center;">
+                <h1>芙芙工具箱 开发工具 说明</h1>
+                <p><i>适用于芙芙工具箱&nbsp;独立开发工具包</i></p>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="container">
+                <p>下载zip文件的在第一次配置时，请先进行以下操作:</p>
+                <ol>
+                    <li><p>解压下载的 zip 文件</p></li>
+                    <li><p>找到开发工具包解压目录</p></li>
+                    <li><p>将该目录添加到环境变量<code>PATH</code>中，类似步骤请查看<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98QandA/%E4%B8%BB%E7%A8%8B%E5%BA%8F/#add-python-to-path" target="_blank">[Q：我该如何添加python到系统PATH环境变量]</a> (我相信你能通过这个类似的文档看懂)</p></li>
+                    <li><p>尝试在终端中使用<code>ffdev</code>命令，如果提示命令不存在则请重开一个终端实例/重启你的设备。</p></li>
+                </ol>
+                <p>用安装程序安装的不用弄。</p>
+                <p>如果你已正确配置，你应该可以看到类似如下的输出:</p>
+                <pre>
+                    <code>
+&gt; ffdev
+Usage: ffdev &lt;工具&gt; &lt;命令&gt; [&lt;参数&gt;...]
+&gt; ffdev 帮助
+⚠ 无效的程序调用
+[!] 可用程序: [总调用] [目录复制] [参数查重] [非UTF-8编码] [尾随空格] [需求生成] [代码行数] [账号切换] [连续push] [连续pull] [git连续尝试]
+                    </code>
+                </pre>
+                <p>最后，使用<code>ffdev &lt;工具&gt; [参数]</code>即可执行工具，具体使用方法请参阅每个功能的<code>--help</code>。</p>
+            </div>
+            <br>
+            <div class="container">
+                <h2 id="ini">ini配置文件说明</h2>
+                <p>详见配置文件中的注释。</p>
+                <p><del>什么？你说你把注释删掉了？请</del><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/files/ini/开发工具默认config/config.ini" download>[点我下载默认配置文件(20240527)]</a></p>
+            </div>
+            <br>
+            <div class="container">
+                <h2 id="json">json配置文件说明</h2>
+                <p><i>Examples:</i></p>
+                <ul>
+                    <li>
+                        <h3>git/账户切换/accounts.json</h3>
+                        <pre>
+                            <code>
+{
+    "用户1": {
+        "name": "用户名1",
+        "email": "邮箱1@example.com",
+        "aliases": ["用户1别名1", "用户1别名2"]
+    },
+    "用户2": {
+        "name": "用户名2",
+        "email": "邮箱2@example.com",
+        "aliases": ["用户2别名1", "用户2别名2"]
+    }
+}
+                            </code>
+                        </pre>
+                        <p><strong>[!WARNING]</strong><br>请勿在<code>json</code>文件中添加注释！</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: right;">
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
+                <p>最后更新：<strong>2025/2/10</strong></p>
+                <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
+            </div>
+        </div>
+    </body>
+</html>

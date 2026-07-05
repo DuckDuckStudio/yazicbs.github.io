@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Code by Duck Studio -->
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>芙芙工具箱&nbsp;版本说明</title>
+        <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/Fufu_Tools.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="芙芙工具箱 - 版本说明" name="description">
+        <!--定义了网页的描述，用于搜索引擎显示网页摘要-->
+        <meta content="鸭鸭工作室,鸭鸭「カモ」,DuckStudio,DuckDuckStudio,Fufu_Tools,芙芙工具箱,版本说明" name="keywords">
+        <!--定义与网页相关的关键词-->
+        <script>
+            // 前面不要加空格
+            console.log(`
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+
+本站维护人员：
+鸭鸭「カモ」
+欢迎关注我的bilibili频道：@鸭鸭_カモ
+https://space.bilibili.com/2054654702/
+回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
+            `)
+        </script>
+        <style>
+            body {
+                background-color: #6dc0ede1; /* 蓝色背景 */
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* 扩距
+            *    margin-top: 1%;
+            *    margin-bottom: 1%;
+            *    margin-left: 1%;
+            *    margin-right: 1%;
+            *    such as: <div class="container" style="margin-right: 1%; margin-left: 1%;">左右扩距</div>
+            */
+            
+            .container {
+                background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+
+            h1 {
+                color: #333;
+                font-size: 40px;
+            }
+
+            h2 {
+                color: #333;
+                font-size: 24px; /* 调整标题文本大小 */
+                margin-bottom: 10px; /* 调整标题与下方段落的间距 */
+            }
+        </style>
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: center;">
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/photos/展示图.png" alt="展示图" width="960" height="540">
+            </div>
+            <p>&nbsp;</p>
+
+            <div style="text-align: center;">
+                <h1>版本说明</h1>
+                <i>目前有<a href="#lite版">lite版</a>、<a href="#打包版">打包版</a>、<a href="#安装程序">安装程序</a>、<a href="#源码">code版</a>以及<a href="#独立开发工具包">独立开发工具包</a></i>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="container" id="lite版">
+                <h2>lite版<i>(zip/7z)</i></h2>
+                <p>这是一个十分轻量级的版本，<strong>占用空间最少，运行速度最快，功能与其他版本相同</strong>，但<strong>必须先配置依赖</strong>。</p>
+                <h3>适用人群：</h3>
+                <ul>
+                    <li><p>能正确配置依赖<sup><a href="#注释1">[1]</a></sup>的</p></li>
+                    <li><p>需要解压即用的</p></li>
+                </ul>
+            </div>
+
+            <div class="container" id="打包版">
+                <h2>打包版<i>(zip/7z)</i></h2>
+                <p>这是一个经过打包后的版本，<strong>占用空间较大，运行速度较慢，功能与其他版本相同</strong>，虽然有些许缺点，但你在使用这个版本时<strong>无需配置依赖。</strong></p>
+                <h3>适用人群：</h3>
+                <ul>
+                    <li><p>不配置依赖的</p></li>
+                    <li><p>需要解压即用的</p></li>
+                </ul>
+            </div>
+
+            <div class="container" id="安装程序">
+                <h2>安装程序<i>(exe)</i></h2>
+                <p>这是打包版的安装程序，与<i>打包版(zip)</i>不同的是这个版本<i>可以实现自动新建桌面图标等功能</i>，且<i>自带卸载工具</i>。<strong>占用空间较大，运行速度较慢，功能与其他版本相同</strong>，虽然有些许缺点，但你在使用这个版本时<strong>无需配置依赖。</strong></p>
+                <h3>适用人群：</h3>
+                <ul>
+                    <li><p>需要卸载程序的</p></li>
+                    <li><p>不配置依赖的</p></li>
+                </ul>
+            </div>
+
+            <div class="container" id="源码">
+                <h2>源码 / code版</h2>
+                <p>这个版本为代码仓库中的工具的版本。使用这个版本，你可以<strong>最先体验到已知BUG修复、全新工具等</strong>，但这个版本的程序<strong>未经验证</strong>，可能会出现一些很神奇的BUG。</p>
+                <h3>适用人群：</h3>
+                <ul>
+                    <li><p>想要体验到最新功能的</p></li>
+                    <li><p>懂得查阅文档的</p></li>
+                    <li><p>能正确配置依赖<sup><a href="#注释1">[1]</a></sup>的</p></li>
+                </ul>
+                <h3>如何获取：</h3>
+                <p>如果您确实需要使用到这个版本，请在命令行中<code>cd</code>到一个目录中，然后执行<code>git clone https://github.com/DuckDuckStudio/Fufu_Tools.git</code>即可获取仓库源码。</p>
+                <p>在获取完仓库源码后，请记得将仓库中的<code>cxx</code>文件进行编译！(我使用g++编译)</p>
+            </div>
+
+            <div class="container" id="独立开发工具包">
+                <h2>独立开发工具包</h2>
+                <p>这个版本为独立工具包仓库中的发行版。这个版本<strong>仅包含开发工具</strong>，同时提供预览版。</p>
+                <h3>适用人群：</h3>
+                <ul>
+                    <li><p>仅需开发工具的</p></li>
+                    <li><p>懂得查阅文档的</p></li>
+                </ul>
+                <h3>如何获取：</h3>
+                <p>请前往<a href="https://github.com/DuckDuckStudio/Fufu_Dev_Tools/releases/" target="_blank">仓库发行版</a>获取</p>
+            </div>
+
+            <br>
+
+            <div class="container" id="注释">
+                <h2>注释</h2>
+                <p id="注释1"><sup>[1]</sup> 关于芙芙工具箱的系统要求，请前往这个网站查看→<strong><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/minimum/" target="_blank">[芙芙工具箱最低系统要求]</a></strong></p>
+            </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
+            <div style="text-align: right;">
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/">回到首页</a>
+                <p>最后更新：<strong>2024/9/16</strong></p>
+                <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues" target="_blank">[提交<strong>本页面</strong>的反馈]</a><br>
+                <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues" target="_blank">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
+            </div>
+        </div>
+    </body>
+</html>

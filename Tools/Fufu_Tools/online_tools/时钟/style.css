@@ -1,0 +1,31 @@
+body {
+    overflow: hidden;
+    text-align: center;
+    background-color: #eadbbf;
+    font-family: 楷体, Arial, monospace;
+}
+
+h1 {
+    margin-top: 27vh;
+    margin-bottom: auto;
+    font-size: 350%;
+}
+
+/* For PC */
+#Clock {
+    margin: 0;
+    font-size: 1500%;
+    font-family: "UD Digi Kyokasho N-R", Arial, monospace;
+}
+
+.comma {
+    color: #888;
+    font-weight: lighter;
+}
+
+/* For Phone */
+@media (max-width: 900px) {
+    #Clock {
+        font-size: 750%;
+    }
+}

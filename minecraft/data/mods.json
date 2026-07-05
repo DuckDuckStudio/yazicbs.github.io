@@ -1,0 +1,207 @@
+{
+  "NOTE": "数据由 AI 生成，不保证除 Minecraft Version 和 Mod Loader 和 Name 外的其他字段完全准确",
+  "Minecraft Version": "1.21.1",
+  "Mod Loader": "Fabric",
+  "Mods": [
+    {
+      "Name": "immersive_aircraft-1.1.6+1.21.1-fabric.jar",
+      "Translated Name": "沉浸式飞机",
+      "Version": "1.1.6+1.21.1"
+    },
+    {
+      "Name": "worldedit-mod-7.3.8.jar",
+      "Translated Name": "创世神",
+      "Version": "7.3.8"
+    },
+    {
+      "Name": "fabric-carpet-1.21-1.4.147+v240613.jar",
+      "Translated Name": "地毯",
+      "Version": "1.21-1.4.147+v240613"
+    },
+    {
+      "Name": "enhancedblockentities-0.10.2+1.21.jar",
+      "Translated Name": "方块实体优化",
+      "Version": "0.10.2+1.21"
+    },
+    {
+      "Name": "Controlling-fabric-1.21.1-19.0.4.jar",
+      "Translated Name": "键位冲突显示",
+      "Version": "1.21.1-19.0.4"
+    },
+    {
+      "Name": "lithium-fabric-0.14.8+mc1.21.1.jar",
+      "Translated Name": "锂",
+      "Version": "0.14.8+mc1.21.1"
+    },
+    {
+      "Name": "replaymod-1.21-2.6.20.jar",
+      "Translated Name": "录像回放",
+      "Version": "1.21-2.6.20"
+    },
+    {
+      "Name": "modmenu-11.0.3.jar",
+      "Translated Name": "模组菜单",
+      "Version": "11.0.3"
+    },
+    {
+      "Name": "MagicLib-mc1.21.1-fabric-0.8.662-stable.jar",
+      "Translated Name": "魔法类库",
+      "Version": "mc1.21.1-fabric-0.8.662-stable"
+    },
+    {
+      "Name": "sodium-extra-fabric-0.6.0+mc1.21.1.jar",
+      "Translated Name": "钠 · 扩展",
+      "Version": "0.6.0+mc1.21.1"
+    },
+    {
+      "Name": "sodium-fabric-0.6.9+mc1.21.1.jar",
+      "Translated Name": "钠",
+      "Version": "0.6.9+mc1.21.1"
+    },
+    {
+      "Name": "FarmersDelight-1.21.1-2.3.0+refabricated.jar",
+      "Translated Name": "农夫乐事：重织",
+      "Version": "1.21.1-2.3.0+refabricated"
+    },
+    {
+      "Name": "appleskin-fabric-mc1.21-3.0.6.jar",
+      "Translated Name": "苹果皮",
+      "Version": "mc1.21-3.0.6"
+    },
+    {
+      "Name": "comforts-fabric-9.0.3+1.21.1.jar",
+      "Translated Name": "舒适用品",
+      "Version": "9.0.3+1.21.1"
+    },
+    {
+      "Name": "IMBlocker-5.0.2-1.20.6+.jar",
+      "Translated Name": "输入法冲突修复",
+      "Version": "5.0.2-1.20.6+"
+    },
+    {
+      "Name": "ExplorersCompass-1.21.1-2.2.5-fabric.jar",
+      "Translated Name": "探险者指南针",
+      "Version": "1.21.1-2.2.5"
+    },
+    {
+      "Name": "litematica-fabric-1.21-0.19.53.jar",
+      "Translated Name": "投影",
+      "Version": "1.21-0.19.53"
+    },
+    {
+      "Name": "CustomSkinLoader_Fabric-14.22.jar",
+      "Translated Name": "万用皮肤补丁",
+      "Version": "14.22"
+    },
+    {
+      "Name": "placeholder-api-2.4.2+1.21.jar",
+      "Translated Name": "文本占位符 API",
+      "Version": "2.4.2+1.21"
+    },
+    {
+      "Name": "indium-1.0.35+mc1.21.jar",
+      "Translated Name": "铟",
+      "Version": "1.0.35+mc1.21"
+    },
+    {
+      "Name": "physics-mod-3.0.20-mc-1.21.0-fabric.jar.disabled",
+      "Translated Name": "真实物理",
+      "Version": "3.0.20-mc-1.21.0"
+    },
+    {
+      "Name": "gugle-carpet-addition-mc1.21.1-v2.10.0+build.12.jar",
+      "Translated Name": "Gugle的Carpet附加包",
+      "Version": "mc1.21.1-v2.10.0+build.12"
+    },
+    {
+      "Name": "jei-1.21.1-fabric-19.8.4.113.jar",
+      "Translated Name": "JEI物品管理器",
+      "Version": "1.21.1-fabric-19.8.4.113"
+    },
+    {
+      "Name": "lambdynamiclights-3.1.4+1.21.1.jar",
+      "Translated Name": "Lambd的动态光源",
+      "Version": "3.1.4+1.21.1"
+    },
+    {
+      "Name": "reeses-sodium-options-fabric-1.8.3+mc1.21.4.jar",
+      "Translated Name": "Reese的钠视频界面",
+      "Version": "1.8.3+mc1.21.4"
+    },
+    {
+      "Name": "XaerosWorldMap_1.39.4_Fabric_1.21.jar",
+      "Translated Name": "Xaero的世界地图",
+      "Version": "1.39.4_Fabric_1.21"
+    },
+    {
+      "Name": "Xaeros_Minimap_25.1.0_Fabric_1.21.jar",
+      "Translated Name": "Xaero的小地图",
+      "Version": "25.1.0_Fabric_1.21"
+    },
+    {
+      "Name": "badpackets-fabric-0.8.2.jar",
+      "Translated Name": "",
+      "Version": "0.8.2"
+    },
+    {
+      "Name": "continuity-3.0.0+1.21.jar",
+      "Translated Name": "",
+      "Version": "3.0.0+1.21"
+    },
+    {
+      "Name": "fabric-api-0.115.1+1.21.1.jar",
+      "Translated Name": "",
+      "Version": "0.115.1+1.21."
+    },
+    {
+      "Name": "ForgeConfigAPIPort-v21.1.3-1.21.1-Fabric.jar",
+      "Translated Name": "",
+      "Version": "v21.1.3-1.21.1"
+    },
+    {
+      "Name": "iris-fabric-1.8.8+mc1.21.1.jar",
+      "Translated Name": "",
+      "Version": "1.8.8+mc1.21.1"
+    },
+    {
+      "Name": "LeavesBeGone-v21.1.0-1.21.1-Fabric.jar",
+      "Translated Name": "",
+      "Version": "v21.1.0-1.21.1"
+    },
+    {
+      "Name": "malilib-fabric-1.21-0.21.4.jar",
+      "Translated Name": "",
+      "Version": "1.21-0.21.4"
+    },
+    {
+      "Name": "MasaGadget-mc1.21.1-fabric-4.0.373-stable.jar",
+      "Translated Name": "",
+      "Version": "mc1.21.1-fabric-4.0.373-stable"
+    },
+    {
+      "Name": "PuzzlesLib-v21.1.28-1.21.1-Fabric.jar",
+      "Translated Name": "",
+      "Version": "v21.1.28-1.21.1"
+    },
+    {
+      "Name": "Searchables-fabric-1.21.1-1.0.2.jar",
+      "Translated Name": "",
+      "Version": "1.21.1-1.0.2"
+    },
+    {
+      "Name": "tweakeroo-fabric-1.21-0.21.54.jar",
+      "Translated Name": "",
+      "Version": "1.21-0.21.54"
+    },
+    {
+      "Name": "wthit-fabric-12.5.1.jar",
+      "Translated Name": "",
+      "Version": "12.5.1"
+    },
+    {
+      "Name": "yet_another_config_lib_v3-3.6.3+1.21.1-fabric.jar",
+      "Translated Name": "",
+      "Version": "v3-3.6.3+1.21.1"
+    }
+  ]
+}

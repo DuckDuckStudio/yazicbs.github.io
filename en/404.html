@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Translated from the Chinese 404 page -->
+
+<html lang="en">
+    <head>
+        <title>Oops! It seems like you've come to the wrong place!</title>
+        <style>
+            body {
+                background-color: #f5f5dc;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+
+            .container {
+                background-color: rgba(255, 255, 255, 0.7);
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+        </style>
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Oops! It seems like you've accessed a non-existent page!</h1>
+            <p>ERROR CODE: <strong>404 (Server could not locate the requested resource)</strong><br>
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/">[Back to Homepage]</a>
+            </p>
+            <h3>Is the link correct? Please try the following steps:</h3>
+            <ol>
+                <li>Refresh the page and try again</li>
+                <li>Ask the person or website administrator who provided you with the link if they gave you an incorrect one</li>
+                <li>Wait a moment and try again, as <code>GitHub Pages</code> might be deploying the updated webpage. You can check the deployment status <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/actions">here</a></li>
+                <li>Go to the <a href="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/">homepage</a> to find the site you intended to visit.</li>
+            </ol>
+
+            <h3>If you are a webmaster:</h3>
+            <h4>Information of access</h4>
+            <ul>
+                <li><strong>ip:</strong> <span id="ip"></span></li>
+                <li><strong>head:</strong> <span id="browser"></span></li>
+                <li><strong>time:</strong> <span id="time"></span></li>
+                <li><strong>resource:</strong> <span id="resource"></span></li>
+            </ul>
+
+            <script>
+                // Get browser type
+                const browser = navigator.userAgent;
+
+                // Get current time
+                const time = new Date().toISOString();
+
+                // Display information
+                document.getElementById('browser').innerText = browser;
+                document.getElementById('time').innerText = time;
+
+                // Get approximate access location
+                /* 
+                * JS输出分类: Location
+                */
+                fetch('https://ipapi.co/json/')
+                    .then(response => response.json())
+                    .then(data => {
+                        const city = data.city; // City | e.g. Zhangzhou
+                        const province = data.region; // province/region | e.g. Fujian
+                        const country = data.country_code; // Country | e.g. CN
+
+                        const cityMessages = {
+                            'CN': {
+                                'Fujian': {
+                                    'Xiamen': '厦门',
+                                    'Quanzhou': '泉州',
+                                    'Fuzhou': '福州',
+                                    'Putian': '莆田',
+                                    'Zhangzhou': '漳州',
+                                    'Nanping': '南平',
+                                    'Longyan': '龙岩',
+                                    'Sanming': '三明',
+                                    'Ningde': '宁德'
+                                },
+                                'Guangdong': {
+                                    'Guangzhou': '广州'
+                                },
+                                'Beijing': '北京',
+                                'Shanghai': '上海',
+                                'Tianjin': '天津',
+                                'Chongqing': '重庆',
+                            },
+                        };
+
+                        let welcomeMessage = '';
+
+                        if (cityMessages[country] && cityMessages[country][province] && cityMessages[country][province][city]) {
+                            welcomeMessage = `${cityMessages[country][province][city]} << ${country} | ${province} | ${city}`;
+                        } else {
+                            console.warn("[WARN(Location-Mapping)] Your region is not mapped, please submit an Issue or PR supplement, remember to bring the console output[TEST(Location)]")
+                            welcomeMessage = `${city || province} << ${country} | ${province} | ${city}`;
+                        }
+
+                        console.log(`%c[TEST(Location)] ${country} | ${province} | ${city}`, 'color: cyan;');
+
+                        const helloSpan = document.getElementById('ip');
+                        helloSpan.textContent = welcomeMessage;
+                    })
+                .catch(error => console.error('[ERROR(Location)] Failed to get location:', error));
+
+                // Get resource
+                const currentUrl = window.location.href;
+                const baseUrl = 'https://github.com/DuckDuckStudio/yazicbs.github.io/tree/main/';
+                const path = currentUrl.replace('https://duckduckstudio.github.io/yazicbs.github.io/', '');
+                const githubLink = baseUrl + path;
+                const resourceElement = document.getElementById('resource');
+                const linkElement = document.createElement('a');
+                linkElement.setAttribute('href', githubLink);
+                linkElement.textContent = githubLink;
+                resourceElement.appendChild(linkElement);
+            </script>
+
+            <div style="text-align: right;">
+                <p>This page is translated from the Chinese 404 page.</p>
+                <p>Last translated: 2025/04/27</p>
+                <p>&nbsp;</p>
+                <h4>View this pages in other languages:</h4>
+                <p><a href="https://duckduckstudio.github.io/yazicbs.github.io/404.html">中文(简体)</a></p>
+            </div>
+        </div>
+    </body>
+</html>

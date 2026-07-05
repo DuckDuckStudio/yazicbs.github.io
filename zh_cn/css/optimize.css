@@ -1,0 +1,60 @@
+code {
+    display: inline-block;
+    padding: 0.5em;
+    background-color: rgba(235, 235, 235, 1);
+    color: #333;
+    border-radius: 4px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.hello_container {
+    background-color: rgba(245, 245, 220, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.name_container {
+    background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+summary {
+    cursor: pointer;
+    /* cursor: pointer; 会让鼠标悬停在对应元素上时，鼠标指针变成一只手的形状（类似于超链接的效果）。这通常用于提示用户该元素是可点击的，比如按钮或链接。 */
+    padding-left: 1%;
+}
+
+/* ------ 打字效果 ------ */
+.text{
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+}
+
+.text::after{ /*光标*/
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    height: 20px;
+    width: 2px;     
+    background-color: #000000;
+    animation: san 0.5s steps(1) infinite;
+}
+@keyframes san{
+    0%,100%{
+        background-color: #000000;
+    }
+    50%{
+       background-color: transparent;
+    }
+
+}
+/* ------ */

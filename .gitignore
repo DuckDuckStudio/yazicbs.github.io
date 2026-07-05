@@ -1,0 +1,30 @@
+# IDE
+.idea/
+.vs/
+.vscode/
+
+# python
+.venv/
+
+# TEST
+test/
+test.*
+
+# npm
+node_modules/
+
+# TypeScript / tsc
+**/*.js
+**/*.js.map
+
+**/*.mjs
+**/*.mjs.map
+
+**/*.d.ts
+**/*.d.ts.map
+
+**/*.d.mts
+**/*.d.mts.map
+
+# Eslint
+!eslint.config.js

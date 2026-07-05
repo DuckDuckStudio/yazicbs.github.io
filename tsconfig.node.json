@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "lib": ["esnext"],
+        "types": ["node"]
+    },
+    "include": [
+        ".action_scripts/JavaScript/yaml-json.mts"
+    ],
+    "exclude": [
+        // 顶掉继承过来的排除项
+    ]
+}

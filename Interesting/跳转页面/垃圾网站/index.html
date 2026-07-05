@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Code by Duck Studio -->
+<!-- (c) 鸭鸭「カモ」 -->
+<!-- 如需搬运，请注明主页网址与本页网址，感谢！ -->
+
+<!--
+免责声明:
+本页面仅供个人插件跳转使用，并没有对任何网站做出评价。
+-->
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>真的！别看！</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="https://duckduckstudio.github.io/yazicbs.github.io/icos/773x716.png">
+        <!-- 捡没用的图标来用 -->
+
+        <script>
+           // 前面不要加空格
+           console.log(`
+ddddd                  k         ssss                   d  i
+d     d         c c c  k   k     s      t           ddddd      oooo
+d     d  u   u  c      k k        sss  ttt  u   u  d    d  i  o    o
+d     d  u   u  c      k k           s  t   u   u  d    d  i  o    o
+ddddd    u u u  c c c  k   k     sssss  t   u u u   ddddd  i   oooo
+
+本站维护人员：
+鸭鸭「カモ」
+欢迎关注我的bilibili频道：@鸭鸭_カモ
+https://space.bilibili.com/2054654702/
+回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
+            `)
+        </script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <!-- 芙芙工具箱网页通用样式 by 鸭鸭「カモ」 -->
+        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+    </head>
+    <body>
+        <div class="container;" style="text-align: center;">
+            <p style="font-size: xx-large;">真的，别看。<span id="原因">这就是个垃圾网站。</span></p>
+        </div>
+        <script>
+            // 获取 URL 参数中的 why (阻止理由)
+            const why = new URLSearchParams(window.location.search).get("why");
+            if (why) {
+                document.getElementById("原因").textContent = why;
+            } else {
+                console.warn("未检测到 why 参数！显示默认理由。");
+                // 保持原样
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+/* 芙芙工具箱网页通用样式 Version 1.0 */
+/* by鸭鸭「カモ」 */
+/* NOTE:全站所有相同样式页面都会用到的才可放进来！ */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+code {
+    display: inline-block;
+    padding: 0.5em;
+    background-color: rgba(235, 235, 235, 1);
+    color: #333;
+    border-radius: 4px;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+}
+
+a {
+    color: #007bff;
+    padding: 3px 5px;
+}
+
+a:hover {
+    color: #0056b3;
+    background-color: #e9ecef;
+}

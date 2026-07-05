@@ -1,0 +1,25 @@
+name: 检查本地路径
+
+# GitHub Action DuckDuckStudio/Check_Locale_Paths 版本 2.0.0 示例工作流
+# https://github.com/marketplace/actions/check-locale-paths
+# 通过 [Apache License v2.0](https://github.com/DuckDuckStudio/Check_Locale_Paths/blob/main/LICENSE) 许可
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions: {}
+
+jobs:
+  check-local-paths:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检查本地路径
+        uses: DuckDuckStudio/Check_Locale_Paths@2f3264da0b9bc5799380851283c7edb1e1ebfe86 # 3.0.0
+        with:
+          skip_files: Tools/Fufu_Tools/minimum/index.html
+          skip_folders: Tools/Fufu_Tools/wiki,node_modules
+          # formats: html,css,js,mjs,ts,mts
