@@ -2,7 +2,7 @@
 // APlayer doc: https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0
 // 别加歌词别加歌词，弄过了，样式不好弄
 
-/* 
+/*
 * JS输出分类: 歌单
 */
 
@@ -105,6 +105,33 @@ const playlists = [
             cover: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Images/Songs/纯音乐/中国之声结束曲%20-%20没有共产党就没有新中国.jpg"
         },
     ],
+    // 方言
+    [
+        {
+            name: "世界第一等",
+            artist: "刘德华",
+            url: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Audios/Songs/方言/刘德华%20-%20世界第一等.mp3",
+            cover: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Images/Songs/方言/刘德华%20-%20世界第一等.jpg"
+        },
+        {
+            name: "酒国一蕊花",
+            artist: "王瑞霞",
+            url: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Audios/Songs/方言/王瑞霞%20-%20酒国一蕊花.mp3",
+            cover: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Images/Songs/方言/王瑞霞%20-%20酒国一蕊花.jpg"
+        },
+        {
+            name: "雨水我问你",
+            artist: "蔡秋凤",
+            url: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Audios/Songs/方言/蔡秋凤%20-%20雨水我问你.mp3",
+            cover: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Images/Songs/方言/蔡秋凤%20-%20雨水我问你.jpg"
+        },
+        {
+            name: "黑咖啡",
+            artist: "江蕙",
+            url: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Audios/Songs/方言/江蕙%20-%20黑咖啡.mp3",
+            cover: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Images/Songs/方言/江蕙%20-%20黑咖啡.jpg"
+        },
+    ],
     // 春节
     [
         {
@@ -162,14 +189,16 @@ const playlists = [
 const playlistNames: Record<number, string> & { default: string } = {
     0: "游戏",
     1: "纯音乐",
-    2: "春节",
+    2: "方言",
+    3: "春节",
     default: "[WARN(歌单-选择-索引越界)] 未定义歌单名称"
 };
 
 // 歌单权重设置，权重越大被选中的概率越高
 const playlistWeights = [
-    1, // 游戏
-    1, // 纯音乐
+    1,   // 游戏
+    1,   // 纯音乐
+    1,   // 方言
     0.1, // 春节
 ];
 
