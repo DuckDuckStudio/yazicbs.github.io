@@ -253,38 +253,6 @@ https://space.bilibili.com/2054654702/
                                     </div>
                                     <!-- End in the here -->
                                 </li>
-                                <li class="slide s-section-2 css-1rkmeg4">
-                                    <div>
-                                        <!-------------------->
-                                        <div class="transition s-bg-white s-new-media-section s-section s-media-section s-top-padding-half background-image"
-                                            data-react-style="{}">
-                                            <div class="container">
-                                                <div class="columns sixteen">
-                                                </div>
-                                                <div class="s-mh s-layout-normal s-repeatable">
-                                                    <div>
-                                                        <div data-sorting-index="0" class="s-repeatable-item s-last-row">
-                                                            <div class="clearfix">
-                                                                <div>
-                                                                    <div class="s-item-text-group">
-                                                                        <div class="s-item-title">
-                                                                            <div class="s-component s-text">
-                                                                                <div class="hello_container">
-                                                                                    <h2><span id="hello-there">Hello，____你哪里的?</span></h2>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-------------------->
-                                    </div>
-                                </li>
                                 <li class="slide s-section-3 css-1rkmeg4">
                                     <div class="waypoint"></div>
                                     <a class="section-anchor"></a>
@@ -1056,53 +1024,6 @@ https://space.bilibili.com/2054654702/
                                                                                 <p>脚本: PowerShell、batch、bash，只会写点简单的</p>
                                                                                 <p>我承认我的技术非常一般，完全达不到产品要求。</p>
                                                                                 <script>
-                                                                                    /* 
-                                                                                    * JS输出分类: 位置
-                                                                                    */
-                                                                                    fetch("https://ipapi.co/json/")
-                                                                                        .then(response => response.json())
-                                                                                        .then(data => {
-                                                                                            const city = data.city; // 城市 Zhangzhou
-                                                                                            const province = data.region; // 省份 Fujian
-                                                                                            const country = data.country_code; // 国家代码 CN
-
-                                                                                            const cityMessages = {
-                                                                                                "CN": {
-                                                                                                    "Fujian": "福建",
-                                                                                                    "Guangdong": "广东",
-                                                                                                    "HeBei": "河北",
-                                                                                                    // 四个直辖市
-                                                                                                    "Beijing": "北京",
-                                                                                                    "Shanghai": "上海",
-                                                                                                    "Tianjin": "天津",
-                                                                                                    "Chongqing": "重庆",
-                                                                                                },
-                                                                                            };
-
-                                                                                            let welcomeMessage = "";
-
-                                                                                            if (country === "CN") {
-                                                                                                if (cityMessages[country] && cityMessages[country][province]) {
-                                                                                                    welcomeMessage = `你好，${cityMessages[country][province]}！`;
-                                                                                                } else {
-                                                                                                    console.warn("[WARN(位置-映射)] 你所在的地区没有被映射，请提交Issue或PR补充，记得带上控制台输出[TEST(位置)]")
-                                                                                                    welcomeMessage = `你好，${province}！`;
-                                                                                                }
-                                                                                            } else if (country === "JP") {
-                                                                                                welcomeMessage = `こんにちは、${province}！`;
-                                                                                            } else {
-                                                                                                welcomeMessage = `Hello, ${province}!`;
-                                                                                            }
-
-                                                                                            console.debug(`%c[TEST(位置)] ${country} | ${province} | ${city}`, "color: cyan;");
-
-                                                                                            const helloSpan = document.getElementById("hello-there");
-                                                                                            helloSpan.textContent = welcomeMessage;
-                                                                                        })
-                                                                                        .catch(error => console.error("[ERROR(位置)]获取地区失败:", error));
-
-                                                                                    // ------- 位置 ↑ --- GitHub 状态 ↓ -------
-
                                                                                     /* 
                                                                                     * JS输出分类: GitHub状态
                                                                                     */
