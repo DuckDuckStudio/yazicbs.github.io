@@ -34,7 +34,7 @@ export default defineConfig(
         {
             files: ["**/*.css"],
             ignores: [
-                "zh_cn/css/main_v4.826422d2b6a94eabfe21.bundle.css" // 外部 CSS
+                "zh_cn/css/main_v4.826422d2b6a94eabfe21.bundle.pruned.css" // 外部 CSS
             ],
             plugins: { css },
             language: "css/css",
