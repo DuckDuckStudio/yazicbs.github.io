@@ -1029,8 +1029,6 @@ https://space.bilibili.com/2054654702/
                                                                                     * JS输出分类: GitHub状态
                                                                                     */
 
-                                                                                    const USERNAME = 'DuckDuckStudio';
-
                                                                                     async function getTotalStars() {
                                                                                         try {
                                                                                             let totalStars = 0;
@@ -1038,7 +1036,7 @@ https://space.bilibili.com/2054654702/
                                                                                             let hasMoreRepos = true;
 
                                                                                             while (hasMoreRepos) {
-                                                                                                const response = await fetch(`https://api.github.com/users/${USERNAME}/repos?per_page=100&page=${page}`);
+                                                                                                const response = await fetch(`https://api.github.com/users/DuckDuckStudio/repos?per_page=100&page=${page}`);
 
                                                                                                 if (!response.ok) {
                                                                                                     throw new Error(`GitHub API 响应 ${response.status}`);
