@@ -30,6 +30,11 @@ summary {
     padding-left: 1%;
 }
 
+span[title] {
+    /* 为悬停鼠标查看更多的内容添加下划线 */
+    text-decoration: underline dotted;
+}
+
 /* ------ 打字效果 ------ */
 .text{
     display: inline-block;

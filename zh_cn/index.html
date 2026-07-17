@@ -100,9 +100,9 @@ https://space.bilibili.com/2054654702/
     <body>
         <!-- 音乐组件 -->
         <!-- 官方教程：https://aplayer.js.org/#/zh-Hans/ -->
-        <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
         <div id="aplayer"></div>
-        <script type="module" src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+        <script type="module" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
         <script type="module" src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/SongList.mjs"></script>
         <!-- END -->
         <div>
@@ -1015,7 +1015,8 @@ https://space.bilibili.com/2054654702/
                                                                                 </p>
                                                                                 <p>GitHub Star: <strong><span id="total-stars">[计算中...]</span></strong></p>
                                                                                 <p>不会聊天... (万能的关键字)</p>
-                                                                                <p>音游人、单机游戏玩家；公共交通爱好者。</p>
+                                                                                <p><span title="现在主要是 Milthm 和 osu!">音游人</span>、<span title="感觉纸笔挺有意思的，但有点不会解，只会通灵。">单机游戏玩家</span>；</p>
+                                                                                <p>公共交通、摄影、观鸟爱好者。</p>
                                                                                 <p>偶尔贡献于 <a href="https://github.com/microsoft/winget-pkgs", target="_blank">Windows 包管理器清单社区</a>。</p>
                                                                                 <p style="font-weight: bold;">编程方面:</p>
                                                                                 <p>程序: C♯、Python3、极少的 C++、Scratch3</p>
@@ -1028,8 +1029,6 @@ https://space.bilibili.com/2054654702/
                                                                                     * JS输出分类: GitHub状态
                                                                                     */
 
-                                                                                    const USERNAME = 'DuckDuckStudio';
-
                                                                                     async function getTotalStars() {
                                                                                         try {
                                                                                             let totalStars = 0;
@@ -1037,7 +1036,7 @@ https://space.bilibili.com/2054654702/
                                                                                             let hasMoreRepos = true;
 
                                                                                             while (hasMoreRepos) {
-                                                                                                const response = await fetch(`https://api.github.com/users/${USERNAME}/repos?per_page=100&page=${page}`);
+                                                                                                const response = await fetch(`https://api.github.com/users/DuckDuckStudio/repos?per_page=100&page=${page}`);
 
                                                                                                 if (!response.ok) {
                                                                                                     throw new Error(`GitHub API 响应 ${response.status}`);

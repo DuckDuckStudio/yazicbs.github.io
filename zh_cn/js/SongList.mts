@@ -108,6 +108,12 @@ const playlists = [
     // 方言
     [
         {
+            name: "车站",
+            artist: "张秀卿",
+            url: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Audios/Songs/方言/张秀卿%20-%20车站.mp3",
+            cover: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Images/Songs/方言/张秀卿%20-%20车站.jpg"
+        },
+        {
             name: "世界第一等",
             artist: "刘德华",
             url: "https://duckduckstudio.github.io/yazicbs.github.io/Assets/Audios/Songs/方言/刘德华%20-%20世界第一等.mp3",
