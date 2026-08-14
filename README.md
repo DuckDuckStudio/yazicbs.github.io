@@ -1,19 +1,8 @@
 # 鸭鸭「カモ」 的个人网站
 
-| 页面部署 | 检查本地路径 | 检查链接有效性 |
-|---------|-------------|---------------|
-| [![向 GitHub Page 部署静态内容](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/deploy.yml) | [![检查本地路径](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml) | [![检查链接有效性](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml) |
+[![向 GitHub Page 部署静态内容](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/deploy.yml)
 
-| 处理自动合并标签 | 生成 Sitemap | 依赖更新 |
-|-----------------|-------------|----------|
-| [![处理自动合并标签](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/handle_auto_merge_labels.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/handle_auto_merge_labels.yml) | [![生成 Sitemap](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/generate-sitemap.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/generate-sitemap.yml) | [![Dependabot Updates](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/dependabot/dependabot-updates) |
-
-| Eslint |
-|--------|
-| [![Eslint](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/eslint.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/eslint.yml) |
-
-
-如标题和仓库介绍所述，这是我的个人网站，用来随便堆一些东西，顺便练练前端。
+如标题和仓库介绍所述，这是我的个人网站，用来随便堆一些东西。
 
 <div id="模板"></div>
 
