@@ -56,6 +56,10 @@ jobs:
           install: true
           require-lockfile: true
 
+      - name: 生成 CSS 文件
+        shell: bash
+        run: npm run sass
+
       - name: 编译 TypeScript 代码
         shell: bash
         run: |-
