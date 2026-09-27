@@ -28,3 +28,9 @@ node_modules/
 
 # Eslint
 !eslint.config.js
+
+# Scss
+Tools/GitHubView/style.css
+Tools/GitHubView/style.css.map
+zh_cn/css/灯笼.css
+zh_cn/css/灯笼.css.map

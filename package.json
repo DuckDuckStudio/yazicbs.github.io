@@ -17,7 +17,8 @@
   "type": "module",
   "main": "index.html",
   "scripts": {
-    "lint": "npx eslint --rule \"semi: [error, always]\" --max-warnings 0"
+    "lint": "npx eslint --rule \"semi: [error, always]\" --max-warnings 0",
+    "sass": "npx sass \"Tools/GitHubView/style.scss:Tools/GitHubView/style.css\" \"zh_cn/css/灯笼.scss:zh_cn/css/灯笼.css\""
   },
   "dependencies": {
     "js-yaml": "^5.4.2",
@@ -31,6 +32,7 @@
     "@types/node": "^26.6.2",
     "eslint": "^10.11.0",
     "globals": "^17.12.0",
+    "sass": "^1.105.0",
     "typescript-eslint": "^8.70.1"
   }
 }
