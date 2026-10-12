@@ -88,7 +88,7 @@ jobs:
           rm -v Tools/chinese_git/notice/Notice.md
           rm -v tsconfig.json
           rm -v package.json
-          rm -v package-lock.json
+          rm -v pnpm-lock.yaml
           rm -v serve.json
 
       - name: 设置页面
