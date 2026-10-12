@@ -38,11 +38,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: 设置 Node.js
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: latest
-
       - name: 设置 Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
@@ -54,16 +49,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r .action_scripts/Python/requirements.txt
 
-      - name: 安装 npm 依赖
-        shell: bash
-        run: |-
-          npm ci
+      - name: 设置 pnpm 和 Node.js
+        uses: pnpm/setup@e0ed22ae4d909f13ed5d2688513f73e1875e46db # v3.0.0
+        with:
+          runtime: "node@latest"
+          install: true
+          require-lockfile: true
 
       - name: 编译 TypeScript 代码
         shell: bash
         run: |-
-          npx tsc -p tsconfig.json --declaration false --declarationMap false --sourceMap false
-          npx tsc -p tsconfig.node.json --declaration false --declarationMap false --sourceMap false
+          pnpm exec tsc -p tsconfig.json --declaration false --declarationMap false --sourceMap false
+          pnpm exec tsc -p tsconfig.node.json --declaration false --declarationMap false --sourceMap false
           python .action_scripts/Python/tsClear.py
 
       - name: 转换 api 文件
