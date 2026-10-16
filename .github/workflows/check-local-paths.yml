@@ -17,8 +17,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: 检出代码
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
       - name: 检查本地路径
-        uses: DuckDuckStudio/Check_Locale_Paths@bb1f15571c76f0e6ec34d6b1af34037c2946eeff # 3.0.5
+        uses: DuckDuckStudio/Check_Locale_Paths@37243d21d49d543060676b3cc0c91c740dcc77ce # 4.0.0
         with:
           skip_files: Tools/Fufu_Tools/minimum/index.html
           skip_folders: Tools/Fufu_Tools/wiki,node_modules
