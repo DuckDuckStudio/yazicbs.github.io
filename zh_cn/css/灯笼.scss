@@ -1,0 +1,203 @@
+$lantern-red: #d8000f;
+$lantern-red-soft: rgba(216, 0, 15, 0.8);
+$lantern-red-faint: rgba(216, 0, 15, 0.1);
+$lantern-gold: #dc8f03;
+$lantern-orange: #ffa500;
+$lantern-shadow: rgba(250, 108, 0, 1);
+$lantern-shadow-2: rgba(252, 144, 61, 1);
+
+@mixin lantern-swing($duration, $origin: 50% -100px) {
+    transform-origin: $origin;
+    animation: swing $duration infinite ease-in-out;
+    -webkit-transform-origin: $origin;
+    -webkit-animation: swing $duration infinite ease-in-out;
+}
+
+.deng-box1 {
+    position: fixed;
+    top: -30px;
+    left: 5px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: $lantern-red;
+    background: $lantern-red-soft;
+    border-radius: 50% 50%;
+    @include lantern-swing(3s);
+    box-shadow: -5px 5px 50px 4px $lantern-shadow;
+
+    &::before {
+        position: absolute;
+        top: -7px;
+        left: 29px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        z-index: 999;
+        border-radius: 5px 5px 0 0;
+        border: solid 1px $lantern-gold;
+        background: $lantern-orange;
+        background: linear-gradient(to right, $lantern-gold, $lantern-orange, $lantern-gold, $lantern-orange, $lantern-gold);
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -7px;
+        left: 10px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: solid 1px $lantern-gold;
+        background: $lantern-orange;
+        background: linear-gradient(to right, $lantern-gold, $lantern-orange, $lantern-gold, $lantern-orange, $lantern-gold);
+    }
+}
+
+.xian {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 2px;
+    height: 20px;
+    background: $lantern-gold;
+}
+
+.deng-a {
+    width: 100px;
+    height: 90px;
+    background: $lantern-red;
+    background: $lantern-red-faint;
+    margin: 12px 8px 8px 10px;
+    border-radius: 50% 50%;
+    border: 2px solid $lantern-gold;
+}
+
+.deng-b {
+    width: 45px;
+    height: 90px;
+    background: $lantern-red;
+    background: $lantern-red-faint;
+    margin: -2px 8px 8px 26px;
+    border-radius: 50% 50%;
+    border: 2px solid $lantern-gold;
+}
+
+.deng-t {
+    font-family: 华文行楷, Arial, Lucida Grande, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: $lantern-orange;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    width: 25px;
+    margin: 0 auto;
+}
+
+.shui-a {
+    position: relative;
+    width: 5px;
+    height: 20px;
+    margin: -5px 0 0 59px;
+    @include lantern-swing(4s, 50% -45px);
+    background: $lantern-orange;
+    border-radius: 0 0 5px 5px;
+}
+
+.shui-c {
+    position: absolute;
+    top: 18px;
+    left: -2px;
+    width: 10px;
+    height: 35px;
+    background: $lantern-orange;
+    border-radius: 0 0 0 5px;
+}
+
+.shui-b {
+    position: absolute;
+    top: 14px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    background: $lantern-gold;
+    border-radius: 50%;
+}
+
+.deng-box2 {
+    position: fixed;
+    top: -30px;
+    right: 5px;
+    z-index: 9999;
+    pointer-events: none;
+
+    .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: $lantern-red;
+        background: $lantern-red-soft;
+        border-radius: 50% 50%;
+        @include lantern-swing(5s);
+        box-shadow: -5px 5px 30px 4px $lantern-shadow-2;
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+@-moz-keyframes swing {
+    0% {
+        -moz-transform: rotate(-10deg);
+    }
+
+    50% {
+        -moz-transform: rotate(10deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotate(-10deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(10deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-10deg);
+    }
+}
+
+@media (max-width: 900px) {
+    .deng-box1,
+    .deng-box2 {
+        display: none;
+    }
+}
