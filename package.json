@@ -29,8 +29,8 @@
     "@eslint/json": "^2.1.1",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^26.6.6",
-    "eslint": "^10.13.0",
-    "globals": "^17.13.0",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
     "sass": "^1.107.1",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.72.1"
@@ -38,9 +38,9 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.11.2",
+      "version": "12.18.0",
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.11.2"
+  "packageManager": "pnpm@12.18.0"
 }
