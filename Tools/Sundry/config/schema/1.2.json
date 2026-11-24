@@ -63,7 +63,7 @@
                         },
                         "mention_self_when_reviewer": {
                             "type": "boolean",
-                            "description": "自己在 Auth.csv 中作为包修改的审查者时，是否在 PR 中请求自己审查"
+                            "description": "自己作为包修改的审查者时，是否在 PR 中请求自己审查"
                         }
                     }
                 }
